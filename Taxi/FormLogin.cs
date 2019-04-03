@@ -15,9 +15,9 @@ using GMap.NET.MapProviders;
 
 namespace Taxi
 {
-    public partial class Form1 : Form
+    public partial class FormLogin : Form
     {
-        public Form1()
+        public FormLogin()
         {
             InitializeComponent();
         }
@@ -27,5 +27,9 @@ namespace Taxi
 
         }
 
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

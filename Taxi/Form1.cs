@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using GMap.NET;
+using GMap.NET.WindowsForms;
+using GMap.NET.WindowsForms.Markers;
+using GMap.NET.MapProviders;
+
 namespace Taxi
 {
     public partial class Form1 : Form
@@ -21,5 +26,6 @@ namespace Taxi
         {
 
         }
+
     }
 }

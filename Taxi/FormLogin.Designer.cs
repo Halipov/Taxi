@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.panelInfo = new System.Windows.Forms.Panel();
             this.labelinfo = new System.Windows.Forms.Label();
@@ -40,7 +41,7 @@
             this.LabelForgetPass = new System.Windows.Forms.Label();
             this.TextBoxPass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.ButtonExit = new Bunifu.Framework.UI.BunifuImageButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.PanelSignUp = new System.Windows.Forms.Panel();
             this.ButtonSignUp = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.LabelLogin = new System.Windows.Forms.Label();
@@ -49,13 +50,25 @@
             this.TextBoxEmail = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.TextBoxLastName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.TextBoxFirstName = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.panelForgetPass = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.TextBoxFPEmail = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.ButtonFPSend = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl4 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panelInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonRussia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonUSA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonExit)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.PanelSignUp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            this.panelForgetPass.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelInfo
@@ -149,12 +162,14 @@
             resources.ApplyResources(this.LabelSignUp, "LabelSignUp");
             this.LabelSignUp.ForeColor = System.Drawing.Color.White;
             this.LabelSignUp.Name = "LabelSignUp";
+            this.LabelSignUp.Click += new System.EventHandler(this.LabelSignUp_Click);
             // 
             // LabelForgetPass
             // 
             resources.ApplyResources(this.LabelForgetPass, "LabelForgetPass");
             this.LabelForgetPass.ForeColor = System.Drawing.Color.White;
             this.LabelForgetPass.Name = "LabelForgetPass";
+            this.LabelForgetPass.Click += new System.EventHandler(this.LabelForgetPass_Click);
             // 
             // TextBoxPass
             // 
@@ -181,18 +196,18 @@
             this.ButtonExit.Zoom = 10;
             this.ButtonExit.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
-            // panel1
+            // PanelSignUp
             // 
-            this.panel1.Controls.Add(this.ButtonSignUp);
-            this.panel1.Controls.Add(this.bunifuImageButton2);
-            this.panel1.Controls.Add(this.LabelLogin);
-            this.panel1.Controls.Add(this.TextBoxReEnter);
-            this.panel1.Controls.Add(this.TextBoxPassSign);
-            this.panel1.Controls.Add(this.TextBoxEmail);
-            this.panel1.Controls.Add(this.TextBoxLastName);
-            this.panel1.Controls.Add(this.TextBoxFirstName);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            this.PanelSignUp.Controls.Add(this.ButtonSignUp);
+            this.PanelSignUp.Controls.Add(this.bunifuImageButton2);
+            this.PanelSignUp.Controls.Add(this.LabelLogin);
+            this.PanelSignUp.Controls.Add(this.TextBoxReEnter);
+            this.PanelSignUp.Controls.Add(this.TextBoxPassSign);
+            this.PanelSignUp.Controls.Add(this.TextBoxEmail);
+            this.PanelSignUp.Controls.Add(this.TextBoxLastName);
+            this.PanelSignUp.Controls.Add(this.TextBoxFirstName);
+            resources.ApplyResources(this.PanelSignUp, "PanelSignUp");
+            this.PanelSignUp.Name = "PanelSignUp";
             // 
             // ButtonSignUp
             // 
@@ -238,6 +253,7 @@
             resources.ApplyResources(this.LabelLogin, "LabelLogin");
             this.LabelLogin.ForeColor = System.Drawing.Color.White;
             this.LabelLogin.Name = "LabelLogin";
+            this.LabelLogin.Click += new System.EventHandler(this.LabelLogin_Click);
             // 
             // TextBoxReEnter
             // 
@@ -304,15 +320,119 @@
             this.TextBoxFirstName.Name = "TextBoxFirstName";
             this.TextBoxFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // panelForgetPass
+            // 
+            this.panelForgetPass.Controls.Add(this.label2);
+            this.panelForgetPass.Controls.Add(this.ButtonFPSend);
+            this.panelForgetPass.Controls.Add(this.TextBoxFPEmail);
+            this.panelForgetPass.Controls.Add(this.bunifuImageButton1);
+            this.panelForgetPass.Controls.Add(this.label1);
+            resources.ApplyResources(this.panelForgetPass, "panelForgetPass");
+            this.panelForgetPass.Name = "panelForgetPass";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
+            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            // 
+            // TextBoxFPEmail
+            // 
+            this.TextBoxFPEmail.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
+            this.TextBoxFPEmail.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.TextBoxFPEmail.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
+            this.TextBoxFPEmail.BorderThickness = 3;
+            this.TextBoxFPEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.TextBoxFPEmail, "TextBoxFPEmail");
+            this.TextBoxFPEmail.ForeColor = System.Drawing.Color.White;
+            this.TextBoxFPEmail.isPassword = false;
+            this.TextBoxFPEmail.Name = "TextBoxFPEmail";
+            this.TextBoxFPEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // ButtonFPSend
+            // 
+            this.ButtonFPSend.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonFPSend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            resources.ApplyResources(this.ButtonFPSend, "ButtonFPSend");
+            this.ButtonFPSend.BorderRadius = 4;
+            this.ButtonFPSend.ButtonText = "Send";
+            this.ButtonFPSend.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonFPSend.DisabledColor = System.Drawing.Color.Gray;
+            this.ButtonFPSend.Iconcolor = System.Drawing.Color.Transparent;
+            this.ButtonFPSend.Iconimage = null;
+            this.ButtonFPSend.Iconimage_right = null;
+            this.ButtonFPSend.Iconimage_right_Selected = null;
+            this.ButtonFPSend.Iconimage_Selected = null;
+            this.ButtonFPSend.IconMarginLeft = 0;
+            this.ButtonFPSend.IconMarginRight = 0;
+            this.ButtonFPSend.IconRightVisible = true;
+            this.ButtonFPSend.IconRightZoom = 0D;
+            this.ButtonFPSend.IconVisible = true;
+            this.ButtonFPSend.IconZoom = 90D;
+            this.ButtonFPSend.IsTab = false;
+            this.ButtonFPSend.Name = "ButtonFPSend";
+            this.ButtonFPSend.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonFPSend.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonFPSend.OnHoverTextColor = System.Drawing.Color.White;
+            this.ButtonFPSend.selected = false;
+            this.ButtonFPSend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ButtonFPSend.Textcolor = System.Drawing.Color.White;
+            this.ButtonFPSend.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Name = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this;
+            this.bunifuDragControl1.Vertical = true;
+            // 
+            // bunifuDragControl2
+            // 
+            this.bunifuDragControl2.Fixed = true;
+            this.bunifuDragControl2.Horizontal = true;
+            this.bunifuDragControl2.TargetControl = this.PanelSignUp;
+            this.bunifuDragControl2.Vertical = true;
+            // 
+            // bunifuDragControl3
+            // 
+            this.bunifuDragControl3.Fixed = true;
+            this.bunifuDragControl3.Horizontal = true;
+            this.bunifuDragControl3.TargetControl = this.panelForgetPass;
+            this.bunifuDragControl3.Vertical = true;
+            // 
+            // bunifuDragControl4
+            // 
+            this.bunifuDragControl4.Fixed = true;
+            this.bunifuDragControl4.Horizontal = true;
+            this.bunifuDragControl4.TargetControl = this.pictureBox1;
+            this.bunifuDragControl4.Vertical = true;
+            // 
             // FormLogin
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
+            this.Controls.Add(this.panelForgetPass);
             this.Controls.Add(this.ButtonRussia);
             this.Controls.Add(this.ButtonUSA);
             this.Controls.Add(this.ButtonExit);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PanelSignUp);
             this.Controls.Add(this.ButtonLogin);
             this.Controls.Add(this.LabelSignUp);
             this.Controls.Add(this.LabelForgetPass);
@@ -328,9 +448,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.ButtonRussia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonUSA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonExit)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.PanelSignUp.ResumeLayout(false);
+            this.PanelSignUp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            this.panelForgetPass.ResumeLayout(false);
+            this.panelForgetPass.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -348,7 +471,7 @@
         private System.Windows.Forms.Label LabelSignUp;
         private System.Windows.Forms.Label LabelForgetPass;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TextBoxPass;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel PanelSignUp;
         private Bunifu.Framework.UI.BunifuFlatButton ButtonSignUp;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private System.Windows.Forms.Label LabelLogin;
@@ -358,6 +481,16 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox TextBoxLastName;
         private Bunifu.Framework.UI.BunifuMetroTextbox TextBoxFirstName;
         private Bunifu.Framework.UI.BunifuImageButton ButtonExit;
+        private System.Windows.Forms.Panel panelForgetPass;
+        private Bunifu.Framework.UI.BunifuFlatButton ButtonFPSend;
+        private Bunifu.Framework.UI.BunifuMetroTextbox TextBoxFPEmail;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl3;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl4;
     }
 }
 

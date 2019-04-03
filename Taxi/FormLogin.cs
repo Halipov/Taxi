@@ -20,6 +20,8 @@ namespace Taxi
         public FormLogin()
         {
             InitializeComponent();
+            PanelSignUp.Visible = false;
+            panelForgetPass.Visible = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -30,6 +32,26 @@ namespace Taxi
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void LabelSignUp_Click(object sender, EventArgs e)
+        {
+            PanelSignUp.Visible = true;
+        }
+
+        private void LabelLogin_Click(object sender, EventArgs e)
+        {
+            PanelSignUp.Visible = false;
+        }
+
+        private void LabelForgetPass_Click(object sender, EventArgs e)
+        {
+            panelForgetPass.Visible = true;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            panelForgetPass.Visible = false;
         }
     }
 }

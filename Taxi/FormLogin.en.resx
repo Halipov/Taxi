@@ -121,6 +121,9 @@
     <value>Passwo</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PanelSignUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 0</value>
+  </data>
   <data name="bunifuImageButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABS
@@ -276,17 +279,14 @@
         YII=
 </value>
   </data>
-  <data name="PanelSignUp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>988, 0</value>
+  <data name="LabelLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 330</value>
+  </data>
+  <data name="panelForgetPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 0</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 330</value>
-  </data>
-  <data name="ButtonFPSend.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 279</value>
-  </data>
-  <data name="TextBoxFPEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 135</value>
+    <value>138, 330</value>
   </data>
   <data name="bunifuImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -443,11 +443,8 @@
         YII=
 </value>
   </data>
-  <data name="panelForgetPass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 433</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1320, 433</value>
+    <value>664, 433</value>
   </data>
   <data name="ButtonExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -460,5 +457,11 @@
         KirAiL6IujHcg50k0FRRQStQLnaSiEZAhY6gsqiThDIHVIlC3TrYSeIO5PBK5PA6yuMDVbmHOLa9nI4A
         AAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="ButtonRussia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>443, 365</value>
+  </data>
+  <data name="ButtonUSA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>504, 365</value>
   </data>
 </root>

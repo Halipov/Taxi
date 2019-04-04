@@ -134,13 +134,22 @@
     <value>NoControl</value>
   </data>
   <data name="LabelSignUp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 330</value>
+    <value>434, 330</value>
   </data>
   <data name="LabelSignUp.Size" type="System.Drawing.Size, System.Drawing">
     <value>129, 22</value>
   </data>
   <data name="LabelSignUp.Text" xml:space="preserve">
     <value>Регистрация</value>
+  </data>
+  <data name="LabelForgetPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>427, 184</value>
+  </data>
+  <data name="LabelForgetPass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 21</value>
+  </data>
+  <data name="LabelForgetPass.Text" xml:space="preserve">
+    <value>Забыли пароль?</value>
   </data>
   <data name="bunifuImageButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -297,6 +306,9 @@
         YII=
 </value>
   </data>
+  <data name="LabelLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 330</value>
+  </data>
   <data name="LabelLogin.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 22</value>
   </data>
@@ -315,14 +327,11 @@
   <data name="TextBoxLastName.Text" xml:space="preserve">
     <value>Фамилия</value>
   </data>
-  <data name="TextBoxFirstName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 71</value>
-  </data>
   <data name="TextBoxFirstName.Text" xml:space="preserve">
     <value>Имя</value>
   </data>
   <data name="PanelSignUp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 0</value>
+    <value>332, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 22</value>
@@ -489,7 +498,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 95</value>
+    <value>68, 109</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
@@ -498,13 +507,10 @@
     <value>Введите вашу почту</value>
   </data>
   <data name="panelForgetPass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 0</value>
-  </data>
-  <data name="panelForgetPass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 433</value>
+    <value>332, 0</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>651, 433</value>
+    <value>664, 433</value>
   </data>
   <data name="ButtonExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -517,5 +523,11 @@
         KirAiL6IujHcg50k0FRRQStQLnaSiEZAhY6gsqiThDIHVIlC3TrYSeIO5PBK5PA6yuMDVbmHOLa9nI4A
         AAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="ButtonRussia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>443, 365</value>
+  </data>
+  <data name="ButtonUSA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>504, 365</value>
   </data>
 </root>

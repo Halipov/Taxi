@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
 
 using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using GMap.NET.MapProviders;
+
+
+
+
 
 namespace Taxi
 {
@@ -19,6 +25,7 @@ namespace Taxi
     {
         public FormLogin()
         {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
             InitializeComponent();
             PanelSignUp.Visible = false;
             panelForgetPass.Visible = false;
@@ -52,6 +59,50 @@ namespace Taxi
         private void label2_Click(object sender, EventArgs e)
         {
             panelForgetPass.Visible = false;
+        }
+
+
+        private void ChangeLanguage(string lang)
+        {
+            var rm = new ComponentResourceManager(this.GetType());
+            var culture = CultureInfo.CreateSpecificCulture(lang);
+            Thread.CurrentThread.CurrentCulture = culture;
+            Thread.CurrentThread.CurrentUICulture = culture;
+            foreach (Control c in this.AllControls())
+            {
+                if (c is ToolStrip)
+                {
+                    var items = ((ToolStrip)c).AllItems().ToList();
+                    foreach (var item in items)
+                        rm.ApplyResources(item, item.Name);
+                }
+                rm.ApplyResources(c, c.Name);
+            }
+        }
+        private void ButtonRussia_Click(object sender, EventArgs e)
+        {
+            ChangeLanguage("ru");
+            ButtonLogin.Text = "Войти";
+            ButtonSignUp.Text = "Регистрация";
+            ButtonFPSend.Text = "Отправить";
+        }
+
+        private void ButtonUSA_Click(object sender, EventArgs e)
+        {
+            ChangeLanguage("en");
+            ButtonLogin.Text = "LogIn";
+            ButtonSignUp.Text = "SignUp";
+            ButtonFPSend.Text = "Send";
+        }
+
+        private void panelForgetPass_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PanelSignUp_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

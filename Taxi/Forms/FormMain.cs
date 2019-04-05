@@ -17,6 +17,7 @@ namespace Taxi
         public FormMain()
         {
             InitializeComponent();
+            time.Start();
             PanelWidth = PanelMenu.Width;
             isCollapsed = false;
         }
@@ -53,6 +54,43 @@ namespace Taxi
                     this.Refresh();
                 }
             }
+        }
+
+        private void moveSidePanel(Control btn)
+        {
+            PanelSlide.Top = btn.Top;
+            PanelSlide.Width = btn.Width;
+        }
+
+        private void time_Tick(object sender, EventArgs e)
+        {
+            DateTime dt = DateTime.Now;
+            LabelTime.Text = dt.ToString("HH:MM:ss");
+        }
+
+        private void ButtonHomeLoc_Click(object sender, EventArgs e)
+        {
+            moveSidePanel(ButtonHomeLoc);
+        }
+
+        private void ButtonLoc_Click(object sender, EventArgs e)
+        {
+            moveSidePanel(ButtonLoc);
+        }
+
+        private void ButtonRoute_Click(object sender, EventArgs e)
+        {
+            moveSidePanel(ButtonRoute);
+        }
+
+        private void ButtonAuto_Click(object sender, EventArgs e)
+        {
+            moveSidePanel(ButtonAuto);
+        }
+
+        private void ButtonPrice_Click(object sender, EventArgs e)
+        {
+            moveSidePanel(ButtonPrice);
         }
     }
 }

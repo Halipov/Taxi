@@ -104,5 +104,13 @@ namespace Taxi
         {
 
         }
+
+        private void ButtonLogin_Click_1(object sender, EventArgs e)
+        {
+            using (FormMain fd = new FormMain())
+            {
+                fd.ShowDialog();
+            }
+        }
     }
 }

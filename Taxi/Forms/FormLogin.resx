@@ -117,361 +117,274 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="TextBoxPass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>391, 135</value>
-  </data>
-  <data name="&gt;&gt;ButtonRussia.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 14.25pt</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 205</value>
-  </data>
-  <data name="&gt;&gt;TextBoxEmail.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;LabelSignUp.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;ButtonLogin.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="LabelSignUp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>463, 330</value>
-  </data>
-  <data name="&gt;&gt;TextBoxUser.Name" xml:space="preserve">
-    <value>TextBoxUser</value>
-  </data>
-  <data name="&gt;&gt;LabelLogin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ButtonExit.Name" xml:space="preserve">
-    <value>ButtonExit</value>
-  </data>
-  <data name="&gt;&gt;labelinfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="labelinfo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="labelinfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;TextBoxPassSign.Name" xml:space="preserve">
-    <value>TextBoxPassSign</value>
-  </data>
-  <data name="PanelSignUp.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="ButtonFPSend.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 48</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ButtonExit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="TextBoxPassSign.Text" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="&gt;&gt;ButtonLogin.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TextBoxFirstName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="TextBoxReEnter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>310, 44</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TextBoxFPEmail.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ButtonLogin.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;TextBoxFirstName.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="PanelSignUp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>996, 0</value>
-  </data>
-  <data name="&gt;&gt;TextBoxLastName.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="TextBoxReEnter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 217</value>
-  </data>
-  <data name="ButtonUSA.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="LabelSignUp.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 14.25pt</value>
-  </data>
-  <data name="&gt;&gt;TextBoxPassSign.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;panelInfo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LabelSignUp.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TextBoxPassSign.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="LabelLogin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;LabelSignUp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TextBoxLastName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 71</value>
-  </data>
-  <data name="TextBoxFPEmail.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="bunifuImageButton2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="panelForgetPass.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Taxi</value>
-  </data>
-  <data name="TextBoxEmail.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;TextBoxPass.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bunifuDragControl3.Name" xml:space="preserve">
-    <value>bunifuDragControl3</value>
-  </data>
-  <data name="&gt;&gt;TextBoxEmail.Name" xml:space="preserve">
-    <value>TextBoxEmail</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="ButtonRussia.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;ButtonSignUp.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;LabelSignUp.Name" xml:space="preserve">
-    <value>LabelSignUp</value>
-  </data>
-  <data name="LabelSignUp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ButtonLogin.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;LabelLogin.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="bunifuImageButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 3</value>
-  </data>
-  <data name="TextBoxReEnter.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;TextBoxFPEmail.Name" xml:space="preserve">
-    <value>TextBoxFPEmail</value>
-  </data>
-  <data name="panelInfo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;TextBoxLastName.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="&gt;&gt;TextBoxEmail.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="bunifuImageButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TextBoxUser.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="TextBoxLastName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;bunifuDragControl3.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="TextBoxLastName.Text" xml:space="preserve">
-    <value>Last Name</value>
-  </data>
-  <data name="panelForgetPass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>667, 0</value>
-  </data>
-  <data name="&gt;&gt;PanelSignUp.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;bunifuImageButton1.Parent" xml:space="preserve">
-    <value>panelForgetPass</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;bunifuElipse1.Name" xml:space="preserve">
-    <value>bunifuElipse1</value>
-  </data>
-  <data name="ButtonLogin.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="ButtonRussia.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;LabelForgetPass.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="TextBoxReEnter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="TextBoxEmail.Text" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="panelInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="ButtonExit.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;ButtonRussia.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ButtonUSA.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;panelForgetPass.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="ButtonRussia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>443, 366</value>
-  </data>
-  <data name="&gt;&gt;bunifuDragControl2.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="ButtonSignUp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 48</value>
-  </data>
-  <data name="LabelSignUp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 22</value>
-  </data>
-  <data name="&gt;&gt;ButtonExit.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;panelForgetPass.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="TextBoxEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="LabelSignUp.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;bunifuDragControl4.Name" xml:space="preserve">
-    <value>bunifuDragControl4</value>
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="labelinfo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 21.75pt</value>
   </data>
-  <data name="&gt;&gt;bunifuImageButton2.Name" xml:space="preserve">
-    <value>bunifuImageButton2</value>
+  <data name="labelinfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 208</value>
   </data>
-  <data name="&gt;&gt;TextBoxPass.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="labelinfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 108</value>
   </data>
-  <data name="bunifuImageButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 61</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+  <data name="labelinfo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="labelinfo.Text" xml:space="preserve">
     <value>Powered by:
 Halipov Evgenii
 2 course 7 group</value>
   </data>
-  <data name="TextBoxFPEmail.Text" xml:space="preserve">
-    <value>Email</value>
+  <data name="labelinfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
   </data>
-  <data name="&gt;&gt;PanelSignUp.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;labelinfo.Name" xml:space="preserve">
+    <value>labelinfo</value>
   </data>
-  <data name="LabelForgetPass.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12pt</value>
+  <data name="&gt;&gt;labelinfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBoxReEnter.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
+  <data name="&gt;&gt;labelinfo.Parent" xml:space="preserve">
+    <value>panelInfo</value>
   </data>
-  <data name="&gt;&gt;TextBoxReEnter.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;labelinfo.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="ButtonUSA.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="TextBoxPassSign.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 170</value>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="ButtonLogin.Text" xml:space="preserve">
-    <value>LogIn</value>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 205</value>
   </data>
-  <data name="TextBoxUser.Text" xml:space="preserve">
-    <value>Email</value>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>panelInfo</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelInfo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="panelInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 433</value>
+  </data>
+  <data name="panelInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelInfo.Name" xml:space="preserve">
+    <value>panelInfo</value>
   </data>
   <data name="&gt;&gt;panelInfo.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;panelInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelInfo.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="TextBoxUser.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="TextBoxUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 73</value>
+  </data>
+  <data name="TextBoxUser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="TextBoxUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 44</value>
+  </data>
+  <data name="TextBoxUser.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="TextBoxUser.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="&gt;&gt;TextBoxUser.Name" xml:space="preserve">
+    <value>TextBoxUser</value>
+  </data>
+  <data name="&gt;&gt;TextBoxUser.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextBoxUser.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TextBoxUser.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ButtonLogin.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="ButtonLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 279</value>
+  </data>
+  <data name="ButtonLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 48</value>
+  </data>
+  <data name="ButtonLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="ButtonLogin.Text" xml:space="preserve">
+    <value>LogIn</value>
+  </data>
+  <data name="&gt;&gt;ButtonLogin.Name" xml:space="preserve">
+    <value>ButtonLogin</value>
+  </data>
+  <data name="&gt;&gt;ButtonLogin.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonLogin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonLogin.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="LabelSignUp.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelSignUp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt</value>
+  </data>
+  <data name="LabelSignUp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LabelSignUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>463, 330</value>
+  </data>
+  <data name="LabelSignUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 22</value>
+  </data>
+  <data name="LabelSignUp.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="LabelSignUp.Text" xml:space="preserve">
+    <value>SignUp</value>
+  </data>
+  <data name="&gt;&gt;LabelSignUp.Name" xml:space="preserve">
+    <value>LabelSignUp</value>
+  </data>
+  <data name="&gt;&gt;LabelSignUp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelSignUp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelSignUp.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="LabelForgetPass.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelForgetPass.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
   <data name="LabelForgetPass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;bunifuImageButton1.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="LabelForgetPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>424, 184</value>
   </data>
-  <data name="&gt;&gt;bunifuDragControl1.Name" xml:space="preserve">
-    <value>bunifuDragControl1</value>
+  <data name="LabelForgetPass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 21</value>
+  </data>
+  <data name="LabelForgetPass.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="LabelForgetPass.Text" xml:space="preserve">
+    <value>Forget password?</value>
+  </data>
+  <data name="&gt;&gt;LabelForgetPass.Name" xml:space="preserve">
+    <value>LabelForgetPass</value>
+  </data>
+  <data name="&gt;&gt;LabelForgetPass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LabelForgetPass.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;ButtonUSA.Parent" xml:space="preserve">
+  <data name="&gt;&gt;LabelForgetPass.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="TextBoxPass.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="TextBoxPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 135</value>
+  </data>
+  <data name="TextBoxPass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="TextBoxPass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 44</value>
+  </data>
+  <data name="TextBoxPass.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="TextBoxPass.Text" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="&gt;&gt;TextBoxPass.Name" xml:space="preserve">
+    <value>TextBoxPass</value>
+  </data>
+  <data name="&gt;&gt;TextBoxPass.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextBoxPass.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TextBoxPass.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ButtonSignUp.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="ButtonSignUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 279</value>
+  </data>
+  <data name="ButtonSignUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 48</value>
+  </data>
+  <data name="ButtonSignUp.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="ButtonSignUp.Text" xml:space="preserve">
+    <value>SignUp</value>
+  </data>
+  <data name="&gt;&gt;ButtonSignUp.Name" xml:space="preserve">
+    <value>ButtonSignUp</value>
+  </data>
+  <data name="&gt;&gt;ButtonSignUp.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonSignUp.Parent" xml:space="preserve">
+    <value>PanelSignUp</value>
+  </data>
+  <data name="&gt;&gt;ButtonSignUp.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="bunifuImageButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -628,300 +541,329 @@ Halipov Evgenii
         YII=
 </value>
   </data>
-  <data name="&gt;&gt;ButtonExit.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="bunifuImageButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;TextBoxReEnter.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="bunifuImageButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 3</value>
   </data>
-  <data name="&gt;&gt;bunifuImageButton1.Name" xml:space="preserve">
-    <value>bunifuImageButton1</value>
+  <data name="bunifuImageButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 61</value>
   </data>
-  <data name="&gt;&gt;PanelSignUp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TextBoxPass.Name" xml:space="preserve">
-    <value>TextBoxPass</value>
-  </data>
-  <data name="TextBoxFPEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 135</value>
-  </data>
-  <data name="LabelForgetPass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 21</value>
-  </data>
-  <data name="TextBoxLastName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 44</value>
-  </data>
-  <data name="&gt;&gt;labelinfo.Name" xml:space="preserve">
-    <value>labelinfo</value>
-  </data>
-  <data name="ButtonExit.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="bunifuImageButton2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="&gt;&gt;labelinfo.Parent" xml:space="preserve">
-    <value>panelInfo</value>
+  <data name="bunifuImageButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
-  <data name="TextBoxPassSign.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 22</value>
-  </data>
-  <data name="&gt;&gt;LabelLogin.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="TextBoxEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 123</value>
-  </data>
-  <data name="&gt;&gt;TextBoxUser.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TextBoxFirstName.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="TextBoxUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 44</value>
-  </data>
-  <data name="LabelLogin.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="TextBoxUser.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="TextBoxPass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 44</value>
-  </data>
-  <data name="ButtonUSA.Location" type="System.Drawing.Point, System.Drawing">
-    <value>504, 366</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>panelInfo</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panelForgetPass</value>
-  </data>
-  <data name="TextBoxLastName.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="labelinfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 208</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="TextBoxEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;LabelForgetPass.Name" xml:space="preserve">
-    <value>LabelForgetPass</value>
-  </data>
-  <data name="&gt;&gt;TextBoxPassSign.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="TextBoxFirstName.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;bunifuImageButton2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="LabelSignUp.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="LabelLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 22</value>
-  </data>
-  <data name="&gt;&gt;ButtonLogin.Name" xml:space="preserve">
-    <value>ButtonLogin</value>
-  </data>
-  <data name="TextBoxPass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;LabelLogin.Name" xml:space="preserve">
-    <value>LabelLogin</value>
-  </data>
-  <data name="TextBoxFirstName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;TextBoxFirstName.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="&gt;&gt;ButtonSignUp.Name" xml:space="preserve">
-    <value>ButtonSignUp</value>
-  </data>
-  <data name="ButtonExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>634, 2</value>
-  </data>
-  <data name="TextBoxEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>310, 44</value>
-  </data>
-  <data name="TextBoxLastName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="ButtonRussia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 43</value>
+  <data name="&gt;&gt;bunifuImageButton2.Name" xml:space="preserve">
+    <value>bunifuImageButton2</value>
   </data>
   <data name="&gt;&gt;bunifuImageButton2.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="ButtonUSA.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 43</value>
+  <data name="&gt;&gt;bunifuImageButton2.Parent" xml:space="preserve">
+    <value>PanelSignUp</value>
   </data>
-  <data name="TextBoxUser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="ButtonSignUp.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="&gt;&gt;bunifuImageButton2.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="LabelLogin.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;panelInfo.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="LabelLogin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt</value>
   </data>
-  <data name="&gt;&gt;ButtonFPSend.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="TextBoxPass.Text" xml:space="preserve">
-    <value>Пароль</value>
-  </data>
-  <data name="&gt;&gt;TextBoxEmail.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="bunifuImageButton1.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="bunifuImageButton1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="TextBoxFPEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 44</value>
+  <data name="LabelLogin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="LabelLogin.Location" type="System.Drawing.Point, System.Drawing">
     <value>139, 330</value>
   </data>
-  <data name="labelinfo.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="LabelLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 22</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormLogin</value>
-  </data>
-  <data name="&gt;&gt;panelForgetPass.Name" xml:space="preserve">
-    <value>panelForgetPass</value>
-  </data>
-  <data name="LabelSignUp.Text" xml:space="preserve">
-    <value>SignUp</value>
-  </data>
-  <data name="LabelForgetPass.Text" xml:space="preserve">
-    <value>Forget password?</value>
-  </data>
-  <data name="ButtonSignUp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 279</value>
-  </data>
-  <data name="ButtonFPSend.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;ButtonFPSend.Name" xml:space="preserve">
-    <value>ButtonFPSend</value>
-  </data>
-  <data name="TextBoxFPEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="TextBoxPass.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;panelInfo.Name" xml:space="preserve">
-    <value>panelInfo</value>
-  </data>
-  <data name="panelForgetPass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 433</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panelForgetPass</value>
-  </data>
-  <data name="ButtonLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>391, 279</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bunifuElipse1.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Login</value>
-  </data>
-  <data name="TextBoxPassSign.Size" type="System.Drawing.Size, System.Drawing">
-    <value>310, 44</value>
-  </data>
-  <data name="&gt;&gt;ButtonSignUp.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="ButtonFPSend.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 279</value>
-  </data>
-  <data name="TextBoxPassSign.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="LabelForgetPass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>424, 184</value>
-  </data>
-  <data name="TextBoxUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>391, 73</value>
-  </data>
-  <data name="&gt;&gt;TextBoxFirstName.Name" xml:space="preserve">
-    <value>TextBoxFirstName</value>
-  </data>
-  <data name="&gt;&gt;TextBoxUser.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="labelinfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 108</value>
-  </data>
-  <data name="&gt;&gt;ButtonSignUp.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ButtonFPSend.Text" xml:space="preserve">
-    <value>Send</value>
-  </data>
-  <data name="TextBoxPass.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;TextBoxReEnter.Name" xml:space="preserve">
-    <value>TextBoxReEnter</value>
-  </data>
-  <data name="TextBoxFirstName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 71</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 22</value>
+  <data name="LabelLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="LabelLogin.Text" xml:space="preserve">
     <value>Login</value>
   </data>
-  <data name="&gt;&gt;bunifuDragControl4.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;LabelLogin.Name" xml:space="preserve">
+    <value>LabelLogin</value>
   </data>
-  <data name="&gt;&gt;panelForgetPass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;LabelLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;bunifuImageButton1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;LabelLogin.Parent" xml:space="preserve">
+    <value>PanelSignUp</value>
+  </data>
+  <data name="&gt;&gt;LabelLogin.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TextBoxReEnter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="TextBoxReEnter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 217</value>
+  </data>
+  <data name="TextBoxReEnter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="TextBoxReEnter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 44</value>
+  </data>
+  <data name="TextBoxReEnter.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="TextBoxReEnter.Text" xml:space="preserve">
+    <value>Re-Enter Password</value>
+  </data>
+  <data name="&gt;&gt;TextBoxReEnter.Name" xml:space="preserve">
+    <value>TextBoxReEnter</value>
+  </data>
+  <data name="&gt;&gt;TextBoxReEnter.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextBoxReEnter.Parent" xml:space="preserve">
+    <value>PanelSignUp</value>
+  </data>
+  <data name="&gt;&gt;TextBoxReEnter.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Enter Email
-</value>
+  <data name="TextBoxPassSign.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="ButtonSignUp.Text" xml:space="preserve">
-    <value>SignUp</value>
+  <data name="TextBoxPassSign.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 170</value>
+  </data>
+  <data name="TextBoxPassSign.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="TextBoxPassSign.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 44</value>
+  </data>
+  <data name="TextBoxPassSign.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="TextBoxPassSign.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="&gt;&gt;TextBoxPassSign.Name" xml:space="preserve">
+    <value>TextBoxPassSign</value>
+  </data>
+  <data name="&gt;&gt;TextBoxPassSign.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextBoxPassSign.Parent" xml:space="preserve">
+    <value>PanelSignUp</value>
+  </data>
+  <data name="&gt;&gt;TextBoxPassSign.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="TextBoxEmail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="TextBoxEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 123</value>
+  </data>
+  <data name="TextBoxEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="TextBoxEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 44</value>
+  </data>
+  <data name="TextBoxEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="TextBoxEmail.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="&gt;&gt;TextBoxEmail.Name" xml:space="preserve">
+    <value>TextBoxEmail</value>
+  </data>
+  <data name="&gt;&gt;TextBoxEmail.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextBoxEmail.Parent" xml:space="preserve">
+    <value>PanelSignUp</value>
+  </data>
+  <data name="&gt;&gt;TextBoxEmail.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="TextBoxLastName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="TextBoxLastName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 71</value>
+  </data>
+  <data name="TextBoxLastName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="TextBoxLastName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 44</value>
+  </data>
+  <data name="TextBoxLastName.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="TextBoxLastName.Text" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="&gt;&gt;TextBoxLastName.Name" xml:space="preserve">
+    <value>TextBoxLastName</value>
+  </data>
+  <data name="&gt;&gt;TextBoxLastName.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextBoxLastName.Parent" xml:space="preserve">
+    <value>PanelSignUp</value>
+  </data>
+  <data name="&gt;&gt;TextBoxLastName.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="TextBoxFirstName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="TextBoxFirstName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 71</value>
+  </data>
+  <data name="TextBoxFirstName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="TextBoxFirstName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 44</value>
+  </data>
+  <data name="TextBoxFirstName.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="TextBoxFirstName.Text" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="&gt;&gt;TextBoxFirstName.Name" xml:space="preserve">
+    <value>TextBoxFirstName</value>
+  </data>
+  <data name="&gt;&gt;TextBoxFirstName.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextBoxFirstName.Parent" xml:space="preserve">
+    <value>PanelSignUp</value>
+  </data>
+  <data name="&gt;&gt;TextBoxFirstName.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="PanelSignUp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="PanelSignUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>996, 0</value>
+  </data>
+  <data name="PanelSignUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 433</value>
+  </data>
+  <data name="PanelSignUp.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;PanelSignUp.Name" xml:space="preserve">
+    <value>PanelSignUp</value>
+  </data>
+  <data name="&gt;&gt;PanelSignUp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelSignUp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PanelSignUp.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 330</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 22</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panelForgetPass</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ButtonFPSend.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="ButtonFPSend.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 279</value>
+  </data>
+  <data name="ButtonFPSend.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 48</value>
+  </data>
+  <data name="ButtonFPSend.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="ButtonFPSend.Text" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="&gt;&gt;ButtonFPSend.Name" xml:space="preserve">
+    <value>ButtonFPSend</value>
+  </data>
+  <data name="&gt;&gt;ButtonFPSend.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonFPSend.Parent" xml:space="preserve">
+    <value>panelForgetPass</value>
+  </data>
+  <data name="&gt;&gt;ButtonFPSend.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="TextBoxFPEmail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="TextBoxFPEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 135</value>
+  </data>
+  <data name="TextBoxFPEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="TextBoxFPEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 44</value>
+  </data>
+  <data name="TextBoxFPEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="TextBoxFPEmail.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="&gt;&gt;TextBoxFPEmail.Name" xml:space="preserve">
+    <value>TextBoxFPEmail</value>
   </data>
   <data name="&gt;&gt;TextBoxFPEmail.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="ButtonSignUp.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="&gt;&gt;TextBoxFPEmail.Parent" xml:space="preserve">
+    <value>panelForgetPass</value>
   </data>
-  <data name="&gt;&gt;ButtonRussia.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;TextBoxFPEmail.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="bunifuImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1078,128 +1020,96 @@ Halipov Evgenii
         YII=
 </value>
   </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="bunifuImageButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;ButtonRussia.Name" xml:space="preserve">
-    <value>ButtonRussia</value>
-  </data>
-  <data name="&gt;&gt;TextBoxFPEmail.Parent" xml:space="preserve">
-    <value>panelForgetPass</value>
-  </data>
-  <data name="panelInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 433</value>
-  </data>
-  <data name="LabelForgetPass.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="TextBoxReEnter.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="TextBoxReEnter.Text" xml:space="preserve">
-    <value>Re-Enter Password</value>
-  </data>
-  <data name="TextBoxFirstName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 44</value>
-  </data>
-  <data name="&gt;&gt;ButtonUSA.Name" xml:space="preserve">
-    <value>ButtonUSA</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;LabelForgetPass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bunifuImageButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;ButtonUSA.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="bunifuImageButton2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="bunifuImageButton1.Location" type="System.Drawing.Point, System.Drawing">
     <value>116, 3</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 330</value>
+  <data name="bunifuImageButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 61</value>
   </data>
-  <data name="TextBoxFirstName.Text" xml:space="preserve">
-    <value>First Name</value>
+  <data name="bunifuImageButton1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1328, 433</value>
+  <data name="bunifuImageButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
-  <data name="ButtonFPSend.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="&gt;&gt;bunifuImageButton1.Name" xml:space="preserve">
+    <value>bunifuImageButton1</value>
   </data>
-  <data name="PanelSignUp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 433</value>
+  <data name="&gt;&gt;bunifuImageButton1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="TextBoxPassSign.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="&gt;&gt;bunifuImageButton1.Parent" xml:space="preserve">
+    <value>panelForgetPass</value>
   </data>
-  <data name="&gt;&gt;labelinfo.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;bunifuImageButton1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;bunifuImageButton2.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="ButtonLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 48</value>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 14.25pt</value>
   </data>
-  <data name="ButtonRussia.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 95</value>
   </data>
-  <data name="ButtonExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 27</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 22</value>
   </data>
-  <data name="&gt;&gt;ButtonExit.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TextBoxLastName.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="LabelForgetPass.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;TextBoxLastName.Name" xml:space="preserve">
-    <value>TextBoxLastName</value>
-  </data>
-  <data name="&gt;&gt;bunifuDragControl1.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="TextBoxFPEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bunifuImageButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 61</value>
-  </data>
-  <data name="panelInfo.TabIndex" type="System.Int32, mscorlib">
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="LabelLogin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 14.25pt</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Enter Email
+</value>
   </data>
-  <data name="&gt;&gt;bunifuDragControl2.Name" xml:space="preserve">
-    <value>bunifuDragControl2</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
   </data>
-  <data name="&gt;&gt;ButtonFPSend.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>panelForgetPass</value>
   </data>
-  <data name="&gt;&gt;TextBoxUser.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="bunifuImageButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="panelForgetPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>667, 0</value>
+  </data>
+  <data name="panelForgetPass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 433</value>
+  </data>
+  <data name="panelForgetPass.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;panelForgetPass.Name" xml:space="preserve">
+    <value>panelForgetPass</value>
+  </data>
+  <data name="&gt;&gt;panelForgetPass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelForgetPass.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelForgetPass.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1328, 433</value>
   </data>
   <data name="ButtonExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1213,47 +1123,134 @@ Halipov Evgenii
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="ButtonExit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ButtonExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>634, 2</value>
+  </data>
+  <data name="ButtonExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 27</value>
+  </data>
+  <data name="ButtonExit.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="ButtonExit.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;ButtonExit.Name" xml:space="preserve">
+    <value>ButtonExit</value>
+  </data>
+  <data name="&gt;&gt;ButtonExit.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonExit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonExit.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;PanelSignUp.Name" xml:space="preserve">
-    <value>PanelSignUp</value>
+  <data name="ButtonRussia.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 95</value>
+  <data name="ButtonRussia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>443, 366</value>
+  </data>
+  <data name="ButtonRussia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 43</value>
+  </data>
+  <data name="ButtonRussia.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="ButtonRussia.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;ButtonRussia.Name" xml:space="preserve">
+    <value>ButtonRussia</value>
+  </data>
+  <data name="&gt;&gt;ButtonRussia.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonRussia.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonRussia.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ButtonUSA.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ButtonUSA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>504, 366</value>
+  </data>
+  <data name="ButtonUSA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 43</value>
+  </data>
+  <data name="ButtonUSA.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="ButtonUSA.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;ButtonUSA.Name" xml:space="preserve">
+    <value>ButtonUSA</value>
+  </data>
+  <data name="&gt;&gt;ButtonUSA.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ButtonUSA.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonUSA.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="PanelSignUp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Taxi</value>
   </data>
-  <data name="&gt;&gt;ButtonFPSend.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;bunifuDragControl1.Name" xml:space="preserve">
+    <value>bunifuDragControl1</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;bunifuDragControl1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;TextBoxPass.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuMaterialTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;bunifuDragControl2.Name" xml:space="preserve">
+    <value>bunifuDragControl2</value>
   </data>
+  <data name="&gt;&gt;bunifuDragControl2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuDragControl3.Name" xml:space="preserve">
+    <value>bunifuDragControl3</value>
+  </data>
+  <data name="&gt;&gt;bunifuDragControl3.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuDragControl4.Name" xml:space="preserve">
+    <value>bunifuDragControl4</value>
+  </data>
+  <data name="&gt;&gt;bunifuDragControl4.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuElipse1.Name" xml:space="preserve">
+    <value>bunifuElipse1</value>
+  </data>
+  <data name="&gt;&gt;bunifuElipse1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormLogin</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="bunifuDragControl2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>177, 17</value>
+  </metadata>
   <metadata name="bunifuDragControl3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>337, 17</value>
   </metadata>
-  <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="bunifuDragControl4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>497, 17</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ru</value>
-  </metadata>
-  <metadata name="bunifuDragControl2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>177, 17</value>
   </metadata>
   <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>657, 17</value>

@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.panelInfo = new System.Windows.Forms.Panel();
             this.labelinfo = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.TextBoxUser = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.ButtonLogin = new Bunifu.Framework.UI.BunifuFlatButton();
             this.LabelSignUp = new System.Windows.Forms.Label();
@@ -40,7 +39,6 @@
             this.TextBoxPass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.PanelSignUp = new System.Windows.Forms.Panel();
             this.ButtonSignUp = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.LabelLogin = new System.Windows.Forms.Label();
             this.TextBoxReEnter = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.TextBoxPassSign = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -51,25 +49,27 @@
             this.label2 = new System.Windows.Forms.Label();
             this.ButtonFPSend = new Bunifu.Framework.UI.BunifuFlatButton();
             this.TextBoxFPEmail = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl4 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.ButtonExit = new Bunifu.Framework.UI.BunifuImageButton();
             this.ButtonRussia = new Bunifu.Framework.UI.BunifuImageButton();
             this.ButtonUSA = new Bunifu.Framework.UI.BunifuImageButton();
-            this.ButtonExit = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelSignUp.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             this.panelForgetPass.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonRussia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonUSA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ButtonExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelInfo
@@ -84,13 +84,6 @@
             // 
             resources.ApplyResources(this.labelinfo, "labelinfo");
             this.labelinfo.Name = "labelinfo";
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::Taxi.Properties.Resources.IconTaxi;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
             // 
             // TextBoxUser
             // 
@@ -211,15 +204,6 @@
             this.ButtonSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ButtonSignUp.Textcolor = System.Drawing.Color.White;
             this.ButtonSignUp.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            // 
-            // bunifuImageButton2
-            // 
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
-            resources.ApplyResources(this.bunifuImageButton2, "bunifuImageButton2");
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
             // 
             // LabelLogin
             // 
@@ -356,15 +340,6 @@
             this.TextBoxFPEmail.Name = "TextBoxFPEmail";
             this.TextBoxFPEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
@@ -399,6 +374,22 @@
             this.bunifuDragControl4.TargetControl = this.pictureBox1;
             this.bunifuDragControl4.Vertical = true;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 25;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // ButtonExit
+            // 
+            this.ButtonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
+            this.ButtonExit.Image = global::Taxi.Properties.Resources.close;
+            this.ButtonExit.ImageActive = null;
+            resources.ApplyResources(this.ButtonExit, "ButtonExit");
+            this.ButtonExit.Name = "ButtonExit";
+            this.ButtonExit.TabStop = false;
+            this.ButtonExit.Zoom = 10;
+            this.ButtonExit.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
             // ButtonRussia
             // 
             this.ButtonRussia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
@@ -421,20 +412,30 @@
             this.ButtonUSA.Zoom = 10;
             this.ButtonUSA.Click += new System.EventHandler(this.ButtonUSA_Click);
             // 
-            // ButtonExit
+            // bunifuImageButton1
             // 
-            this.ButtonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
-            resources.ApplyResources(this.ButtonExit, "ButtonExit");
-            this.ButtonExit.ImageActive = null;
-            this.ButtonExit.Name = "ButtonExit";
-            this.ButtonExit.TabStop = false;
-            this.ButtonExit.Zoom = 10;
-            this.ButtonExit.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
+            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
             // 
-            // bunifuElipse1
+            // bunifuImageButton2
             // 
-            this.bunifuElipse1.ElipseRadius = 25;
-            this.bunifuElipse1.TargetControl = this;
+            this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
+            resources.ApplyResources(this.bunifuImageButton2, "bunifuImageButton2");
+            this.bunifuImageButton2.ImageActive = null;
+            this.bunifuImageButton2.Name = "bunifuImageButton2";
+            this.bunifuImageButton2.TabStop = false;
+            this.bunifuImageButton2.Zoom = 10;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::Taxi.Properties.Resources.IconTaxi;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // FormLogin
             // 
@@ -457,16 +458,16 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelInfo.ResumeLayout(false);
             this.panelInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelSignUp.ResumeLayout(false);
             this.PanelSignUp.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             this.panelForgetPass.ResumeLayout(false);
             this.panelForgetPass.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonRussia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonUSA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ButtonExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -20,7 +20,6 @@ namespace Taxi
         public FormMain()
         {
             InitializeComponent();
-            time.Start();
             PanelWidth = PanelMenu.Width;
             isCollapsed = false;
             AddControlsToPanel(ruc);
@@ -29,6 +28,21 @@ namespace Taxi
         private void button6_Click(object sender, EventArgs e)
         {
             timer.Start();
+            //if (PanelMenu.Width == 57)
+            //{
+            //    PanelMenu.Visible = false;
+            //    PanelMenu.Width = 225;
+            //    PanelAnimator2.ShowSync(PanelMenu);
+            //    LogoAnimator.ShowSync(Logo);
+            //}
+            //else
+            //{
+            //    LogoAnimator.HideSync(Logo);
+            //    PanelMenu.Visible = false; 
+            //    PanelMenu.Width = 57;
+            //    PanelAnimator.ShowSync(PanelMenu);
+
+            //}
         }
 
         private void ButtonClose_Click(object sender, EventArgs e)
@@ -68,7 +82,7 @@ namespace Taxi
 
         private void time_Tick(object sender, EventArgs e)
         {
-            DateTime dt = DateTime.Now;
+           // DateTime dt = DateTime.Now;
             //LabelTime.Text = dt.ToString("HH:MM:ss");
         }
 

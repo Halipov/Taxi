@@ -150,6 +150,7 @@
             // LabelForgetPass
             // 
             resources.ApplyResources(this.LabelForgetPass, "LabelForgetPass");
+            this.LabelForgetPass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LabelForgetPass.ForeColor = System.Drawing.Color.White;
             this.LabelForgetPass.Name = "LabelForgetPass";
             this.LabelForgetPass.Click += new System.EventHandler(this.LabelForgetPass_Click);

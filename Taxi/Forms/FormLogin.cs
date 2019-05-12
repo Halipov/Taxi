@@ -29,6 +29,7 @@ namespace Taxi
             InitializeComponent();
             PanelSignUp.Visible = false;
             panelForgetPass.Visible = false;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -107,10 +108,9 @@ namespace Taxi
 
         private void ButtonLogin_Click_1(object sender, EventArgs e)
         {
-            using (FormMain fd = new FormMain())
-            {
-                fd.ShowDialog();
-            }
+            FormMain s = new FormMain();
+            s.Show();
+            this.Hide();
         }
     }
 }

@@ -20,6 +20,7 @@ namespace Taxi
             time.Start();
             PanelWidth = PanelMenu.Width;
             isCollapsed = false;
+
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -29,7 +30,7 @@ namespace Taxi
 
         private void ButtonClose_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Application.Exit();
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -68,15 +69,6 @@ namespace Taxi
             LabelTime.Text = dt.ToString("HH:MM:ss");
         }
 
-        private void ButtonHomeLoc_Click(object sender, EventArgs e)
-        {
-            moveSidePanel(ButtonHomeLoc);
-        }
-
-        private void ButtonLoc_Click(object sender, EventArgs e)
-        {
-            moveSidePanel(ButtonLoc);
-        }
 
         private void ButtonRoute_Click(object sender, EventArgs e)
         {

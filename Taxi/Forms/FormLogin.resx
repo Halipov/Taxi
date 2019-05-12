@@ -117,63 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;labelinfo.Name" xml:space="preserve">
-    <value>labelinfo</value>
-  </data>
-  <data name="&gt;&gt;labelinfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelinfo.Parent" xml:space="preserve">
-    <value>panelInfo</value>
-  </data>
-  <data name="&gt;&gt;labelinfo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>panelInfo</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panelInfo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panelInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panelInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 433</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panelInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelInfo.Name" xml:space="preserve">
-    <value>panelInfo</value>
-  </data>
-  <data name="&gt;&gt;panelInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelInfo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelInfo.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
   <data name="labelinfo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="labelinfo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 21.75pt</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="labelinfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -235,6 +187,30 @@ Halipov Evgenii
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="panelInfo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="panelInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 433</value>
+  </data>
+  <data name="panelInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelInfo.Name" xml:space="preserve">
+    <value>panelInfo</value>
+  </data>
+  <data name="&gt;&gt;panelInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelInfo.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="TextBoxUser.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
@@ -388,126 +364,6 @@ Halipov Evgenii
   </data>
   <data name="&gt;&gt;TextBoxPass.ZOrder" xml:space="preserve">
     <value>8</value>
-  </data>
-  <data name="&gt;&gt;ButtonSignUp.Name" xml:space="preserve">
-    <value>ButtonSignUp</value>
-  </data>
-  <data name="&gt;&gt;ButtonSignUp.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ButtonSignUp.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="&gt;&gt;ButtonSignUp.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;bunifuImageButton2.Name" xml:space="preserve">
-    <value>bunifuImageButton2</value>
-  </data>
-  <data name="&gt;&gt;bunifuImageButton2.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bunifuImageButton2.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="&gt;&gt;bunifuImageButton2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;LabelLogin.Name" xml:space="preserve">
-    <value>LabelLogin</value>
-  </data>
-  <data name="&gt;&gt;LabelLogin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LabelLogin.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="&gt;&gt;LabelLogin.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;TextBoxReEnter.Name" xml:space="preserve">
-    <value>TextBoxReEnter</value>
-  </data>
-  <data name="&gt;&gt;TextBoxReEnter.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TextBoxReEnter.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="&gt;&gt;TextBoxReEnter.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;TextBoxPassSign.Name" xml:space="preserve">
-    <value>TextBoxPassSign</value>
-  </data>
-  <data name="&gt;&gt;TextBoxPassSign.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TextBoxPassSign.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="&gt;&gt;TextBoxPassSign.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;TextBoxEmail.Name" xml:space="preserve">
-    <value>TextBoxEmail</value>
-  </data>
-  <data name="&gt;&gt;TextBoxEmail.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TextBoxEmail.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="&gt;&gt;TextBoxEmail.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;TextBoxLastName.Name" xml:space="preserve">
-    <value>TextBoxLastName</value>
-  </data>
-  <data name="&gt;&gt;TextBoxLastName.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TextBoxLastName.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="&gt;&gt;TextBoxLastName.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;TextBoxFirstName.Name" xml:space="preserve">
-    <value>TextBoxFirstName</value>
-  </data>
-  <data name="&gt;&gt;TextBoxFirstName.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TextBoxFirstName.Parent" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="&gt;&gt;TextBoxFirstName.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="PanelSignUp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="PanelSignUp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>996, 0</value>
-  </data>
-  <data name="PanelSignUp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 433</value>
-  </data>
-  <data name="PanelSignUp.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;PanelSignUp.Name" xml:space="preserve">
-    <value>PanelSignUp</value>
-  </data>
-  <data name="&gt;&gt;PanelSignUp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelSignUp.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PanelSignUp.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="ButtonSignUp.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -901,86 +757,29 @@ Halipov Evgenii
   <data name="&gt;&gt;TextBoxFirstName.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="PanelSignUp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="PanelSignUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>996, 0</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panelForgetPass</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ButtonFPSend.Name" xml:space="preserve">
-    <value>ButtonFPSend</value>
-  </data>
-  <data name="&gt;&gt;ButtonFPSend.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ButtonFPSend.Parent" xml:space="preserve">
-    <value>panelForgetPass</value>
-  </data>
-  <data name="&gt;&gt;ButtonFPSend.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;TextBoxFPEmail.Name" xml:space="preserve">
-    <value>TextBoxFPEmail</value>
-  </data>
-  <data name="&gt;&gt;TextBoxFPEmail.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuMetroTextbox, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TextBoxFPEmail.Parent" xml:space="preserve">
-    <value>panelForgetPass</value>
-  </data>
-  <data name="&gt;&gt;TextBoxFPEmail.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;bunifuImageButton1.Name" xml:space="preserve">
-    <value>bunifuImageButton1</value>
-  </data>
-  <data name="&gt;&gt;bunifuImageButton1.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bunifuImageButton1.Parent" xml:space="preserve">
-    <value>panelForgetPass</value>
-  </data>
-  <data name="&gt;&gt;bunifuImageButton1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panelForgetPass</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="panelForgetPass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>667, 0</value>
-  </data>
-  <data name="panelForgetPass.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="PanelSignUp.Size" type="System.Drawing.Size, System.Drawing">
     <value>332, 433</value>
   </data>
-  <data name="panelForgetPass.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
+  <data name="PanelSignUp.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
-  <data name="&gt;&gt;panelForgetPass.Name" xml:space="preserve">
-    <value>panelForgetPass</value>
+  <data name="&gt;&gt;PanelSignUp.Name" xml:space="preserve">
+    <value>PanelSignUp</value>
   </data>
-  <data name="&gt;&gt;panelForgetPass.Type" xml:space="preserve">
+  <data name="&gt;&gt;PanelSignUp.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panelForgetPass.Parent" xml:space="preserve">
+  <data name="&gt;&gt;PanelSignUp.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelForgetPass.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;PanelSignUp.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1287,6 +1086,27 @@ Halipov Evgenii
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="panelForgetPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>667, 0</value>
+  </data>
+  <data name="panelForgetPass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 433</value>
+  </data>
+  <data name="panelForgetPass.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;panelForgetPass.Name" xml:space="preserve">
+    <value>panelForgetPass</value>
+  </data>
+  <data name="&gt;&gt;panelForgetPass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelForgetPass.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelForgetPass.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

@@ -16,6 +16,7 @@ namespace Taxi
         int PanelWidth;
         bool isCollapsed;
         RouteUC ruc = new RouteUC();
+        SelectAutoUC sauc = new SelectAutoUC();
         public FormMain()
         {
             InitializeComponent();
@@ -82,6 +83,7 @@ namespace Taxi
         private void ButtonAuto_Click(object sender, EventArgs e)
         {
             moveSidePanel(ButtonAuto);
+            AddControlsToPanel(sauc);
         }
 
         private void ButtonPrice_Click(object sender, EventArgs e)

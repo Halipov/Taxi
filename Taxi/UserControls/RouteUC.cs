@@ -30,6 +30,16 @@ namespace Taxi.UserControls
 
         private void map_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void PanelStatus_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void map_Load_1(object sender, EventArgs e)
+        {
             GMapProviders.GoogleMap.ApiKey = @"AIzaSyBGVo5Pr11kzS7On3LIm3AkgTiZc6c300E";
             GMaps.Instance.Mode = AccessMode.ServerAndCache;
             map.CacheLocation = @"cache";

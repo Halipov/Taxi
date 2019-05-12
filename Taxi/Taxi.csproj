@@ -101,6 +101,12 @@
     <Compile Include="UserControls\RouteUC.Designer.cs">
       <DependentUpon>RouteUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\SelectAutoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SelectAutoUC.Designer.cs">
+      <DependentUpon>SelectAutoUC.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\FormLogin.en.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +131,9 @@
     </Compile>
     <EmbeddedResource Include="UserControls\RouteUC.resx">
       <DependentUpon>RouteUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SelectAutoUC.resx">
+      <DependentUpon>SelectAutoUC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

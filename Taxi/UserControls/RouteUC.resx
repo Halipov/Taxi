@@ -117,4 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHUAAAApCAYAAAALSGYwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJzSURBVHhe7du9a1NRGMdxh3NPqG21CrGWmrZDBcWCiwi+
+        LEp9wbcmksWCCBXpog7iJNKiIohUIZTiXyE4CU6Ck6ODq6DgotY2tRSjkPw8z70k9Zpj19zz8Bs+20mG
+        fHPvPbl57qaofxikC6MqxKgKMapCjKoQoyq0YdTegSFM7svj5XgP3p3pwteJHBpFQx0gn700eH2yG1Nj
+        eeQHC95m4r9Rz+7px2LRYmXKoj7r3vih89R5Rh0hn71rUL9nsHrNYqlkMb0/723XFlW+AS+O92L5skWj
+        8s8bU3bMG1SvWrw9vRmFwq5Uw1RUCfrxQg61O5H/jShz6g8MPpVyGB1aD5uKKkcogwbInZbletsWVa6h
+        8SnX9yLKvNXrEe4f3LYeVXa5siniNTRgCwaLZYuxkcEkqmyRZUflXUzB+HU7QuVwXxJVfvvIVtm3kALy
+        2ODD+VwS9fOEO0rnPIsoLO4U/LsUJVHXim7H6373eBdSWIomiRrfivItoPAwqkKMqhCjKsSoCjGqQoyq
+        EKMq1IwqdyHkboR3EYWlGTWePeKoig7NqDISIf+gexdROOZMfB8/jjpzYDt+3uTEQ+jqdw2eH9uSRJX5
+        lqUyr6uhq16xuLh3RxJVPDnUhx83eLSGquaO0lcnetIzSjLS8v5cFxqP/C+iDKsYfCnZ1oB3K6qQ+ZZv
+        Zf5hHhQX9Psli/HdO1sdU1HF0dGBePZ37RZPxVlXm0mO0L+DiraoQk7FC0e2YnnSxjsqThlmyLzb5c6a
+        +HGYN6e6vc/UeKM2yTdAtshVGR+VW4nUcTJ6JA+syYNrvmZiw6gUJkZViFEVYlSFGFWdYfwBppG/LMYn
+        j4gAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

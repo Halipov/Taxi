@@ -15,6 +15,7 @@ namespace Taxi
     {
         int PanelWidth;
         bool isCollapsed;
+        bool flag = false;
         RouteUC ruc = new RouteUC();
         SelectAutoUC sauc = new SelectAutoUC();
         public FormMain()
@@ -27,22 +28,22 @@ namespace Taxi
 
         private void button6_Click(object sender, EventArgs e)
         {
-            timer.Start();
-            //if (PanelMenu.Width == 57)
-            //{
-            //    PanelMenu.Visible = false;
-            //    PanelMenu.Width = 225;
-            //    PanelAnimator2.ShowSync(PanelMenu);
-            //    LogoAnimator.ShowSync(Logo);
-            //}
-            //else
-            //{
-            //    LogoAnimator.HideSync(Logo);
-            //    PanelMenu.Visible = false; 
-            //    PanelMenu.Width = 57;
-            //    PanelAnimator.ShowSync(PanelMenu);
+            //timer.Start();
+            if (PanelMenu.Width == 57)
+            {
+                PanelMenu.Visible = false;
+                PanelMenu.Width = 225;
+                PanelAnimator2.ShowSync(PanelMenu);
+                LogoAnimator.ShowSync(Logo);
+            }
+            else
+            {
+                LogoAnimator.HideSync(Logo);
+                PanelMenu.Visible = false;
+                PanelMenu.Width = 57;
+                PanelAnimator.ShowSync(PanelMenu);
 
-            //}
+            }
         }
 
         private void ButtonClose_Click(object sender, EventArgs e)
@@ -52,26 +53,29 @@ namespace Taxi
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            if (isCollapsed)
-            {
-                PanelMenu.Width = PanelMenu.Width + 10;
-                if(PanelMenu.Width >= PanelWidth)
+            
+                if (isCollapsed)
                 {
-                    timer.Stop();
-                    isCollapsed = false;
-                    this.Refresh();
+                    
+                    PanelMenu.Width = PanelMenu.Width + 10;
+                    if(PanelMenu.Width >= PanelWidth)
+                    {
+                        timer.Stop();
+                        isCollapsed = false;
+                        this.Refresh();
+                    }
                 }
-            }
-            else
-            {
-                PanelMenu.Width = PanelMenu.Width - 10;
-                if (PanelMenu.Width <= 57)
+                if (isCollapsed == false && flag == false)
                 {
-                    timer.Stop();
-                    isCollapsed = true;
-                    this.Refresh();
+                    
+                    PanelMenu.Width = PanelMenu.Width - 10;
+                    if (PanelMenu.Width <= 57)
+                    {
+                        timer.Stop();
+                        isCollapsed = true;
+                        this.Refresh();
+                    }
                 }
-            }
         }
 
         private void moveSidePanel(Control btn)
@@ -94,12 +98,6 @@ namespace Taxi
             AddControlsToPanel(ruc);
         }
 
-        private void ButtonAuto_Click(object sender, EventArgs e)
-        {
-            moveSidePanel(ButtonAuto);
-            AddControlsToPanel(sauc);
-        }
-
         private void ButtonPrice_Click(object sender, EventArgs e)
         {
             moveSidePanel(ButtonPrice);
@@ -120,6 +118,62 @@ namespace Taxi
         private void TextBoxFrom_OnValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Logo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PanelUC_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonMenu_Click(object sender, EventArgs e)
+        {
+            flag = false;
+            timer.Start();
+
+            //if (PanelMenu.Width == 57)
+            //{
+            //    PanelMenu.Visible = false;
+            //    PanelMenu.Width = 225;
+            //    PanelAnimator2.ShowSync(PanelMenu);
+            //    LogoAnimator.ShowSync(Logo);
+            //}
+            //else
+            //{
+            //    LogoAnimator.HideSync(Logo);
+            //    PanelMenu.Visible = false;
+            //    PanelMenu.Width = 57;
+            //    PanelAnimator.ShowSync(PanelMenu); 
+            // moveSidePanel(ButtonAuto);
+            //AddControlsToPanel(sauc);
+
+            //}
+        }
+
+        private void ButtonRoute_Click_1(object sender, EventArgs e)
+        {
+            moveSidePanel(ButtonRoute);
+            AddControlsToPanel(ruc);
+            buttonMenu.Visible = true;
+            
+        }
+
+        private void ButtonAuto_Click_1(object sender, EventArgs e)
+        {
+            moveSidePanel(ButtonAuto);
+            AddControlsToPanel(sauc);
+            flag = true;
+            timer.Start();
+            buttonMenu.Visible = false;
         }
     }
 }

@@ -28,42 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.PanelBar = new System.Windows.Forms.Panel();
+            this.ButtonClose = new Bunifu.Framework.UI.BunifuImageButton();
+            this.PanelM = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PanelBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // PanelBar
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(975, 74);
-            this.panel1.TabIndex = 0;
+            this.PanelBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.PanelBar.Controls.Add(this.ButtonClose);
+            this.PanelBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelBar.Location = new System.Drawing.Point(0, 0);
+            this.PanelBar.Name = "PanelBar";
+            this.PanelBar.Size = new System.Drawing.Size(1143, 26);
+            this.PanelBar.TabIndex = 8;
+            // 
+            // ButtonClose
+            // 
+            this.ButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonClose.Image = global::Taxi.Properties.Resources.close2;
+            this.ButtonClose.ImageActive = null;
+            this.ButtonClose.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ButtonClose.Location = new System.Drawing.Point(1110, 3);
+            this.ButtonClose.Name = "ButtonClose";
+            this.ButtonClose.Size = new System.Drawing.Size(34, 21);
+            this.ButtonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ButtonClose.TabIndex = 23;
+            this.ButtonClose.TabStop = false;
+            this.ButtonClose.Zoom = 10;
+            // 
+            // PanelM
+            // 
+            this.PanelM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
+            this.PanelM.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PanelM.Location = new System.Drawing.Point(0, 26);
+            this.PanelM.Name = "PanelM";
+            this.PanelM.Size = new System.Drawing.Size(167, 774);
+            this.PanelM.TabIndex = 9;
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnName});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 74);
+            this.dataGridView1.Location = new System.Drawing.Point(167, 26);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(975, 626);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(976, 774);
+            this.dataGridView1.TabIndex = 10;
+            // 
+            // ColumnName
+            // 
+            this.ColumnName.HeaderText = "Name";
+            this.ColumnName.Name = "ColumnName";
+            this.ColumnName.ReadOnly = true;
             // 
             // SelectAutoUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Controls.Add(this.PanelM);
+            this.Controls.Add(this.PanelBar);
             this.Name = "SelectAutoUC";
-            this.Size = new System.Drawing.Size(975, 700);
+            this.Size = new System.Drawing.Size(1143, 800);
+            this.PanelBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -71,7 +112,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel PanelBar;
+        private Bunifu.Framework.UI.BunifuImageButton ButtonClose;
+        private System.Windows.Forms.Panel PanelM;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
     }
 }

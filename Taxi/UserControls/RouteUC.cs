@@ -17,10 +17,11 @@ namespace Taxi.UserControls
 {
     public partial class RouteUC : UserControl
     {
+        private List<PointLatLng> points;
         public RouteUC()
         {
             InitializeComponent();
-            
+            points = new List<PointLatLng>();
         }
 
         private void Route_Load(object sender, EventArgs e)
@@ -65,6 +66,78 @@ namespace Taxi.UserControls
             map.Zoom = 16;
             map.NegativeMode = false;
             map.SetPositionByKeywords("Беларусь, Минск, Свердлова 13");
+        }
+
+        private void ButtonRoute_Click(object sender, EventArgs e)
+        {
+            if (!TextBoxFrom.Text.Trim().Equals(""))
+            {
+                string str1 = "Минск" + TextBoxFrom.Text.Trim();
+                GeoCoderStatusCode statusCode;
+                var pointLatLng1 = GoogleMapProvider.Instance.GetPoint(TextBoxFrom.Text.Trim(), out statusCode);
+                if (statusCode == GeoCoderStatusCode.OK)
+                {
+                    points.Insert(0, new PointLatLng(pointLatLng1.Value.Lat, pointLatLng1.Value.Lng));
+                    map.SetPositionByKeywords($"{TextBoxFrom.Text}");
+                }
+                else
+                {
+                    MessageBox.Show("Uncorrect address. Returned status:" + statusCode);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid");
+            }
+
+            if (!TextBoxTo.Text.Trim().Equals(""))
+            {
+                GeoCoderStatusCode statusCode;
+                string str1 = "Минск" + TextBoxTo.Text.Trim();
+                var pointLatLng2 = GoogleMapProvider.Instance.GetPoint(str1, out statusCode);
+                if (statusCode == GeoCoderStatusCode.OK)
+                {
+                    points.Insert(1, new PointLatLng(pointLatLng2.Value.Lat, pointLatLng2.Value.Lng));
+                    map.SetPositionByKeywords($"{TextBoxTo.Text}");
+                }
+                else
+                {
+                    MessageBox.Show("Uncorrect address. Returned status:" + statusCode);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid");
+            }
+
+            var route = GoogleMapProvider.Instance.GetRoute(points[0], points[1], false, false, 14);
+            var r = new GMapRoute(route.Points, "My Route");
+            var routes = new GMapOverlay("routes");
+            routes.Routes.Add(r);
+            map.Overlays.Add(routes);
+            map.ZoomAndCenterRoutes("routes");
+        }
+
+        private void TextBoxFrom_OnValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void TextBoxFrom_Click(object sender, EventArgs e)
+        {
+            TextBoxFrom.Text = "";
+            
+        }
+
+        private void TextBoxTo_Click(object sender, EventArgs e)
+        {
+            //TextBoxFrom.ForeColor = System.Drawing.Color.White;
+            TextBoxTo.Text = "";
+        }
+
+        private void TextBoxTo_MouseCaptureChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

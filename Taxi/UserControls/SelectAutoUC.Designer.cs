@@ -33,6 +33,8 @@
             this.PanelM = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Car = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PanelBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -79,7 +81,9 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnName});
+            this.ColumnName,
+            this.Car,
+            this.Number});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(167, 26);
             this.dataGridView1.Name = "dataGridView1";
@@ -92,6 +96,18 @@
             this.ColumnName.HeaderText = "Name";
             this.ColumnName.Name = "ColumnName";
             this.ColumnName.ReadOnly = true;
+            // 
+            // Car
+            // 
+            this.Car.HeaderText = "Car";
+            this.Car.Name = "Car";
+            this.Car.ReadOnly = true;
+            // 
+            // Number
+            // 
+            this.Number.HeaderText = "Number";
+            this.Number.Name = "Number";
+            this.Number.ReadOnly = true;
             // 
             // SelectAutoUC
             // 
@@ -117,5 +133,7 @@
         private System.Windows.Forms.Panel PanelM;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Car;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Number;
     }
 }

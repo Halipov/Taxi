@@ -8,19 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Taxi.UserControls;
+using System.Data.SqlClient;
 
 namespace Taxi
 {
     public partial class FormMain : Form
     {
+
         int PanelWidth;
         bool isCollapsed;
         bool flag = false;
+
         RouteUC ruc = new RouteUC();
         SelectAutoUC sauc = new SelectAutoUC();
         public FormMain()
         {
             InitializeComponent();
+
             PanelWidth = PanelMenu.Width;
             isCollapsed = false;
             AddControlsToPanel(ruc);
@@ -174,6 +178,11 @@ namespace Taxi
             flag = true;
             timer.Start();
             buttonMenu.Visible = false;
+        }
+
+        private void PanelUC_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

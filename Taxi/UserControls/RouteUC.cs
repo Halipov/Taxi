@@ -65,20 +65,19 @@ namespace Taxi.UserControls
             map.MaxZoom = 18;
             map.Zoom = 16;
             map.NegativeMode = false;
-            map.SetPositionByKeywords("Беларусь, Минск, Свердлова 13");
+            map.SetPositionByKeywords("Беларусь, Минск, Свердлова 13а");
         }
 
         private void ButtonRoute_Click(object sender, EventArgs e)
         {
             if (!TextBoxFrom.Text.Trim().Equals(""))
             {
-                string str1 = "Минск" + TextBoxFrom.Text.Trim();
+                string str1 = "Беларусь, Минск" + TextBoxFrom.Text.Trim();
                 GeoCoderStatusCode statusCode;
-                var pointLatLng1 = GoogleMapProvider.Instance.GetPoint(TextBoxFrom.Text.Trim(), out statusCode);
+                var pointLatLng1 = GoogleMapProvider.Instance.GetPoint(str1, out statusCode);
                 if (statusCode == GeoCoderStatusCode.OK)
                 {
                     points.Insert(0, new PointLatLng(pointLatLng1.Value.Lat, pointLatLng1.Value.Lng));
-                    map.SetPositionByKeywords($"{TextBoxFrom.Text}");
                 }
                 else
                 {
@@ -93,12 +92,11 @@ namespace Taxi.UserControls
             if (!TextBoxTo.Text.Trim().Equals(""))
             {
                 GeoCoderStatusCode statusCode;
-                string str1 = "Минск" + TextBoxTo.Text.Trim();
-                var pointLatLng2 = GoogleMapProvider.Instance.GetPoint(str1, out statusCode);
+                string str2 = "Беларусь, Минск" + TextBoxTo.Text.Trim();
+                var pointLatLng2 = GoogleMapProvider.Instance.GetPoint(str2, out statusCode);
                 if (statusCode == GeoCoderStatusCode.OK)
                 {
                     points.Insert(1, new PointLatLng(pointLatLng2.Value.Lat, pointLatLng2.Value.Lng));
-                    map.SetPositionByKeywords($"{TextBoxTo.Text}");
                 }
                 else
                 {
@@ -138,6 +136,11 @@ namespace Taxi.UserControls
         private void TextBoxTo_MouseCaptureChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void TextBoxTo_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

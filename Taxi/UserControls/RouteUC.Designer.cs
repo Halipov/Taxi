@@ -121,7 +121,7 @@
             this.TextBoxTo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TextBoxTo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.TextBoxTo.ForeColor = System.Drawing.Color.White;
-            this.TextBoxTo.HintForeColor = System.Drawing.Color.Empty;
+            this.TextBoxTo.HintForeColor = System.Drawing.Color.White;
             this.TextBoxTo.HintText = "";
             this.TextBoxTo.isPassword = false;
             this.TextBoxTo.LineFocusedColor = System.Drawing.Color.Blue;
@@ -135,6 +135,7 @@
             this.TextBoxTo.TabIndex = 4;
             this.TextBoxTo.Text = "To";
             this.TextBoxTo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TextBoxTo.OnValueChanged += new System.EventHandler(this.TextBoxTo_OnValueChanged);
             this.TextBoxTo.Click += new System.EventHandler(this.TextBoxTo_Click);
             this.TextBoxTo.MouseCaptureChanged += new System.EventHandler(this.TextBoxTo_MouseCaptureChanged);
             // 

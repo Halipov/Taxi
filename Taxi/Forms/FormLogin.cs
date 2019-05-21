@@ -14,10 +14,8 @@ using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using GMap.NET.MapProviders;
-
-
-
-
+using Taxi.BLL;
+using Taxi.DLL;
 
 namespace Taxi
 {
@@ -32,6 +30,8 @@ namespace Taxi
 
         }
 
+        LoginBLL l = new LoginBLL();
+        LoginDAL dal = new LoginDAL();
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -106,11 +106,25 @@ namespace Taxi
 
         }
 
+
         private void ButtonLogin_Click_1(object sender, EventArgs e)
         {
-            FormMain s = new FormMain();
-            s.Show();
-            this.Hide();
+            l.contact = TextBoxUser.Text.Trim();
+            l.password = TextBoxPass.Text.Trim();
+
+            bool success = dal.loginCheck(l);
+            if(success == true)
+            {
+                MessageBox.Show("Login success");
+                FormMain s = new FormMain();
+                s.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Login failed");
+            }
+            
         }
     }
 }

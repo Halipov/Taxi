@@ -85,6 +85,7 @@
             this.Car,
             this.Number});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.Location = new System.Drawing.Point(167, 26);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;

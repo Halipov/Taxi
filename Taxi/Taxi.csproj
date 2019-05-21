@@ -81,7 +81,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\LoginBLL.cs" />
     <Compile Include="BLL\UserBLL.cs" />
+    <Compile Include="DLL\LoginDAL.cs" />
     <Compile Include="DLL\UserDAL.cs" />
     <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>

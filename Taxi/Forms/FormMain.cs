@@ -28,6 +28,7 @@ namespace Taxi
             PanelWidth = PanelMenu.Width;
             isCollapsed = false;
             AddControlsToPanel(ruc);
+
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -183,6 +184,11 @@ namespace Taxi
         private void PanelUC_Paint_1(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            LabelContact.Text = FormLogin.contact;
         }
     }
 }

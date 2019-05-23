@@ -18,6 +18,8 @@ namespace Taxi.UserControls
     public partial class RouteUC : UserControl
     {
         private List<PointLatLng> points;
+        public bool flagFrom = true;
+        public bool flagTo = true;
         public RouteUC()
         {
             InitializeComponent();
@@ -118,13 +120,13 @@ namespace Taxi.UserControls
 
         private void TextBoxFrom_OnValueChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void TextBoxFrom_Click(object sender, EventArgs e)
         {
-            TextBoxFrom.Text = "";
-            
+            //TextBoxFrom.Text = "";
+
         }
 
         private void TextBoxTo_Click(object sender, EventArgs e)
@@ -135,12 +137,46 @@ namespace Taxi.UserControls
 
         private void TextBoxTo_MouseCaptureChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void TextBoxTo_OnValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void TextBoxFrom_Enter(object sender, EventArgs e)
+        {
+            if (flagFrom == true)
+            {
+                TextBoxFrom.Text = "";
+            }
+            flagFrom = false;
+        }
+
+        private void TextBoxTo_Enter(object sender, EventArgs e)
+        {
+            if (flagTo == true)
+            {
+                TextBoxTo.Text = "";
+            }
+            flagTo = false;
+        }
+
+        private void TextBoxFrom_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                map.SetPositionByKeywords("Беларусь, Минск," + TextBoxFrom.Text.Trim());
+            }
+        }
+
+        private void TextBoxTo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                map.SetPositionByKeywords("Беларусь, Минск," + TextBoxTo.Text.Trim());
+            }
         }
     }
 }

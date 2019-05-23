@@ -51,6 +51,42 @@ namespace Taxi.DLL
 
             return isSuccess;
         }
+        public bool signup_check(SignUpBLL s)
+        {
+            bool isSuccess = false;
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            try
+            {
+                string sql = "SELECT * FROM users WHERE contact=@contact";
+                SqlCommand cmd = new SqlCommand(sql, conn);
 
+                cmd.Parameters.AddWithValue("@contact", s.contact);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
+                DataTable dt = new DataTable();
+                conn.Open();
+                adapter.Fill(dt);
+
+                if (dt.Rows.Count == 1)
+                {
+                    isSuccess = false;
+                }
+                else
+                {
+                    isSuccess = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return isSuccess;
+        }
     }
 }

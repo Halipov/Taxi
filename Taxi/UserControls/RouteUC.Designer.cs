@@ -137,6 +137,8 @@
             this.TextBoxTo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextBoxTo.OnValueChanged += new System.EventHandler(this.TextBoxTo_OnValueChanged);
             this.TextBoxTo.Click += new System.EventHandler(this.TextBoxTo_Click);
+            this.TextBoxTo.Enter += new System.EventHandler(this.TextBoxTo_Enter);
+            this.TextBoxTo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxTo_KeyDown);
             this.TextBoxTo.MouseCaptureChanged += new System.EventHandler(this.TextBoxTo_MouseCaptureChanged);
             // 
             // TextBoxFrom
@@ -160,6 +162,8 @@
             this.TextBoxFrom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextBoxFrom.OnValueChanged += new System.EventHandler(this.TextBoxFrom_OnValueChanged);
             this.TextBoxFrom.Click += new System.EventHandler(this.TextBoxFrom_Click);
+            this.TextBoxFrom.Enter += new System.EventHandler(this.TextBoxFrom_Enter);
+            this.TextBoxFrom.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxFrom_KeyDown);
             // 
             // panel1
             // 

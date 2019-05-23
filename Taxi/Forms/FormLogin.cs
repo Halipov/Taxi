@@ -34,6 +34,9 @@ namespace Taxi
         LoginDAL l_dal = new LoginDAL();
         SignUpBLL s = new SignUpBLL();
         SignUpDAL s_dal = new SignUpDAL();
+
+        public static string contact;
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -145,6 +148,7 @@ namespace Taxi
                 if (success == true)
                 {
                     MessageBox.Show("Login success");
+                    contact = l.contact;
                     FormMain s = new FormMain();
                     s.Show();
                     this.Hide();
@@ -166,14 +170,23 @@ namespace Taxi
             s.last_name = TextBoxLastName.Text.Trim();
             s.password = TextBoxPassSign.Text.Trim();
 
-            bool success = s_dal.signup(s);
-            if (success == true)
+            bool success_check = s_dal.signup_check(s);
+            if (success_check == true)
             {
-                MessageBox.Show("SignUp success");
+                bool success = s_dal.signup(s);
+                if (success == true)
+                {
+                    MessageBox.Show("SignUp success");
+                }
+                else
+                {
+                    MessageBox.Show("SignUp failed");
+                }
+                
             }
             else
             {
-                MessageBox.Show("SignUp failed");
+                MessageBox.Show("contact is al-ready register");
             }
         }
 

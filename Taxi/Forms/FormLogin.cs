@@ -31,7 +31,9 @@ namespace Taxi
         }
 
         LoginBLL l = new LoginBLL();
-        LoginDAL dal = new LoginDAL();
+        LoginDAL l_dal = new LoginDAL();
+        SignUpBLL s = new SignUpBLL();
+        SignUpDAL s_dal = new SignUpDAL();
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -112,7 +114,7 @@ namespace Taxi
             l.contact = TextBoxUser.Text.Trim();
             l.password = TextBoxPass.Text.Trim();
 
-            bool success = dal.loginCheck(l);
+            bool success = l_dal.loginCheck(l);
             if(success == true)
             {
                 MessageBox.Show("Login success");
@@ -125,6 +127,71 @@ namespace Taxi
                 MessageBox.Show("Login failed");
             }
             
+        }
+
+        private void FormLogin_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
+
+        private void FormLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+           if(e.KeyData == Keys.Enter)
+            {
+                l.contact = TextBoxUser.Text.Trim();
+                l.password = TextBoxPass.Text.Trim();
+
+                bool success = l_dal.loginCheck(l);
+                if (success == true)
+                {
+                    MessageBox.Show("Login success");
+                    FormMain s = new FormMain();
+                    s.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Login failed");
+                }
+
+                e.Handled = true;
+            }
+        }
+
+        private void ButtonSignUp_Click(object sender, EventArgs e)
+        {
+            //l.contact = TextBoxUser.Text.Trim();
+            s.contact = TextBoxEmail.Text.Trim();
+            s.first_name = TextBoxFirstName.Text.Trim();
+            s.last_name = TextBoxLastName.Text.Trim();
+            s.password = TextBoxPassSign.Text.Trim();
+
+            bool success = s_dal.signup(s);
+            if (success == true)
+            {
+                MessageBox.Show("SignUp success");
+            }
+            else
+            {
+                MessageBox.Show("SignUp failed");
+            }
+        }
+
+        private void TextBoxPassSign_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBoxPassSign_Click(object sender, EventArgs e)
+        {
+            TextBoxPassSign.Text = "";
+            TextBoxPassSign.isPassword = true;
+        }
+
+        private void TextBoxReEnter_Click(object sender, EventArgs e)
+        {
+            TextBoxReEnter.Text = "";
+            TextBoxReEnter.isPassword = true;
         }
     }
 }

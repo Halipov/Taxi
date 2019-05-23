@@ -74,10 +74,10 @@
             // 
             // panelInfo
             // 
-            resources.ApplyResources(this.panelInfo, "panelInfo");
             this.panelInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
             this.panelInfo.Controls.Add(this.labelinfo);
             this.panelInfo.Controls.Add(this.pictureBox1);
+            resources.ApplyResources(this.panelInfo, "panelInfo");
             this.panelInfo.Name = "panelInfo";
             // 
             // labelinfo
@@ -94,9 +94,9 @@
             // 
             // TextBoxUser
             // 
-            resources.ApplyResources(this.TextBoxUser, "TextBoxUser");
             this.TextBoxUser.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.TextBoxUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.TextBoxUser, "TextBoxUser");
             this.TextBoxUser.ForeColor = System.Drawing.Color.White;
             this.TextBoxUser.HintForeColor = System.Drawing.Color.Empty;
             this.TextBoxUser.HintText = "";
@@ -110,9 +110,9 @@
             // 
             // ButtonLogin
             // 
-            resources.ApplyResources(this.ButtonLogin, "ButtonLogin");
             this.ButtonLogin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
             this.ButtonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            resources.ApplyResources(this.ButtonLogin, "ButtonLogin");
             this.ButtonLogin.BorderRadius = 4;
             this.ButtonLogin.ButtonText = "LogIn";
             this.ButtonLogin.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -157,8 +157,8 @@
             // 
             // TextBoxPass
             // 
-            resources.ApplyResources(this.TextBoxPass, "TextBoxPass");
             this.TextBoxPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.TextBoxPass, "TextBoxPass");
             this.TextBoxPass.ForeColor = System.Drawing.Color.White;
             this.TextBoxPass.HintForeColor = System.Drawing.Color.Empty;
             this.TextBoxPass.HintText = "";
@@ -172,7 +172,6 @@
             // 
             // PanelSignUp
             // 
-            resources.ApplyResources(this.PanelSignUp, "PanelSignUp");
             this.PanelSignUp.Controls.Add(this.ButtonSignUp);
             this.PanelSignUp.Controls.Add(this.bunifuImageButton2);
             this.PanelSignUp.Controls.Add(this.LabelLogin);
@@ -181,14 +180,15 @@
             this.PanelSignUp.Controls.Add(this.TextBoxEmail);
             this.PanelSignUp.Controls.Add(this.TextBoxLastName);
             this.PanelSignUp.Controls.Add(this.TextBoxFirstName);
+            resources.ApplyResources(this.PanelSignUp, "PanelSignUp");
             this.PanelSignUp.Name = "PanelSignUp";
             this.PanelSignUp.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelSignUp_Paint);
             // 
             // ButtonSignUp
             // 
-            resources.ApplyResources(this.ButtonSignUp, "ButtonSignUp");
             this.ButtonSignUp.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
             this.ButtonSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            resources.ApplyResources(this.ButtonSignUp, "ButtonSignUp");
             this.ButtonSignUp.BorderRadius = 6;
             this.ButtonSignUp.ButtonText = "SignUp";
             this.ButtonSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -213,11 +213,12 @@
             this.ButtonSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ButtonSignUp.Textcolor = System.Drawing.Color.White;
             this.ButtonSignUp.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ButtonSignUp.Click += new System.EventHandler(this.ButtonSignUp_Click);
             // 
             // bunifuImageButton2
             // 
-            resources.ApplyResources(this.bunifuImageButton2, "bunifuImageButton2");
             this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
+            resources.ApplyResources(this.bunifuImageButton2, "bunifuImageButton2");
             this.bunifuImageButton2.ImageActive = null;
             this.bunifuImageButton2.Name = "bunifuImageButton2";
             this.bunifuImageButton2.TabStop = false;
@@ -233,38 +234,41 @@
             // 
             // TextBoxReEnter
             // 
-            resources.ApplyResources(this.TextBoxReEnter, "TextBoxReEnter");
             this.TextBoxReEnter.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
             this.TextBoxReEnter.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
             this.TextBoxReEnter.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
             this.TextBoxReEnter.BorderThickness = 3;
             this.TextBoxReEnter.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.TextBoxReEnter, "TextBoxReEnter");
             this.TextBoxReEnter.ForeColor = System.Drawing.Color.White;
             this.TextBoxReEnter.isPassword = false;
             this.TextBoxReEnter.Name = "TextBoxReEnter";
             this.TextBoxReEnter.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TextBoxReEnter.Click += new System.EventHandler(this.TextBoxReEnter_Click);
             // 
             // TextBoxPassSign
             // 
-            resources.ApplyResources(this.TextBoxPassSign, "TextBoxPassSign");
             this.TextBoxPassSign.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
             this.TextBoxPassSign.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
             this.TextBoxPassSign.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
             this.TextBoxPassSign.BorderThickness = 3;
             this.TextBoxPassSign.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.TextBoxPassSign, "TextBoxPassSign");
             this.TextBoxPassSign.ForeColor = System.Drawing.Color.White;
             this.TextBoxPassSign.isPassword = false;
             this.TextBoxPassSign.Name = "TextBoxPassSign";
             this.TextBoxPassSign.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TextBoxPassSign.OnValueChanged += new System.EventHandler(this.TextBoxPassSign_OnValueChanged);
+            this.TextBoxPassSign.Click += new System.EventHandler(this.TextBoxPassSign_Click);
             // 
             // TextBoxEmail
             // 
-            resources.ApplyResources(this.TextBoxEmail, "TextBoxEmail");
             this.TextBoxEmail.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
             this.TextBoxEmail.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
             this.TextBoxEmail.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
             this.TextBoxEmail.BorderThickness = 3;
             this.TextBoxEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.TextBoxEmail, "TextBoxEmail");
             this.TextBoxEmail.ForeColor = System.Drawing.Color.White;
             this.TextBoxEmail.isPassword = false;
             this.TextBoxEmail.Name = "TextBoxEmail";
@@ -272,12 +276,12 @@
             // 
             // TextBoxLastName
             // 
-            resources.ApplyResources(this.TextBoxLastName, "TextBoxLastName");
             this.TextBoxLastName.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
             this.TextBoxLastName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
             this.TextBoxLastName.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
             this.TextBoxLastName.BorderThickness = 3;
             this.TextBoxLastName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.TextBoxLastName, "TextBoxLastName");
             this.TextBoxLastName.ForeColor = System.Drawing.Color.White;
             this.TextBoxLastName.isPassword = false;
             this.TextBoxLastName.Name = "TextBoxLastName";
@@ -285,12 +289,12 @@
             // 
             // TextBoxFirstName
             // 
-            resources.ApplyResources(this.TextBoxFirstName, "TextBoxFirstName");
             this.TextBoxFirstName.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
             this.TextBoxFirstName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
             this.TextBoxFirstName.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
             this.TextBoxFirstName.BorderThickness = 3;
             this.TextBoxFirstName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.TextBoxFirstName, "TextBoxFirstName");
             this.TextBoxFirstName.ForeColor = System.Drawing.Color.White;
             this.TextBoxFirstName.isPassword = false;
             this.TextBoxFirstName.Name = "TextBoxFirstName";
@@ -298,12 +302,12 @@
             // 
             // panelForgetPass
             // 
-            resources.ApplyResources(this.panelForgetPass, "panelForgetPass");
             this.panelForgetPass.Controls.Add(this.label2);
             this.panelForgetPass.Controls.Add(this.ButtonFPSend);
             this.panelForgetPass.Controls.Add(this.TextBoxFPEmail);
             this.panelForgetPass.Controls.Add(this.bunifuImageButton1);
             this.panelForgetPass.Controls.Add(this.label1);
+            resources.ApplyResources(this.panelForgetPass, "panelForgetPass");
             this.panelForgetPass.Name = "panelForgetPass";
             this.panelForgetPass.Paint += new System.Windows.Forms.PaintEventHandler(this.panelForgetPass_Paint);
             // 
@@ -317,9 +321,9 @@
             // 
             // ButtonFPSend
             // 
-            resources.ApplyResources(this.ButtonFPSend, "ButtonFPSend");
             this.ButtonFPSend.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
             this.ButtonFPSend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            resources.ApplyResources(this.ButtonFPSend, "ButtonFPSend");
             this.ButtonFPSend.BorderRadius = 4;
             this.ButtonFPSend.ButtonText = "Send";
             this.ButtonFPSend.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -347,12 +351,12 @@
             // 
             // TextBoxFPEmail
             // 
-            resources.ApplyResources(this.TextBoxFPEmail, "TextBoxFPEmail");
             this.TextBoxFPEmail.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
             this.TextBoxFPEmail.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
             this.TextBoxFPEmail.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
             this.TextBoxFPEmail.BorderThickness = 3;
             this.TextBoxFPEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.TextBoxFPEmail, "TextBoxFPEmail");
             this.TextBoxFPEmail.ForeColor = System.Drawing.Color.White;
             this.TextBoxFPEmail.isPassword = false;
             this.TextBoxFPEmail.Name = "TextBoxFPEmail";
@@ -360,8 +364,8 @@
             // 
             // bunifuImageButton1
             // 
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
             this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
+            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
             this.bunifuImageButton1.ImageActive = null;
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.TabStop = false;
@@ -408,10 +412,10 @@
             // 
             // ButtonExit
             // 
-            resources.ApplyResources(this.ButtonExit, "ButtonExit");
             this.ButtonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
             this.ButtonExit.Image = global::Taxi.Properties.Resources.close;
             this.ButtonExit.ImageActive = null;
+            resources.ApplyResources(this.ButtonExit, "ButtonExit");
             this.ButtonExit.Name = "ButtonExit";
             this.ButtonExit.TabStop = false;
             this.ButtonExit.Zoom = 10;
@@ -419,10 +423,10 @@
             // 
             // ButtonRussia
             // 
-            resources.ApplyResources(this.ButtonRussia, "ButtonRussia");
             this.ButtonRussia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
             this.ButtonRussia.Image = global::Taxi.Properties.Resources.Russia;
             this.ButtonRussia.ImageActive = null;
+            resources.ApplyResources(this.ButtonRussia, "ButtonRussia");
             this.ButtonRussia.Name = "ButtonRussia";
             this.ButtonRussia.TabStop = false;
             this.ButtonRussia.Zoom = 10;
@@ -430,10 +434,10 @@
             // 
             // ButtonUSA
             // 
-            resources.ApplyResources(this.ButtonUSA, "ButtonUSA");
             this.ButtonUSA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
             this.ButtonUSA.Image = global::Taxi.Properties.Resources.UnitedStates;
             this.ButtonUSA.ImageActive = null;
+            resources.ApplyResources(this.ButtonUSA, "ButtonUSA");
             this.ButtonUSA.Name = "ButtonUSA";
             this.ButtonUSA.TabStop = false;
             this.ButtonUSA.Zoom = 10;
@@ -456,8 +460,11 @@
             this.Controls.Add(this.TextBoxUser);
             this.Controls.Add(this.panelInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "FormLogin";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormLogin_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormLogin_KeyPress);
             this.panelInfo.ResumeLayout(false);
             this.panelInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

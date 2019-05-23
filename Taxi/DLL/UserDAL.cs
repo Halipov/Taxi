@@ -14,7 +14,7 @@ namespace Taxi.DLL
     class UserDAL
     {
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
-        #region Select data from Database
+        #region Select
         public DataTable Select()
         {
             SqlConnection conn = new SqlConnection(myconnstrng);
@@ -38,7 +38,7 @@ namespace Taxi.DLL
             return dt;
         }
         #endregion
-        #region Insert Data in Database
+        #region Insert
         public bool Insert(UserBLL u)
         {
             bool isSuccess = false;
@@ -76,7 +76,7 @@ namespace Taxi.DLL
             return isSuccess; 
         }
         #endregion
-        #region Update data in Database
+        #region Update
         public bool Update(UserBLL u)
         {
             bool isSuccess = false;
@@ -115,7 +115,7 @@ namespace Taxi.DLL
             return isSuccess;
         }
         #endregion
-        #region Delete from database
+        #region Delete
         public bool Delete(UserBLL u)
         {
             bool isSuccess = false;

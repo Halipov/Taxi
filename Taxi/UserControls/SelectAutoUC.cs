@@ -9,12 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
+using Taxi.BLL;
 
 namespace Taxi.UserControls
 {
     public partial class SelectAutoUC : UserControl
     {
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
+        public static string name;
+        public static string _class;
+        public static string contact;
 
         public SelectAutoUC()
         {
@@ -74,6 +78,11 @@ namespace Taxi.UserControls
             labelName.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             labelClass.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             labelContact.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+
+            name = labelName.Text;
+            _class = labelClass.Text;
+            contact = labelContact.Text;
         }
+        
     }
 }

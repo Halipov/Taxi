@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Taxi.UserControls;
 using System.Data.SqlClient;
+using Taxi.BLL;
 
 namespace Taxi
 {
@@ -18,9 +19,11 @@ namespace Taxi
         int PanelWidth;
         bool isCollapsed;
         bool flag = false;
+        int page = 1;
 
         RouteUC ruc = new RouteUC();
         SelectAutoUC sauc = new SelectAutoUC();
+        
         public FormMain()
         {
             InitializeComponent();
@@ -166,6 +169,8 @@ namespace Taxi
 
         private void ButtonRoute_Click_1(object sender, EventArgs e)
         {
+            ButtonNext.Visible = true;
+            ButtonNext.ButtonText = "Select auto";
             moveSidePanel(ButtonRoute);
             AddControlsToPanel(ruc);
             buttonMenu.Visible = true;
@@ -174,6 +179,8 @@ namespace Taxi
 
         private void ButtonAuto_Click_1(object sender, EventArgs e)
         {
+            ButtonNext.Visible = true;
+            ButtonNext.ButtonText = "Price";
             moveSidePanel(ButtonAuto);
             AddControlsToPanel(sauc);
             flag = true;
@@ -189,6 +196,34 @@ namespace Taxi
         private void FormMain_Load(object sender, EventArgs e)
         {
             LabelContact.Text = FormLogin.contact;
+        }
+
+        private void LabelContact_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonPrice_Click_1(object sender, EventArgs e)
+        {
+            ButtonNext.Visible = false;
+            PriceUC pruc = new PriceUC();
+            moveSidePanel(ButtonPrice);
+            AddControlsToPanel(pruc);
+            flag = true;
+            timer.Start();
+            buttonMenu.Visible = false;
+        }
+
+        private void ButtonNext_Click(object sender, EventArgs e)
+        {
+            moveSidePanel(ButtonAuto);
+            AddControlsToPanel(sauc);
+            flag = true;
+            timer.Start();
+            buttonMenu.Visible = false;
+            ButtonNext.ButtonText = "Price";
+            page = 2;
+            ButtonNext.Visible = false;
         }
     }
 }

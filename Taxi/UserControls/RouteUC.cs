@@ -12,17 +12,30 @@ using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using GMap.NET.MapProviders;
+using Taxi.BLL;
 
 namespace Taxi.UserControls
 {
     public partial class RouteUC : UserControl
     {
+
         private List<PointLatLng> points;
         public bool flagFrom = true;
         public bool flagTo = true;
-        public bool flagRoute = false;    
+        public bool flagRoute = false;
+
+        public static string from;
+        public static string to;
+        public static double distance;
+
+        public RouteUC(object p)
+        {
+
+        }
+        
         public RouteUC()
         {
+
             InitializeComponent();
             points = new List<PointLatLng>();
             label_distance.Visible = false;
@@ -77,6 +90,7 @@ namespace Taxi.UserControls
             if (!TextBoxFrom.Text.Trim().Equals(""))
             {
                 string str1 = "Беларусь, Минск" + TextBoxFrom.Text.Trim();
+                from = TextBoxFrom.Text;
                 GeoCoderStatusCode statusCode;
                 var pointLatLng1 = GoogleMapProvider.Instance.GetPoint(str1, out statusCode);
                 if (statusCode == GeoCoderStatusCode.OK)
@@ -97,6 +111,7 @@ namespace Taxi.UserControls
             {
                 GeoCoderStatusCode statusCode;
                 string str2 = "Беларусь, Минск" + TextBoxTo.Text.Trim();
+                to = TextBoxTo.Text;
                 var pointLatLng2 = GoogleMapProvider.Instance.GetPoint(str2, out statusCode);
                 if (statusCode == GeoCoderStatusCode.OK)
                 {
@@ -126,6 +141,7 @@ namespace Taxi.UserControls
             map.ZoomAndCenterRoutes("routes");
             label_distance.Visible = true;
             label_distance.Text = route.Distance + "km";
+            distance = route.Distance;
             flagRoute = true;
         }
 

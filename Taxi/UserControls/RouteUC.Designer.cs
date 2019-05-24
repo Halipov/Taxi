@@ -38,8 +38,8 @@
             this.TextBoxTo = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.TextBoxFrom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.map = new GMap.NET.WindowsForms.GMapControl();
             this.label_distance = new System.Windows.Forms.Label();
+            this.map = new GMap.NET.WindowsForms.GMapControl();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.PanelBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).BeginInit();
@@ -87,6 +87,7 @@
             this.PanelStatus.Controls.Add(this.TextBoxTo);
             this.PanelStatus.Controls.Add(this.TextBoxFrom);
             this.PanelStatus.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelStatus.ForeColor = System.Drawing.Color.White;
             this.PanelStatus.Location = new System.Drawing.Point(0, 26);
             this.PanelStatus.Name = "PanelStatus";
             this.PanelStatus.Size = new System.Drawing.Size(1200, 74);
@@ -177,6 +178,21 @@
             this.panel1.Size = new System.Drawing.Size(1200, 700);
             this.panel1.TabIndex = 9;
             // 
+            // label_distance
+            // 
+            this.label_distance.AutoSize = true;
+            this.label_distance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
+            this.label_distance.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_distance.ForeColor = System.Drawing.Color.White;
+            this.label_distance.Location = new System.Drawing.Point(1007, 33);
+            this.label_distance.Name = "label_distance";
+            this.label_distance.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.label_distance.Size = new System.Drawing.Size(130, 36);
+            this.label_distance.TabIndex = 22;
+            this.label_distance.Text = "Distance";
+            this.label_distance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_distance.Click += new System.EventHandler(this.label_class_Click);
+            // 
             // map
             // 
             this.map.Bearing = 0F;
@@ -204,21 +220,6 @@
             this.map.TabIndex = 0;
             this.map.Zoom = 0D;
             this.map.Load += new System.EventHandler(this.map_Load);
-            // 
-            // label_distance
-            // 
-            this.label_distance.AutoSize = true;
-            this.label_distance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
-            this.label_distance.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_distance.ForeColor = System.Drawing.Color.White;
-            this.label_distance.Location = new System.Drawing.Point(1007, 33);
-            this.label_distance.Name = "label_distance";
-            this.label_distance.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.label_distance.Size = new System.Drawing.Size(130, 36);
-            this.label_distance.TabIndex = 22;
-            this.label_distance.Text = "Distance";
-            this.label_distance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_distance.Click += new System.EventHandler(this.label_class_Click);
             // 
             // bunifuElipse1
             // 

@@ -71,10 +71,9 @@ namespace Taxi.UserControls
 
         private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-            int n = dataGridView1.RowCount;
-            int row = dataGridView1.CurrentRow.Index;
-
-
+            labelName.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            labelClass.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            labelContact.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
         }
     }
 }

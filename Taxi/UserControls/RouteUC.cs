@@ -20,10 +20,12 @@ namespace Taxi.UserControls
         private List<PointLatLng> points;
         public bool flagFrom = true;
         public bool flagTo = true;
+        public bool flagRoute = false;    
         public RouteUC()
         {
             InitializeComponent();
             points = new List<PointLatLng>();
+            label_distance.Visible = false;
         }
 
         private void Route_Load(object sender, EventArgs e)
@@ -113,9 +115,18 @@ namespace Taxi.UserControls
             var route = GoogleMapProvider.Instance.GetRoute(points[0], points[1], false, false, 14);
             var r = new GMapRoute(route.Points, "My Route");
             var routes = new GMapOverlay("routes");
+            if (flagRoute == true)
+            {
+                routes.Routes.Clear();
+                map.Overlays.Clear();
+            }
+
             routes.Routes.Add(r);
             map.Overlays.Add(routes);
             map.ZoomAndCenterRoutes("routes");
+            label_distance.Visible = true;
+            label_distance.Text = route.Distance + "km";
+            flagRoute = true;
         }
 
         private void TextBoxFrom_OnValueChanged(object sender, EventArgs e)
@@ -172,11 +183,16 @@ namespace Taxi.UserControls
         }
 
         private void TextBoxTo_KeyDown(object sender, KeyEventArgs e)
-        {
+       {
             if (e.KeyData == Keys.Enter)
             {
                 map.SetPositionByKeywords("Беларусь, Минск," + TextBoxTo.Text.Trim());
             }
+        }
+
+        private void label_class_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

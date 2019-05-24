@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.PanelBar = new System.Windows.Forms.Panel();
-            this.ButtonClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.PanelM = new System.Windows.Forms.Panel();
             this.label_Price = new System.Windows.Forms.Label();
             this.labelFrom = new System.Windows.Forms.Label();
@@ -42,6 +41,10 @@
             this.label_Distance = new System.Windows.Forms.Label();
             this.label_Class = new System.Windows.Forms.Label();
             this.labelTotalPrice = new System.Windows.Forms.Label();
+            this.ButtonClose = new Bunifu.Framework.UI.BunifuImageButton();
+            this.map = new GMap.NET.WindowsForms.GMapControl();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.PanelBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +58,137 @@
             this.PanelBar.Name = "PanelBar";
             this.PanelBar.Size = new System.Drawing.Size(1200, 26);
             this.PanelBar.TabIndex = 8;
+            // 
+            // PanelM
+            // 
+            this.PanelM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
+            this.PanelM.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PanelM.Location = new System.Drawing.Point(0, 26);
+            this.PanelM.Name = "PanelM";
+            this.PanelM.Size = new System.Drawing.Size(167, 774);
+            this.PanelM.TabIndex = 10;
+            // 
+            // label_Price
+            // 
+            this.label_Price.AutoSize = true;
+            this.label_Price.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Price.ForeColor = System.Drawing.Color.White;
+            this.label_Price.Location = new System.Drawing.Point(273, 67);
+            this.label_Price.Name = "label_Price";
+            this.label_Price.Size = new System.Drawing.Size(140, 56);
+            this.label_Price.TabIndex = 21;
+            this.label_Price.Text = "Price";
+            // 
+            // labelFrom
+            // 
+            this.labelFrom.AutoSize = true;
+            this.labelFrom.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFrom.ForeColor = System.Drawing.Color.White;
+            this.labelFrom.Location = new System.Drawing.Point(208, 230);
+            this.labelFrom.Name = "labelFrom";
+            this.labelFrom.Size = new System.Drawing.Size(77, 28);
+            this.labelFrom.TabIndex = 22;
+            this.labelFrom.Text = "From:";
+            // 
+            // labelTo
+            // 
+            this.labelTo.AutoSize = true;
+            this.labelTo.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTo.ForeColor = System.Drawing.Color.White;
+            this.labelTo.Location = new System.Drawing.Point(208, 292);
+            this.labelTo.Name = "labelTo";
+            this.labelTo.Size = new System.Drawing.Size(44, 28);
+            this.labelTo.TabIndex = 23;
+            this.labelTo.Text = "To:";
+            this.labelTo.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // labelDistance
+            // 
+            this.labelDistance.AutoSize = true;
+            this.labelDistance.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDistance.ForeColor = System.Drawing.Color.White;
+            this.labelDistance.Location = new System.Drawing.Point(208, 355);
+            this.labelDistance.Name = "labelDistance";
+            this.labelDistance.Size = new System.Drawing.Size(120, 28);
+            this.labelDistance.TabIndex = 24;
+            this.labelDistance.Text = "Distance:";
+            // 
+            // labelClass
+            // 
+            this.labelClass.AutoSize = true;
+            this.labelClass.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelClass.ForeColor = System.Drawing.Color.White;
+            this.labelClass.Location = new System.Drawing.Point(208, 420);
+            this.labelClass.Name = "labelClass";
+            this.labelClass.Size = new System.Drawing.Size(82, 28);
+            this.labelClass.TabIndex = 25;
+            this.labelClass.Text = "Class:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.label1.Location = new System.Drawing.Point(208, 571);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 28);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "In total:";
+            // 
+            // label_From
+            // 
+            this.label_From.AutoSize = true;
+            this.label_From.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_From.ForeColor = System.Drawing.Color.White;
+            this.label_From.Location = new System.Drawing.Point(334, 228);
+            this.label_From.Name = "label_From";
+            this.label_From.Size = new System.Drawing.Size(152, 30);
+            this.label_From.TabIndex = 27;
+            this.label_From.Text = "LabelName";
+            // 
+            // label_To
+            // 
+            this.label_To.AutoSize = true;
+            this.label_To.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_To.ForeColor = System.Drawing.Color.White;
+            this.label_To.Location = new System.Drawing.Point(334, 290);
+            this.label_To.Name = "label_To";
+            this.label_To.Size = new System.Drawing.Size(152, 30);
+            this.label_To.TabIndex = 28;
+            this.label_To.Text = "LabelName";
+            // 
+            // label_Distance
+            // 
+            this.label_Distance.AutoSize = true;
+            this.label_Distance.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Distance.ForeColor = System.Drawing.Color.White;
+            this.label_Distance.Location = new System.Drawing.Point(334, 353);
+            this.label_Distance.Name = "label_Distance";
+            this.label_Distance.Size = new System.Drawing.Size(152, 30);
+            this.label_Distance.TabIndex = 29;
+            this.label_Distance.Text = "LabelName";
+            // 
+            // label_Class
+            // 
+            this.label_Class.AutoSize = true;
+            this.label_Class.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Class.ForeColor = System.Drawing.Color.White;
+            this.label_Class.Location = new System.Drawing.Point(334, 418);
+            this.label_Class.Name = "label_Class";
+            this.label_Class.Size = new System.Drawing.Size(152, 30);
+            this.label_Class.TabIndex = 30;
+            this.label_Class.Text = "LabelName";
+            // 
+            // labelTotalPrice
+            // 
+            this.labelTotalPrice.AutoSize = true;
+            this.labelTotalPrice.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTotalPrice.ForeColor = System.Drawing.Color.White;
+            this.labelTotalPrice.Location = new System.Drawing.Point(334, 569);
+            this.labelTotalPrice.Name = "labelTotalPrice";
+            this.labelTotalPrice.Size = new System.Drawing.Size(152, 30);
+            this.labelTotalPrice.TabIndex = 31;
+            this.labelTotalPrice.Text = "LabelName";
             // 
             // ButtonClose
             // 
@@ -71,142 +205,61 @@
             this.ButtonClose.TabStop = false;
             this.ButtonClose.Zoom = 10;
             // 
-            // PanelM
+            // map
             // 
-            this.PanelM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
-            this.PanelM.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelM.Location = new System.Drawing.Point(0, 26);
-            this.PanelM.Name = "PanelM";
-            this.PanelM.Size = new System.Drawing.Size(167, 774);
-            this.PanelM.TabIndex = 10;
+            this.map.Bearing = 0F;
+            this.map.CanDragMap = true;
+            this.map.EmptyTileColor = System.Drawing.Color.Navy;
+            this.map.GrayScaleMode = false;
+            this.map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.map.LevelsKeepInMemmory = 5;
+            this.map.Location = new System.Drawing.Point(658, 140);
+            this.map.MarkersEnabled = true;
+            this.map.MaxZoom = 2;
+            this.map.MinZoom = 2;
+            this.map.MouseWheelZoomEnabled = true;
+            this.map.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.map.Name = "map";
+            this.map.NegativeMode = false;
+            this.map.PolygonsEnabled = true;
+            this.map.RetryLoadTile = 0;
+            this.map.RoutesEnabled = true;
+            this.map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            this.map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.map.ShowTileGridLines = false;
+            this.map.Size = new System.Drawing.Size(459, 459);
+            this.map.TabIndex = 32;
+            this.map.Zoom = 0D;
+            this.map.Load += new System.EventHandler(this.map_Load);
             // 
-            // label_Price
+            // panel1
             // 
-            this.label_Price.AutoSize = true;
-            this.label_Price.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Price.ForeColor = System.Drawing.Color.White;
-            this.label_Price.Location = new System.Drawing.Point(614, 43);
-            this.label_Price.Name = "label_Price";
-            this.label_Price.Size = new System.Drawing.Size(140, 56);
-            this.label_Price.TabIndex = 21;
-            this.label_Price.Text = "Price";
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(167, 26);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(2, 774);
+            this.panel1.TabIndex = 33;
             // 
-            // labelFrom
+            // label2
             // 
-            this.labelFrom.AutoSize = true;
-            this.labelFrom.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelFrom.ForeColor = System.Drawing.Color.White;
-            this.labelFrom.Location = new System.Drawing.Point(208, 142);
-            this.labelFrom.Name = "labelFrom";
-            this.labelFrom.Size = new System.Drawing.Size(77, 28);
-            this.labelFrom.TabIndex = 22;
-            this.labelFrom.Text = "From:";
-            // 
-            // labelTo
-            // 
-            this.labelTo.AutoSize = true;
-            this.labelTo.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTo.ForeColor = System.Drawing.Color.White;
-            this.labelTo.Location = new System.Drawing.Point(208, 198);
-            this.labelTo.Name = "labelTo";
-            this.labelTo.Size = new System.Drawing.Size(44, 28);
-            this.labelTo.TabIndex = 23;
-            this.labelTo.Text = "To:";
-            this.labelTo.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // labelDistance
-            // 
-            this.labelDistance.AutoSize = true;
-            this.labelDistance.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelDistance.ForeColor = System.Drawing.Color.White;
-            this.labelDistance.Location = new System.Drawing.Point(208, 256);
-            this.labelDistance.Name = "labelDistance";
-            this.labelDistance.Size = new System.Drawing.Size(120, 28);
-            this.labelDistance.TabIndex = 24;
-            this.labelDistance.Text = "Distance:";
-            // 
-            // labelClass
-            // 
-            this.labelClass.AutoSize = true;
-            this.labelClass.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelClass.ForeColor = System.Drawing.Color.White;
-            this.labelClass.Location = new System.Drawing.Point(208, 315);
-            this.labelClass.Name = "labelClass";
-            this.labelClass.Size = new System.Drawing.Size(82, 28);
-            this.labelClass.TabIndex = 25;
-            this.labelClass.Text = "Class:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(208, 411);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 28);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "In total:";
-            // 
-            // label_From
-            // 
-            this.label_From.AutoSize = true;
-            this.label_From.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_From.ForeColor = System.Drawing.Color.White;
-            this.label_From.Location = new System.Drawing.Point(334, 140);
-            this.label_From.Name = "label_From";
-            this.label_From.Size = new System.Drawing.Size(152, 30);
-            this.label_From.TabIndex = 27;
-            this.label_From.Text = "LabelName";
-            // 
-            // label_To
-            // 
-            this.label_To.AutoSize = true;
-            this.label_To.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_To.ForeColor = System.Drawing.Color.White;
-            this.label_To.Location = new System.Drawing.Point(334, 196);
-            this.label_To.Name = "label_To";
-            this.label_To.Size = new System.Drawing.Size(152, 30);
-            this.label_To.TabIndex = 28;
-            this.label_To.Text = "LabelName";
-            // 
-            // label_Distance
-            // 
-            this.label_Distance.AutoSize = true;
-            this.label_Distance.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Distance.ForeColor = System.Drawing.Color.White;
-            this.label_Distance.Location = new System.Drawing.Point(334, 254);
-            this.label_Distance.Name = "label_Distance";
-            this.label_Distance.Size = new System.Drawing.Size(152, 30);
-            this.label_Distance.TabIndex = 29;
-            this.label_Distance.Text = "LabelName";
-            // 
-            // label_Class
-            // 
-            this.label_Class.AutoSize = true;
-            this.label_Class.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Class.ForeColor = System.Drawing.Color.White;
-            this.label_Class.Location = new System.Drawing.Point(334, 313);
-            this.label_Class.Name = "label_Class";
-            this.label_Class.Size = new System.Drawing.Size(152, 30);
-            this.label_Class.TabIndex = 30;
-            this.label_Class.Text = "LabelName";
-            // 
-            // labelTotalPrice
-            // 
-            this.labelTotalPrice.AutoSize = true;
-            this.labelTotalPrice.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTotalPrice.ForeColor = System.Drawing.Color.White;
-            this.labelTotalPrice.Location = new System.Drawing.Point(334, 409);
-            this.labelTotalPrice.Name = "labelTotalPrice";
-            this.labelTotalPrice.Size = new System.Drawing.Size(152, 30);
-            this.labelTotalPrice.TabIndex = 31;
-            this.labelTotalPrice.Text = "LabelName";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(812, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(157, 56);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Route";
             // 
             // PriceUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.map);
             this.Controls.Add(this.labelTotalPrice);
             this.Controls.Add(this.label_Class);
             this.Controls.Add(this.label_Distance);
@@ -247,5 +300,8 @@
         private System.Windows.Forms.Label label_Distance;
         private System.Windows.Forms.Label label_Class;
         private System.Windows.Forms.Label labelTotalPrice;
+        private GMap.NET.WindowsForms.GMapControl map;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
     }
 }

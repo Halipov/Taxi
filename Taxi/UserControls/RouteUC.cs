@@ -27,6 +27,8 @@ namespace Taxi.UserControls
         public static string from;
         public static string to;
         public static double distance;
+        public static GMapOverlay routes2;
+        public static GMapRoute r2;
 
         public RouteUC(object p)
         {
@@ -129,7 +131,9 @@ namespace Taxi.UserControls
 
             var route = GoogleMapProvider.Instance.GetRoute(points[0], points[1], false, false, 14);
             var r = new GMapRoute(route.Points, "My Route");
+            r2 = r;
             var routes = new GMapOverlay("routes");
+            routes2 = routes;
             if (flagRoute == true)
             {
                 routes.Routes.Clear();

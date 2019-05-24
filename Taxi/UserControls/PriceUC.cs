@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using GMap.NET;
+using GMap.NET.WindowsForms;
+using GMap.NET.WindowsForms.Markers;
+using GMap.NET.MapProviders;
+
 namespace Taxi.UserControls
 {
     public partial class PriceUC : UserControl
@@ -46,10 +51,39 @@ namespace Taxi.UserControls
             
             label_From.Text = RouteUC.from;
             label_To.Text = RouteUC.to;
-            label_Distance.Text = $"{RouteUC.distance}";
+            label_Distance.Text = $"{RouteUC.distance} km";
             label_Class.Text = SelectAutoUC._class;
             price_count();
-            labelTotalPrice.Text = $"{sum}";
+            labelTotalPrice.Text = $"{sum} р.";
+        }
+
+        private void map_Load(object sender, EventArgs e)
+        {
+            GMapProviders.GoogleMap.ApiKey = @"AIzaSyBGVo5Pr11kzS7On3LIm3AkgTiZc6c300E";
+            GMaps.Instance.Mode = AccessMode.ServerAndCache;
+            map.CacheLocation = @"cache";
+            map.MapProvider = GMapProviders.GoogleMap;
+
+            GMaps.Instance.Mode = AccessMode.ServerAndCache;
+
+            map.DragButton = MouseButtons.Left;
+            map.GrayScaleMode = true;
+            map.CanDragMap = true;
+            map.MarkersEnabled = true;
+            map.MouseWheelZoomType =
+                GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            map.NegativeMode = false;
+            map.PolygonsEnabled = true;
+            map.RoutesEnabled = true;
+            map.MaxZoom = 18;
+            map.Zoom = 16;
+            map.SetPositionByKeywords("Беларусь, Минск, Свердлова 13а");
+
+            RouteUC.routes2.Routes.Add(RouteUC.r2);
+            map.Overlays.Add(RouteUC.routes2);
+            map.ZoomAndCenterRoutes("routes");
+            //routes.Routes.Add(r);
+            //map.Overlays.Add(routes);
         }
     }
 }

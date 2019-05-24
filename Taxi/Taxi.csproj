@@ -211,6 +211,7 @@
     <None Include="Resources\close2.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\History.png" />
     <Content Include="Resources\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

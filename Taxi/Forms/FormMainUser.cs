@@ -19,7 +19,6 @@ namespace Taxi
         int PanelWidth;
         bool isCollapsed;
         bool flag = false;
-        int page = 1;
 
         RouteUC ruc = new RouteUC();
         SelectAutoUC sauc = new SelectAutoUC();
@@ -31,7 +30,7 @@ namespace Taxi
             PanelWidth = PanelMenu.Width;
             isCollapsed = false;
             AddControlsToPanel(ruc);
-
+            ButtonPrice.Enabled = false;
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -186,6 +185,7 @@ namespace Taxi
             flag = true;
             timer.Start();
             buttonMenu.Visible = false;
+            ButtonPrice.Enabled = true;
         }
 
         private void PanelUC_Paint_1(object sender, PaintEventArgs e)
@@ -222,8 +222,32 @@ namespace Taxi
             timer.Start();
             buttonMenu.Visible = false;
             ButtonNext.ButtonText = "Price";
-            page = 2;
             ButtonNext.Visible = false;
+        }
+
+        private void PanelSlide_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PanelMenu_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ButtonHistory_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Logo_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

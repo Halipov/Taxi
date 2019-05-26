@@ -88,37 +88,49 @@
     <Compile Include="DLL\LoginDAL.cs" />
     <Compile Include="DLL\SignUpDAL.cs" />
     <Compile Include="DLL\UserDAL.cs" />
+    <Compile Include="Forms\FormMainTaxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMainTaxi.Designer.cs">
+      <DependentUpon>FormMainTaxi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormMain.cs">
+    <Compile Include="Forms\FormMainUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormMain.Designer.cs">
-      <DependentUpon>FormMain.cs</DependentUpon>
+    <Compile Include="Forms\FormMainUser.Designer.cs">
+      <DependentUpon>FormMainUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Localization.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControls\PriceUC.cs">
+    <Compile Include="TaxiUC\OrdersUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\PriceUC.Designer.cs">
+    <Compile Include="TaxiUC\OrdersUC.Designer.cs">
+      <DependentUpon>OrdersUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUC\PriceUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\PriceUC.Designer.cs">
       <DependentUpon>PriceUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RouteUC.cs">
+    <Compile Include="UserUC\RouteUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\RouteUC.Designer.cs">
+    <Compile Include="UserUC\RouteUC.Designer.cs">
       <DependentUpon>RouteUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\SelectAutoUC.cs">
+    <Compile Include="UserUC\SelectAutoUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\SelectAutoUC.Designer.cs">
+    <Compile Include="UserUC\SelectAutoUC.Designer.cs">
       <DependentUpon>SelectAutoUC.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Forms\FormLogin.en.resx">
@@ -130,8 +142,11 @@
     <EmbeddedResource Include="Forms\FormLogin.ru.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormMain.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormMainTaxi.resx">
+      <DependentUpon>FormMainTaxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMainUser.resx">
+      <DependentUpon>FormMainUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -143,13 +158,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControls\PriceUC.resx">
+    <EmbeddedResource Include="TaxiUC\OrdersUC.resx">
+      <DependentUpon>OrdersUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\PriceUC.resx">
       <DependentUpon>PriceUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\RouteUC.resx">
+    <EmbeddedResource Include="UserUC\RouteUC.resx">
       <DependentUpon>RouteUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\SelectAutoUC.resx">
+    <EmbeddedResource Include="UserUC\SelectAutoUC.resx">
       <DependentUpon>SelectAutoUC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -212,6 +230,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\History.png" />
+    <None Include="Resources\orders.png" />
     <Content Include="Resources\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

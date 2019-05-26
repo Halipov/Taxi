@@ -117,56 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="money" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\money.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ButtonPick.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAASYAAABACAYAAAC3HtopAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALNSURBVHhe7dq9i1RXGMBhi507qLuJCuMH67pFBAvtUqSI
+        YKEQiJ0gghASbKxMYYoEhITYRMR1d9HVv0KwElIFrCwtbAUFGz/iR0Q0wubNnBmyOuyJoLh73+Ipnure
+        e6b7cc57Zk1ny3QAZCJMQDrCBKQjTEA6wgSkI0xAOu8M08Tkjji6vxfXTo7HzV/WxoOZbvxzeQzgvZV+
+        lI788eP6OPZVL3rTU9XuFP8bpoNfbolH55t4NtfEYuVHAD5E6cnz+SYezzZx/OtetT/LwlQqdvX7iXjS
+        D1JtUYCP5Wk/TjdOrYupz7aPdGgkTCVKd85049VCp7oIwMe2eGks7va7s3PXmziNhKnslEQJaEOZPy0L
+        U5kpOb4BbXk+34nTRza+CVO5fSuD7trLAKuldGjP7slhmMrVXZmS114EWC1/L3Ri/tsNwzCV/xX4SwCQ
+        we3fusMw3TtrtwTk8Lq/axqE6cUFN3FAHoMw1R4AtEWYgHSECUhHmIB0hAlIR5iAdIQJSEeYgHSECUhH
+        mIB0hAlIR5iAdIQJSEeYgHSECUhHmIB0hAlIR5iAdIQJSEeYgHSECUhHmIB0hAlIR5iAdIQJSEeYgHSE
+        CUhHmIB0hAlIR5iAdIQJSGcQptcLnepDgDYMwvRgplt9CNCGQZhunFoXi5fqLwCspntnm2GYfj68KV5e
+        cJwD2rXYd+XEJ8Mw7dy1PR7PChPQrqdzTRzat3kYpmLmmw3x17w4Ae14dXEsfv9hfNCjpTBNTO6IW7+u
+        rX4AsNLun2uiNz01GqZiz+7JeHi+qX4EsFL+7HfnwBdbl1o0EqZi7+fb4s6ZbrwwDAdWWDm+lZ3S21Eq
+        loWpKMe6he8+jSezzWBKXlsQ4EOVrjyba+L6T+uXjm9vq4bpP6Vi5equTMpriwO8r3Iau3ZyPI7u71W7
+        U7wzTABtECYgHWEC0hEmIB1hApKZjn8B406Ui3fCkc0AAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Russia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Russia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="car" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\car.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IconTaxiOrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconTaxiOrange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="route" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\route.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UnitedStates" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UnitedStates.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IconTaxi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconTaxi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="car2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\car2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="History" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\History.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="place" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\place.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="orders" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\orders.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Contact.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

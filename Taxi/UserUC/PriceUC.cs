@@ -54,7 +54,7 @@ namespace Taxi.UserControls
             label_Distance.Text = $"{RouteUC.distance} km";
             label_Class.Text = SelectAutoUC._class;
             price_count();
-            labelTotalPrice.Text = $"{sum} р.";
+            labelTotalPrice.Text = $"{sum} BYN";
         }
 
         private void map_Load(object sender, EventArgs e)
@@ -84,6 +84,16 @@ namespace Taxi.UserControls
             map.ZoomAndCenterRoutes("routes");
             //routes.Routes.Add(r);
             //map.Overlays.Add(routes);
+        }
+
+        private void labelTotalPrice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

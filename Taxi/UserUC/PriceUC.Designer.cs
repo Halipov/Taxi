@@ -41,10 +41,10 @@
             this.label_Distance = new System.Windows.Forms.Label();
             this.label_Class = new System.Windows.Forms.Label();
             this.labelTotalPrice = new System.Windows.Forms.Label();
-            this.ButtonClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.map = new GMap.NET.WindowsForms.GMapControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.ButtonClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.PanelBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +56,7 @@
             this.PanelBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelBar.Location = new System.Drawing.Point(0, 0);
             this.PanelBar.Name = "PanelBar";
-            this.PanelBar.Size = new System.Drawing.Size(1200, 26);
+            this.PanelBar.Size = new System.Drawing.Size(1143, 26);
             this.PanelBar.TabIndex = 8;
             // 
             // PanelM
@@ -189,21 +189,7 @@
             this.labelTotalPrice.Size = new System.Drawing.Size(152, 30);
             this.labelTotalPrice.TabIndex = 31;
             this.labelTotalPrice.Text = "LabelName";
-            // 
-            // ButtonClose
-            // 
-            this.ButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
-            this.ButtonClose.Image = global::Taxi.Properties.Resources.close2;
-            this.ButtonClose.ImageActive = null;
-            this.ButtonClose.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ButtonClose.Location = new System.Drawing.Point(1167, 3);
-            this.ButtonClose.Name = "ButtonClose";
-            this.ButtonClose.Size = new System.Drawing.Size(34, 21);
-            this.ButtonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ButtonClose.TabIndex = 23;
-            this.ButtonClose.TabStop = false;
-            this.ButtonClose.Zoom = 10;
+            this.labelTotalPrice.Click += new System.EventHandler(this.labelTotalPrice_Click);
             // 
             // map
             // 
@@ -213,7 +199,7 @@
             this.map.GrayScaleMode = false;
             this.map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.map.LevelsKeepInMemmory = 5;
-            this.map.Location = new System.Drawing.Point(658, 140);
+            this.map.Location = new System.Drawing.Point(664, 140);
             this.map.MarkersEnabled = true;
             this.map.MaxZoom = 2;
             this.map.MinZoom = 2;
@@ -252,6 +238,22 @@
             this.label2.TabIndex = 34;
             this.label2.Text = "Route";
             // 
+            // ButtonClose
+            // 
+            this.ButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonClose.Image = global::Taxi.Properties.Resources.close2;
+            this.ButtonClose.ImageActive = null;
+            this.ButtonClose.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ButtonClose.Location = new System.Drawing.Point(1110, 3);
+            this.ButtonClose.Name = "ButtonClose";
+            this.ButtonClose.Size = new System.Drawing.Size(34, 21);
+            this.ButtonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ButtonClose.TabIndex = 23;
+            this.ButtonClose.TabStop = false;
+            this.ButtonClose.Zoom = 10;
+            this.ButtonClose.Click += new System.EventHandler(this.ButtonClose_Click);
+            // 
             // PriceUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,7 +277,7 @@
             this.Controls.Add(this.PanelBar);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "PriceUC";
-            this.Size = new System.Drawing.Size(1200, 800);
+            this.Size = new System.Drawing.Size(1143, 800);
             this.Load += new System.EventHandler(this.Price_Load);
             this.PanelBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).EndInit();

@@ -30,6 +30,7 @@ namespace Taxi.TaxiUC
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(5, 23, 31);
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            StartWatching();
         }
 
         private void ButtonClose_Click(object sender, EventArgs e)
@@ -39,13 +40,16 @@ namespace Taxi.TaxiUC
 
         private void LoadData()
         {
+
             //dataGridView.ColumnHeadersDefaultCellStyle.BackColor = 
+
             SqlConnection conn = new SqlConnection(myconnstrng);
             conn.Open();
-            string query = "SELECT * FROM Users";
+            string query = "SELECT * FROM Users where status = 1";
             SqlCommand command = new SqlCommand(query, conn);
             SqlDataReader reader = command.ExecuteReader();
             List<string[]> data = new List<string[]>();
+            
             while (reader.Read())
             {
                 data.Add(new string[3]);
@@ -56,10 +60,12 @@ namespace Taxi.TaxiUC
             reader.Close();
             conn.Close();
 
+           
             foreach (string[] s in data)
             {
                 dataGridView1.Rows.Add(s);
             }
+
         }
 
         private void OrdersUC_Load(object sender, EventArgs e)
@@ -73,5 +79,41 @@ namespace Taxi.TaxiUC
             labelClass.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             labelContact.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
         }
+
+
+        public void StartWatching()
+        {
+            SqlDependency.Stop(myconnstrng);
+            SqlDependency.Start(myconnstrng);
+            WatchingQuery();
+        }
+
+        private void WatchingQuery()
+        {
+            using (SqlConnection connection = new SqlConnection(myconnstrng))
+            {
+                connection.Open();
+                using (var command = new SqlCommand(
+                    "SELECT status FROM dbo.Users WHERE status = 1", connection))
+                {
+                    var sqlDependency = new SqlDependency(command);
+                    sqlDependency.OnChange += new OnChangeEventHandler(OnDatabaseChange);
+                    command.ExecuteReader();
+                }
+            }
+        }
+
+        private void OnDatabaseChange(object sender, SqlNotificationEventArgs args)
+        {
+            SqlNotificationInfo info = args.Info;
+            if (SqlNotificationInfo.Insert.Equals(info) || SqlNotificationInfo.Update.Equals(info))
+            {
+                dataGridView1.Rows.Clear();
+                LoadData();
+                MessageBox.Show("New Order");
+            }
+            WatchingQuery();
+        }
     }
+
 }

@@ -15,9 +15,9 @@ namespace Taxi.DLL
     {
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
         
-        public bool loginCheck(LoginBLL l)
+        public int loginCheck(LoginBLL l)
         {
-            bool isSuccess = false;
+            int isSuccess = 0;
             SqlConnection conn = new SqlConnection(myconnstrng);
             try
             {
@@ -35,11 +35,28 @@ namespace Taxi.DLL
 
                 if(dt.Rows.Count>0)
                 {
-                    isSuccess = true;
+                    isSuccess = 1;
                 }
                 else
                 {
-                    isSuccess = false;
+                    string sql2 = "SELECT * FROM Taxi WHERE contact=@contact2 AND password=@password2";
+                    SqlCommand cmd2 = new SqlCommand(sql2, conn);
+
+                    cmd2.Parameters.AddWithValue("@contact2", l.contact);
+                    cmd2.Parameters.AddWithValue("@password2", l.password);
+
+                    SqlDataAdapter adapter2 = new SqlDataAdapter(cmd2);
+
+                    DataTable dt2 = new DataTable();
+                    adapter2.Fill(dt2);
+                    if (dt2.Rows.Count > 0)
+                    {
+                        isSuccess = 2;
+                    }
+                    else
+                    {
+                        isSuccess = 0;
+                    }
                 }
             }
             catch (Exception ex)

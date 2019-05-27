@@ -299,6 +299,8 @@
             this.TextBoxFirstName.isPassword = false;
             this.TextBoxFirstName.Name = "TextBoxFirstName";
             this.TextBoxFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TextBoxFirstName.OnValueChanged += new System.EventHandler(this.TextBoxFirstName_OnValueChanged);
+            this.TextBoxFirstName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TextBoxFirstName_MouseClick);
             // 
             // panelForgetPass
             // 

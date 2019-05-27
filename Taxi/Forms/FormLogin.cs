@@ -16,6 +16,7 @@ using GMap.NET.WindowsForms.Markers;
 using GMap.NET.MapProviders;
 using Taxi.BLL;
 using Taxi.DLL;
+using Taxi.Forms;
 
 namespace Taxi
 {
@@ -117,19 +118,26 @@ namespace Taxi
             l.contact = TextBoxUser.Text.Trim();
             l.password = TextBoxPass.Text.Trim();
 
-            bool success = l_dal.loginCheck(l);
-            if(success == true)
+            int success = l_dal.loginCheck(l);
+            if(success == 1)
             {
-                MessageBox.Show("Login success");
+                MessageBox.Show("Login success(user)");
                 FormMain s = new FormMain();
                 s.Show();
                 this.Hide();
             }
-            else
+            if (success == 2)
+            {
+                MessageBox.Show("Login success(taxi)");
+                FormMainTaxi s = new FormMainTaxi();
+                s.Show();
+                this.Hide();
+            }
+            if (success == 0)
             {
                 MessageBox.Show("Login failed");
             }
-            
+
         }
 
         private void FormLogin_KeyPress(object sender, KeyPressEventArgs e)
@@ -144,16 +152,22 @@ namespace Taxi
                 l.contact = TextBoxUser.Text.Trim();
                 l.password = TextBoxPass.Text.Trim();
 
-                bool success = l_dal.loginCheck(l);
-                if (success == true)
+                int success = l_dal.loginCheck(l);
+                if (success == 1)
                 {
-                    MessageBox.Show("Login success");
-                    contact = l.contact;
+                    MessageBox.Show("Login success(user)");
                     FormMain s = new FormMain();
                     s.Show();
                     this.Hide();
                 }
-                else
+                if (success == 2)
+                {
+                    MessageBox.Show("Login success(taxi)");
+                    FormMainTaxi s = new FormMainTaxi();
+                    s.Show();
+                    this.Hide();
+                }
+                if (success == 0)
                 {
                     MessageBox.Show("Login failed");
                 }
@@ -205,6 +219,16 @@ namespace Taxi
         {
             TextBoxReEnter.Text = "";
             TextBoxReEnter.isPassword = true;
+        }
+
+        private void TextBoxFirstName_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBoxFirstName_MouseClick(object sender, MouseEventArgs e)
+        {
+            TextBoxFirstName.Text = "";
         }
     }
 }

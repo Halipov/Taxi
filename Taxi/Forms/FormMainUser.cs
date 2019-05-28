@@ -265,7 +265,12 @@ namespace Taxi
 
         private void ButtonHistory_Click(object sender, EventArgs e)
         {
-
+            moveSidePanel(ButtonHistory);
+            HistoryUC huc = new HistoryUC();
+            AddControlsToPanel(huc);
+            flag = true;
+            timer.Start();
+            buttonMenu.Visible = false;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

@@ -10,6 +10,7 @@ namespace Taxi.BLL
     {
         public string user_contact { get; set; }
         public string user_name { get; set; }
+        public string user_lastname { get; set; }
         public string taxi_contact { get; set; }
         public string taxi_name { get; set; }
         public string taxi_number { get; set; }

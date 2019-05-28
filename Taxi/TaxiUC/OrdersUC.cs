@@ -128,9 +128,31 @@ namespace Taxi.TaxiUC
 
         private void ButtonPick_Click(object sender, EventArgs e)
         {
-            labelName.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            labelClass.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            labelContact.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            orders.taxi_name = FormLogin.username;
+            orders.taxi_contact = FormLogin.contact;
+            orders.taxi_number = LoginDAL.car_number;
+            orders._class = LoginDAL.car_class;
+
+            orders.user_name = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            orders.user_lastname= dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            orders.from = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            orders.to = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            orders.user_contact = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            orders.distance = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            orders.cost = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+
+            bool success = ordersdal.AddOrder(orders);
+            if (success)
+            {
+                MessageBox.Show("Success");
+
+                //click.Invoke();
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
+
         }
 
         private void labelName_Click(object sender, EventArgs e)

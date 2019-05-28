@@ -16,6 +16,7 @@ namespace Taxi.DLL
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
         public int isSuccess = 0;
         public static string car_number;
+        public static string car_class;
         public int loginCheck(LoginBLL l)
         {
             
@@ -93,8 +94,12 @@ namespace Taxi.DLL
                 SqlCommand command = new SqlCommand(query, conn);
                 command.Parameters.AddWithValue("@contact", l.contact);
                 SqlDataReader reader = command.ExecuteReader();
-                user_name = reader["name"].ToString();
-                car_number = reader["car_number"].ToString();
+                while (reader.Read())
+                {
+                    user_name = reader["name"].ToString();
+                    car_number = reader["car_number"].ToString();
+                    car_class = reader["class"].ToString();
+                }
             }
             return user_name;
         }

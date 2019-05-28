@@ -133,7 +133,7 @@ namespace Taxi
             {
                 MessageBox.Show("Login success(taxi)");
                 contact = TextBoxUser.Text;
-                username = l.first_name;
+                username = l_dal.login_user(l);
                 FormMainTaxi s = new FormMainTaxi();
                 s.Show();
                 this.Hide();
@@ -171,7 +171,7 @@ namespace Taxi
                 {
                     MessageBox.Show("Login success(taxi)");
                     contact = TextBoxUser.Text;
-                    username = l.first_name;
+                    username = l_dal.login_user(l);
                     FormMainTaxi s = new FormMainTaxi();
                     s.Show();
                     this.Hide();

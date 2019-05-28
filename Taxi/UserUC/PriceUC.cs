@@ -104,7 +104,10 @@ namespace Taxi.UserControls
 
         private void ButtonCreateOrder_Click(object sender, EventArgs e)
         {
-
+            order.from = label_From.Text;
+            order.to = label_To.Text;
+            order.cost = labelTotalPrice.Text;
+            order.distance = label_Distance.Text;
             order.contact = FormLogin.contact;
             order.status = "true";
             bool success = orderdal.StatusChange(order);

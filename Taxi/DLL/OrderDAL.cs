@@ -21,13 +21,14 @@ namespace Taxi.DLL
 
             try
             {
-                string sql = "UPDATE Users SET status = @status WHERE contact = @contact";
+                string sql = "UPDATE Users SET status = @status, cost = @cost, distance = @distance, add_from = @from, add_to = @to WHERE contact = @contact";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@contact", u.contact);
                 cmd.Parameters.AddWithValue("@status", u.status);
                 cmd.Parameters.AddWithValue("@cost", u.cost);
                 cmd.Parameters.AddWithValue("@distance", u.distance);
-
+                cmd.Parameters.AddWithValue("@from", u.from);
+                cmd.Parameters.AddWithValue("@to", u.to);
                 conn.Open();
 
                 int rows = cmd.ExecuteNonQuery();
@@ -50,5 +51,6 @@ namespace Taxi.DLL
             }
             return isSuccess;
         }
+        
     }
 }

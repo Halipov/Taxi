@@ -37,6 +37,7 @@ namespace Taxi
         SignUpDAL s_dal = new SignUpDAL();
 
         public static string contact;
+        public static string username;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -122,6 +123,8 @@ namespace Taxi
             if(success == 1)
             {
                 MessageBox.Show("Login success(user)");
+                contact = TextBoxUser.Text;
+                username = l.first_name;
                 FormMainUser s = new FormMainUser();
                 s.Show();
                 this.Hide();
@@ -129,6 +132,8 @@ namespace Taxi
             if (success == 2)
             {
                 MessageBox.Show("Login success(taxi)");
+                contact = TextBoxUser.Text;
+                username = l.first_name;
                 FormMainTaxi s = new FormMainTaxi();
                 s.Show();
                 this.Hide();
@@ -157,6 +162,7 @@ namespace Taxi
                 {
                     MessageBox.Show("Login success(user)");
                     contact = TextBoxUser.Text;
+                    username = l.first_name;
                     FormMainUser s = new FormMainUser();
                     s.Show();
                     this.Hide();
@@ -165,6 +171,7 @@ namespace Taxi
                 {
                     MessageBox.Show("Login success(taxi)");
                     contact = TextBoxUser.Text;
+                    username = l.first_name;
                     FormMainTaxi s = new FormMainTaxi();
                     s.Show();
                     this.Hide();

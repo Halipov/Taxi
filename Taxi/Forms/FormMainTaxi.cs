@@ -18,16 +18,11 @@ namespace Taxi.Forms
     {
 
         int PanelWidth;
-        bool isCollapsed;
-        bool flag = false;
-
         OrdersUC ouc = new OrdersUC();
-
         public FormMainTaxi()
         {
             InitializeComponent();
             PanelWidth = PanelMenu.Width;
-            isCollapsed = false;
             AddControlsToPanel(ouc);
             ButtonPrice.Enabled = false;
             LabelContact.Text = FormLogin.contact;

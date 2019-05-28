@@ -14,10 +14,11 @@ namespace Taxi.DLL
     class LoginDAL
     {
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
-        
+        public int isSuccess = 0;
+        public static string car_number;
         public int loginCheck(LoginBLL l)
         {
-            int isSuccess = 0;
+            
             SqlConnection conn = new SqlConnection(myconnstrng);
             try
             {
@@ -38,6 +39,7 @@ namespace Taxi.DLL
                     isSuccess = 1;
                 }
                 else
+
                 {
                     string sql2 = "SELECT * FROM Taxi WHERE contact=@contact2 AND password=@password2";
                     SqlCommand cmd2 = new SqlCommand(sql2, conn);
@@ -69,6 +71,32 @@ namespace Taxi.DLL
             }
             
             return isSuccess;
+        }
+        public string login_user(LoginBLL l)
+        {
+            string user_name = "";
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            conn.Open();
+           
+           if (isSuccess == 1)
+           {
+                string query = "SELECT * FROM Users WHERE contact = @contact";
+                SqlCommand command = new SqlCommand(query, conn);
+                command.Parameters.AddWithValue("@contact", l.contact);
+                SqlDataReader reader = command.ExecuteReader();
+                user_name = reader["first_Name"].ToString();
+           }
+                
+            if (isSuccess == 2)
+            {
+                string query = "SELECT * FROM Taxi WHERE contact = @contact";
+                SqlCommand command = new SqlCommand(query, conn);
+                command.Parameters.AddWithValue("@contact", l.contact);
+                SqlDataReader reader = command.ExecuteReader();
+                user_name = reader["name"].ToString();
+                car_number = reader["car_number"].ToString();
+            }
+            return user_name;
         }
     }
 }

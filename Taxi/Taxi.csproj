@@ -84,10 +84,12 @@
   <ItemGroup>
     <Compile Include="BLL\LoginBLL.cs" />
     <Compile Include="BLL\OrderBLL.cs" />
+    <Compile Include="BLL\OrdersBLL.cs" />
     <Compile Include="BLL\SignUpBLL.cs" />
     <Compile Include="BLL\UserBLL.cs" />
     <Compile Include="DLL\LoginDAL.cs" />
     <Compile Include="DLL\OrderDAL.cs" />
+    <Compile Include="DLL\OrdersDAL.cs" />
     <Compile Include="DLL\SignUpDAL.cs" />
     <Compile Include="DLL\UserDAL.cs" />
     <Compile Include="Forms\FormMainTaxi.cs">

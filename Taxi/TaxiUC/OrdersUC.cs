@@ -10,13 +10,15 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
 using Taxi.BLL;
+using Taxi.DLL;
 
 namespace Taxi.TaxiUC
 {
     public partial class OrdersUC : UserControl
     {
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
-
+        OrdersBLL orders = new OrdersBLL();
+        OrdersDAL ordersdal = new OrdersDAL();
         public OrdersUC()
         {
             InitializeComponent();
@@ -52,12 +54,14 @@ namespace Taxi.TaxiUC
             
             while (reader.Read())
             {
-                data.Add(new string[5]);
+                data.Add(new string[7]);
                 data[data.Count - 1][0] = reader[1].ToString();
                 data[data.Count - 1][1] = reader[2].ToString();
-                data[data.Count - 1][2] = reader[3].ToString();
-                data[data.Count - 1][3] = reader[7].ToString();
-                data[data.Count - 1][4] = reader[6].ToString();
+                data[data.Count - 1][2] = reader[8].ToString();
+                data[data.Count - 1][3] = reader[9].ToString();
+                data[data.Count - 1][4] = reader[3].ToString();
+                data[data.Count - 1][5] = reader[7].ToString();
+                data[data.Count - 1][6] = reader[6].ToString();
             }
             reader.Close();
             conn.Close();
@@ -118,6 +122,18 @@ namespace Taxi.TaxiUC
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void ButtonPick_Click(object sender, EventArgs e)
+        {
+            labelName.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            labelClass.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            labelContact.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+        }
+
+        private void labelName_Click(object sender, EventArgs e)
         {
 
         }

@@ -116,6 +116,7 @@
             this.ButtonHistory.TabIndex = 11;
             this.ButtonHistory.Text = "History";
             this.ButtonHistory.UseVisualStyleBackColor = true;
+            this.ButtonHistory.Click += new System.EventHandler(this.ButtonHistory_Click);
             // 
             // LabelContact
             // 

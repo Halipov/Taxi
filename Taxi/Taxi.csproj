@@ -180,6 +180,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TaxiUC\HistoryTaxi.resx">
+      <DependentUpon>HistoryTaxi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TaxiUC\OrdersUC.resx">
       <DependentUpon>OrdersUC.cs</DependentUpon>
     </EmbeddedResource>

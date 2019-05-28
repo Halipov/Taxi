@@ -16,6 +16,7 @@ namespace Taxi.Forms
 {
     public partial class FormMainTaxi : Form
     {
+        public static string conntact;
 
         int PanelWidth;
         OrdersUC ouc = new OrdersUC();
@@ -26,6 +27,7 @@ namespace Taxi.Forms
             AddControlsToPanel(ouc);
             ButtonPrice.Enabled = false;
             LabelContact.Text = FormLogin.contact;
+            conntact = LabelContact.Text;
         }
         private void moveSidePanel(Control btn)
         {
@@ -47,6 +49,13 @@ namespace Taxi.Forms
         private void ButtonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ButtonHistory_Click(object sender, EventArgs e)
+        {
+            moveSidePanel(ButtonHistory);
+            HistoryTaxi huc = new HistoryTaxi();
+            AddControlsToPanel(huc);
         }
     }
 }

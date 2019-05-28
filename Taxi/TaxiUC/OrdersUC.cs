@@ -159,6 +159,56 @@ namespace Taxi.TaxiUC
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_class_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_name_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelContact_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelClass_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PanelM_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 }

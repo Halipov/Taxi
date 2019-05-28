@@ -48,5 +48,10 @@ namespace Taxi.Forms
         {
 
         }
+
+        private void ButtonClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

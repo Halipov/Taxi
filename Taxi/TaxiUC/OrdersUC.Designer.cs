@@ -44,20 +44,20 @@
             this.labelName = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.PanelBar = new System.Windows.Forms.Panel();
-            this.ButtonClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.PanelM = new System.Windows.Forms.Panel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.PanelBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -65,7 +65,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(607, 18);
+            this.label2.Location = new System.Drawing.Point(516, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 28);
             this.label2.TabIndex = 22;
@@ -76,18 +76,18 @@
             this.label_class.AutoSize = true;
             this.label_class.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_class.ForeColor = System.Drawing.Color.White;
-            this.label_class.Location = new System.Drawing.Point(434, 18);
+            this.label_class.Location = new System.Drawing.Point(758, 22);
             this.label_class.Name = "label_class";
-            this.label_class.Size = new System.Drawing.Size(75, 28);
+            this.label_class.Size = new System.Drawing.Size(64, 28);
             this.label_class.TabIndex = 21;
-            this.label_class.Text = "Class";
+            this.label_class.Text = "Cost";
             // 
             // label_name
             // 
             this.label_name.AutoSize = true;
             this.label_name.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_name.ForeColor = System.Drawing.Color.White;
-            this.label_name.Location = new System.Drawing.Point(234, 16);
+            this.label_name.Location = new System.Drawing.Point(313, 16);
             this.label_name.Name = "label_name";
             this.label_name.Size = new System.Drawing.Size(84, 28);
             this.label_name.TabIndex = 20;
@@ -98,7 +98,7 @@
             this.labelContact.AutoSize = true;
             this.labelContact.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelContact.ForeColor = System.Drawing.Color.White;
-            this.labelContact.Location = new System.Drawing.Point(610, 47);
+            this.labelContact.Location = new System.Drawing.Point(507, 45);
             this.labelContact.Name = "labelContact";
             this.labelContact.Size = new System.Drawing.Size(112, 30);
             this.labelContact.TabIndex = 19;
@@ -109,7 +109,7 @@
             this.labelClass.AutoSize = true;
             this.labelClass.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelClass.ForeColor = System.Drawing.Color.White;
-            this.labelClass.Location = new System.Drawing.Point(459, 47);
+            this.labelClass.Location = new System.Drawing.Point(770, 49);
             this.labelClass.Name = "labelClass";
             this.labelClass.Size = new System.Drawing.Size(30, 30);
             this.labelClass.TabIndex = 18;
@@ -133,7 +133,7 @@
             this.ButtonPick.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
             this.ButtonPick.IdleForecolor = System.Drawing.Color.White;
             this.ButtonPick.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
-            this.ButtonPick.Location = new System.Drawing.Point(329, 94);
+            this.ButtonPick.Location = new System.Drawing.Point(408, 94);
             this.ButtonPick.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ButtonPick.Name = "ButtonPick";
             this.ButtonPick.Size = new System.Drawing.Size(294, 64);
@@ -150,9 +150,9 @@
             this.panel4.Controls.Add(this.labelName);
             this.panel4.Controls.Add(this.ButtonPick);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(179, 625);
+            this.panel4.Location = new System.Drawing.Point(179, 587);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(964, 175);
+            this.panel4.Size = new System.Drawing.Size(1320, 186);
             this.panel4.TabIndex = 21;
             // 
             // labelName
@@ -160,7 +160,7 @@
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelName.ForeColor = System.Drawing.Color.White;
-            this.labelName.Location = new System.Drawing.Point(234, 47);
+            this.labelName.Location = new System.Drawing.Point(313, 47);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(152, 30);
             this.labelName.TabIndex = 17;
@@ -170,9 +170,9 @@
             // 
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(179, 27);
+            this.panel3.Location = new System.Drawing.Point(179, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(964, 617);
+            this.panel3.Size = new System.Drawing.Size(1320, 581);
             this.panel3.TabIndex = 20;
             // 
             // dataGridView1
@@ -194,7 +194,11 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
-            this.Contact});
+            this.Column3,
+            this.Column6,
+            this.Contact,
+            this.Column4,
+            this.Column5});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -226,72 +230,24 @@
             this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowTemplate.Height = 39;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(964, 617);
+            this.dataGridView1.Size = new System.Drawing.Size(1320, 581);
             this.dataGridView1.TabIndex = 10;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "First Name";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 300;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Last Name";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 300;
-            // 
-            // Contact
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Contact.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Contact.HeaderText = "                          Contact";
-            this.Contact.Name = "Contact";
-            this.Contact.ReadOnly = true;
-            this.Contact.Width = 285;
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(169, 27);
+            this.panel2.Location = new System.Drawing.Point(169, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(10, 773);
             this.panel2.TabIndex = 19;
-            // 
-            // PanelBar
-            // 
-            this.PanelBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
-            this.PanelBar.Controls.Add(this.ButtonClose);
-            this.PanelBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelBar.Location = new System.Drawing.Point(0, 0);
-            this.PanelBar.Name = "PanelBar";
-            this.PanelBar.Size = new System.Drawing.Size(1143, 27);
-            this.PanelBar.TabIndex = 16;
-            // 
-            // ButtonClose
-            // 
-            this.ButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
-            this.ButtonClose.Image = global::Taxi.Properties.Resources.close2;
-            this.ButtonClose.ImageActive = null;
-            this.ButtonClose.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ButtonClose.Location = new System.Drawing.Point(1110, 3);
-            this.ButtonClose.Name = "ButtonClose";
-            this.ButtonClose.Size = new System.Drawing.Size(34, 22);
-            this.ButtonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ButtonClose.TabIndex = 23;
-            this.ButtonClose.TabStop = false;
-            this.ButtonClose.Zoom = 10;
-            this.ButtonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(167, 27);
+            this.panel1.Location = new System.Drawing.Point(167, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2, 773);
             this.panel1.TabIndex = 18;
@@ -300,7 +256,7 @@
             // 
             this.PanelM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
             this.PanelM.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelM.Location = new System.Drawing.Point(0, 27);
+            this.PanelM.Location = new System.Drawing.Point(0, 0);
             this.PanelM.Name = "PanelM";
             this.PanelM.Size = new System.Drawing.Size(167, 773);
             this.PanelM.TabIndex = 17;
@@ -309,8 +265,58 @@
             // 
             this.bunifuDragControl1.Fixed = true;
             this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.PanelBar;
             this.bunifuDragControl1.Vertical = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "First Name";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 160;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Last Name";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 160;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "From";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 290;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "To";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 290;
+            // 
+            // Contact
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Contact.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Contact.HeaderText = "   Contact";
+            this.Contact.Name = "Contact";
+            this.Contact.ReadOnly = true;
+            this.Contact.Width = 180;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "   Distance";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 115;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "      Cost";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 115;
             // 
             // OrdersUC
             // 
@@ -322,19 +328,16 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelM);
-            this.Controls.Add(this.PanelBar);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "OrdersUC";
-            this.Size = new System.Drawing.Size(1143, 800);
+            this.Size = new System.Drawing.Size(1499, 773);
             this.Load += new System.EventHandler(this.OrdersUC_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.PanelBar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -352,13 +355,15 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel PanelBar;
-        private Bunifu.Framework.UI.BunifuImageButton ButtonClose;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel PanelM;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Contact;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

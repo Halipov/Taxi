@@ -25,6 +25,8 @@ namespace Taxi.DLL
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@contact", u.contact);
                 cmd.Parameters.AddWithValue("@status", u.status);
+                cmd.Parameters.AddWithValue("@cost", u.cost);
+                cmd.Parameters.AddWithValue("@distance", u.distance);
 
                 conn.Open();
 

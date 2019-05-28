@@ -52,10 +52,12 @@ namespace Taxi.TaxiUC
             
             while (reader.Read())
             {
-                data.Add(new string[3]);
+                data.Add(new string[5]);
                 data[data.Count - 1][0] = reader[1].ToString();
                 data[data.Count - 1][1] = reader[2].ToString();
                 data[data.Count - 1][2] = reader[3].ToString();
+                data[data.Count - 1][3] = reader[7].ToString();
+                data[data.Count - 1][4] = reader[6].ToString();
             }
             reader.Close();
             conn.Close();
@@ -113,6 +115,11 @@ namespace Taxi.TaxiUC
                 MessageBox.Show("New Order");
             }
             WatchingQuery();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 

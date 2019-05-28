@@ -16,5 +16,10 @@ namespace Taxi.UserUC
         {
             InitializeComponent();
         }
+
+        private void ButtonClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

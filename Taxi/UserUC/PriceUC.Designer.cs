@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.PanelBar = new System.Windows.Forms.Panel();
             this.PanelM = new System.Windows.Forms.Panel();
             this.label_Price = new System.Windows.Forms.Label();
@@ -46,6 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.ButtonCreateOrder = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ButtonClose = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.PanelBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).BeginInit();
             this.SuspendLayout();
@@ -303,6 +305,13 @@
             this.ButtonClose.Zoom = 10;
             this.ButtonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.PanelBar;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // PriceUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,5 +365,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuFlatButton ButtonCreateOrder;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

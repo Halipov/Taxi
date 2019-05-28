@@ -156,6 +156,7 @@ namespace Taxi
                 if (success == 1)
                 {
                     MessageBox.Show("Login success(user)");
+                    contact = TextBoxUser.Text;
                     FormMainUser s = new FormMainUser();
                     s.Show();
                     this.Hide();
@@ -163,6 +164,7 @@ namespace Taxi
                 if (success == 2)
                 {
                     MessageBox.Show("Login success(taxi)");
+                    contact = TextBoxUser.Text;
                     FormMainTaxi s = new FormMainTaxi();
                     s.Show();
                     this.Hide();
@@ -229,6 +231,11 @@ namespace Taxi
         private void TextBoxFirstName_MouseClick(object sender, MouseEventArgs e)
         {
             TextBoxFirstName.Text = "";
+        }
+
+        private void TextBoxUser_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

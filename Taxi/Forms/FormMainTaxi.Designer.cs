@@ -130,6 +130,7 @@
             this.LabelContact.Size = new System.Drawing.Size(97, 42);
             this.LabelContact.TabIndex = 10;
             this.LabelContact.Text = "First_name \r\nLast_name";
+            this.LabelContact.Click += new System.EventHandler(this.LabelContact_Click);
             // 
             // pictureBox1
             // 

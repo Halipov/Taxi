@@ -107,6 +107,7 @@
             this.TextBoxUser.LineThickness = 3;
             this.TextBoxUser.Name = "TextBoxUser";
             this.TextBoxUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TextBoxUser.OnValueChanged += new System.EventHandler(this.TextBoxUser_OnValueChanged);
             // 
             // ButtonLogin
             // 

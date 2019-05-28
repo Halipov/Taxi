@@ -30,6 +30,7 @@ namespace Taxi.Forms
             isCollapsed = false;
             AddControlsToPanel(ouc);
             ButtonPrice.Enabled = false;
+            LabelContact.Text = FormLogin.contact;
         }
         private void moveSidePanel(Control btn)
         {
@@ -41,6 +42,11 @@ namespace Taxi.Forms
             c.Dock = DockStyle.Fill;
             PanelUC.Controls.Clear();
             PanelUC.Controls.Add(c);
+        }
+
+        private void LabelContact_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

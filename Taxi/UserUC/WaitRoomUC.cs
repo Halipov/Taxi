@@ -15,12 +15,12 @@ namespace Taxi.UserUC
     public partial class WaitRoomUC : UserControl
     {
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
-        
-        
+        SqlConnection conn = new SqlConnection(myconnstrng);
+
+
         public WaitRoomUC()
         {
             InitializeComponent();
-            
         }
 
         private void ButtonClose_Click(object sender, EventArgs e)
@@ -37,33 +37,54 @@ namespace Taxi.UserUC
 
         private void WatchingQuery()
         {
-            using (SqlConnection connection = new SqlConnection(myconnstrng))
-            {
-                connection.Open();
+            
+                conn.Open();
                 using (var command = new SqlCommand(
-                    "select class from dbo.Orders WHERE contact_user = @contact", connection))
+                    "select class from dbo.Orders WHERE contact_user = @contact", conn))
                 {
                     command.Parameters.AddWithValue("@contact", FormMainUser.conntact);
                     var sqlDependency = new SqlDependency(command);
                     sqlDependency.OnChange += new OnChangeEventHandler(OnDatabaseChange);
                     command.ExecuteReader();
                 }
-            }
+            
         }
         private void OnDatabaseChange(object sender, SqlNotificationEventArgs args)
         {
             SqlNotificationInfo info = args.Info;
-            if (SqlNotificationInfo.Insert.Equals(info) || SqlNotificationInfo.Update.Equals(info))
+            if (SqlNotificationInfo.Insert.Equals(info))
             {
                 MessageBox.Show("You order is accepted waiting");
                 pictureBox.Hide();
+                labelOrder.Text = "You order is accepted";
+
+                SqlCommand myCommand = new SqlCommand("SELECT TOP 1 * FROM Orders ORDER BY order_id DESC", conn);
+                SqlDataReader myReader = myCommand.ExecuteReader();
+                while (myReader.Read())
+                {
+                    labelName.Text = (myReader["taxi_name"].ToString());
+                    labelContact.Text = (myReader["taxi_contact"].ToString());
+                    labelCarNum.Text = (myReader["taxi_number"].ToString());
+                }
+               
+                
+               
             }
             WatchingQuery();
         }
-
+        public void Label()
+        {
+            
+            
+        }
         private void WaitRoomUC_Load(object sender, EventArgs e)
         {
             StartWatching();
+        }
+
+        private void panelCon_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

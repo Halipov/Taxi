@@ -44,6 +44,7 @@
             this.map = new GMap.NET.WindowsForms.GMapControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.ButtonCreateOrder = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ButtonClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.PanelBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).BeginInit();
@@ -58,6 +59,7 @@
             this.PanelBar.Name = "PanelBar";
             this.PanelBar.Size = new System.Drawing.Size(1143, 26);
             this.PanelBar.TabIndex = 8;
+            this.PanelBar.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelBar_Paint);
             // 
             // PanelM
             // 
@@ -67,6 +69,7 @@
             this.PanelM.Name = "PanelM";
             this.PanelM.Size = new System.Drawing.Size(167, 774);
             this.PanelM.TabIndex = 10;
+            this.PanelM.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelM_Paint);
             // 
             // label_Price
             // 
@@ -78,6 +81,7 @@
             this.label_Price.Size = new System.Drawing.Size(140, 56);
             this.label_Price.TabIndex = 21;
             this.label_Price.Text = "Price";
+            this.label_Price.Click += new System.EventHandler(this.label_Price_Click);
             // 
             // labelFrom
             // 
@@ -89,6 +93,7 @@
             this.labelFrom.Size = new System.Drawing.Size(77, 28);
             this.labelFrom.TabIndex = 22;
             this.labelFrom.Text = "From:";
+            this.labelFrom.Click += new System.EventHandler(this.labelFrom_Click);
             // 
             // labelTo
             // 
@@ -112,6 +117,7 @@
             this.labelDistance.Size = new System.Drawing.Size(120, 28);
             this.labelDistance.TabIndex = 24;
             this.labelDistance.Text = "Distance:";
+            this.labelDistance.Click += new System.EventHandler(this.labelDistance_Click);
             // 
             // labelClass
             // 
@@ -123,6 +129,7 @@
             this.labelClass.Size = new System.Drawing.Size(82, 28);
             this.labelClass.TabIndex = 25;
             this.labelClass.Text = "Class:";
+            this.labelClass.Click += new System.EventHandler(this.labelClass_Click);
             // 
             // label1
             // 
@@ -134,6 +141,7 @@
             this.label1.Size = new System.Drawing.Size(98, 28);
             this.label1.TabIndex = 26;
             this.label1.Text = "In total:";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label_From
             // 
@@ -145,6 +153,7 @@
             this.label_From.Size = new System.Drawing.Size(152, 30);
             this.label_From.TabIndex = 27;
             this.label_From.Text = "LabelName";
+            this.label_From.Click += new System.EventHandler(this.label_From_Click);
             // 
             // label_To
             // 
@@ -156,6 +165,7 @@
             this.label_To.Size = new System.Drawing.Size(152, 30);
             this.label_To.TabIndex = 28;
             this.label_To.Text = "LabelName";
+            this.label_To.Click += new System.EventHandler(this.label_To_Click);
             // 
             // label_Distance
             // 
@@ -167,6 +177,7 @@
             this.label_Distance.Size = new System.Drawing.Size(152, 30);
             this.label_Distance.TabIndex = 29;
             this.label_Distance.Text = "LabelName";
+            this.label_Distance.Click += new System.EventHandler(this.label_Distance_Click);
             // 
             // label_Class
             // 
@@ -178,6 +189,7 @@
             this.label_Class.Size = new System.Drawing.Size(152, 30);
             this.label_Class.TabIndex = 30;
             this.label_Class.Text = "LabelName";
+            this.label_Class.Click += new System.EventHandler(this.label_Class_Click);
             // 
             // labelTotalPrice
             // 
@@ -226,6 +238,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2, 774);
             this.panel1.TabIndex = 33;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label2
             // 
@@ -237,6 +250,42 @@
             this.label2.Size = new System.Drawing.Size(157, 56);
             this.label2.TabIndex = 34;
             this.label2.Text = "Route";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // ButtonCreateOrder
+            // 
+            this.ButtonCreateOrder.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonCreateOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonCreateOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonCreateOrder.BorderRadius = 4;
+            this.ButtonCreateOrder.ButtonText = "Create order";
+            this.ButtonCreateOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonCreateOrder.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonCreateOrder.Iconcolor = System.Drawing.Color.Transparent;
+            this.ButtonCreateOrder.Iconimage = null;
+            this.ButtonCreateOrder.Iconimage_right = null;
+            this.ButtonCreateOrder.Iconimage_right_Selected = null;
+            this.ButtonCreateOrder.Iconimage_Selected = null;
+            this.ButtonCreateOrder.IconMarginLeft = 0;
+            this.ButtonCreateOrder.IconMarginRight = 0;
+            this.ButtonCreateOrder.IconRightVisible = true;
+            this.ButtonCreateOrder.IconRightZoom = 0D;
+            this.ButtonCreateOrder.IconVisible = true;
+            this.ButtonCreateOrder.IconZoom = 90D;
+            this.ButtonCreateOrder.IsTab = false;
+            this.ButtonCreateOrder.Location = new System.Drawing.Point(554, 685);
+            this.ButtonCreateOrder.Name = "ButtonCreateOrder";
+            this.ButtonCreateOrder.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonCreateOrder.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonCreateOrder.OnHoverTextColor = System.Drawing.Color.White;
+            this.ButtonCreateOrder.selected = false;
+            this.ButtonCreateOrder.Size = new System.Drawing.Size(214, 48);
+            this.ButtonCreateOrder.TabIndex = 35;
+            this.ButtonCreateOrder.Text = "Create order";
+            this.ButtonCreateOrder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ButtonCreateOrder.Textcolor = System.Drawing.Color.White;
+            this.ButtonCreateOrder.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ButtonCreateOrder.Click += new System.EventHandler(this.ButtonCreateOrder_Click);
             // 
             // ButtonClose
             // 
@@ -259,6 +308,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
+            this.Controls.Add(this.ButtonCreateOrder);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.map);
@@ -305,5 +355,6 @@
         private GMap.NET.WindowsForms.GMapControl map;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
+        private Bunifu.Framework.UI.BunifuFlatButton ButtonCreateOrder;
     }
 }

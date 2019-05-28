@@ -122,7 +122,7 @@ namespace Taxi
             if(success == 1)
             {
                 MessageBox.Show("Login success(user)");
-                FormMain s = new FormMain();
+                FormMainUser s = new FormMainUser();
                 s.Show();
                 this.Hide();
             }
@@ -156,7 +156,7 @@ namespace Taxi
                 if (success == 1)
                 {
                     MessageBox.Show("Login success(user)");
-                    FormMain s = new FormMain();
+                    FormMainUser s = new FormMainUser();
                     s.Show();
                     this.Hide();
                 }

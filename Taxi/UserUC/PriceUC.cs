@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Taxi.BLL;
+using Taxi.DLL;
 
 using GMap.NET;
 using GMap.NET.WindowsForms;
@@ -15,14 +17,18 @@ using GMap.NET.MapProviders;
 
 namespace Taxi.UserControls
 {
+    public delegate void NextHandlerWR();
     public partial class PriceUC : UserControl
     {
+        
         public PriceUC()
         {
             InitializeComponent();
-            
+            FormMainUser fmu = new FormMainUser();
         }
-
+        OrderBLL order = new OrderBLL();
+        OrderDAL orderdal = new OrderDAL();
+        public event NextHandlerWR click;
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -94,6 +100,87 @@ namespace Taxi.UserControls
         private void ButtonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ButtonCreateOrder_Click(object sender, EventArgs e)
+        {
+            order.contact = FormLogin.contact;
+            order.status = "true";
+            bool success = orderdal.StatusChange(order);
+            if (success)
+            {
+                click.Invoke();
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
+            
+        }
+
+        private void PanelM_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label_Price_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelFrom_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelDistance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelClass_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_From_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_To_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_Distance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_Class_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PanelBar_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

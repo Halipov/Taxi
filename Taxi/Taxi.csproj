@@ -83,9 +83,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\LoginBLL.cs" />
+    <Compile Include="BLL\OrderBLL.cs" />
     <Compile Include="BLL\SignUpBLL.cs" />
     <Compile Include="BLL\UserBLL.cs" />
     <Compile Include="DLL\LoginDAL.cs" />
+    <Compile Include="DLL\OrderDAL.cs" />
     <Compile Include="DLL\SignUpDAL.cs" />
     <Compile Include="DLL\UserDAL.cs" />
     <Compile Include="Forms\FormMainTaxi.cs">
@@ -133,6 +135,12 @@
     <Compile Include="UserUC\SelectAutoUC.Designer.cs">
       <DependentUpon>SelectAutoUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserUC\WaitRoomUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\WaitRoomUC.Designer.cs">
+      <DependentUpon>WaitRoomUC.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\FormLogin.en.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserUC\SelectAutoUC.resx">
       <DependentUpon>SelectAutoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\WaitRoomUC.resx">
+      <DependentUpon>WaitRoomUC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -231,6 +242,7 @@
   <ItemGroup>
     <None Include="Resources\History.png" />
     <None Include="Resources\orders.png" />
+    <None Include="Resources\load.gif" />
     <Content Include="Resources\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -29,37 +29,35 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectAutoUC));
             this.PanelBar = new System.Windows.Forms.Panel();
             this.ButtonClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.PanelM = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ButtonPick = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.labelName = new System.Windows.Forms.Label();
-            this.labelClass = new System.Windows.Forms.Label();
-            this.labelContact = new System.Windows.Forms.Label();
-            this.label_name = new System.Windows.Forms.Label();
-            this.label_class = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.labelinfo = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.ButtonA = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ButtonC = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ButtonB = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ButtonNext = new Bunifu.Framework.UI.BunifuFlatButton();
             this.PanelBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelBar
@@ -97,62 +95,6 @@
             this.PanelM.Size = new System.Drawing.Size(167, 774);
             this.PanelM.TabIndex = 9;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Contact});
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle14;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 40;
-            this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
-            this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowTemplate.Height = 39;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(964, 588);
-            this.dataGridView1.TabIndex = 10;
-            this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
@@ -179,157 +121,304 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Controls.Add(this.panel7);
+            this.panel3.Controls.Add(this.panel6);
+            this.panel3.Controls.Add(this.panel5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(179, 26);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(964, 588);
             this.panel3.TabIndex = 14;
             // 
-            // panel4
+            // panel6
             // 
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.label_class);
-            this.panel4.Controls.Add(this.label_name);
-            this.panel4.Controls.Add(this.labelContact);
-            this.panel4.Controls.Add(this.labelClass);
-            this.panel4.Controls.Add(this.labelName);
-            this.panel4.Controls.Add(this.ButtonPick);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(179, 633);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(964, 167);
-            this.panel4.TabIndex = 15;
+            this.panel6.Controls.Add(this.panel9);
+            this.panel6.Controls.Add(this.label5);
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(321, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(321, 588);
+            this.panel6.TabIndex = 1;
             // 
-            // Column1
+            // panel7
             // 
-            this.Column1.HeaderText = "Name";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 300;
+            this.panel7.Controls.Add(this.panel10);
+            this.panel7.Controls.Add(this.label6);
+            this.panel7.Controls.Add(this.label4);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel7.Location = new System.Drawing.Point(642, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(321, 588);
+            this.panel7.TabIndex = 2;
             // 
-            // Column2
+            // label3
             // 
-            this.Column2.HeaderText = "Car";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 300;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label3.Location = new System.Drawing.Point(91, 75);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(142, 44);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Class B";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Column3
+            // label4
             // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle12;
-            this.Column3.HeaderText = "   Class";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 70;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label4.Location = new System.Drawing.Point(105, 75);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(151, 44);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Class C";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Contact
+            // label5
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Contact.DefaultCellStyle = dataGridViewCellStyle13;
-            this.Contact.HeaderText = "                          Contact";
-            this.Contact.Name = "Contact";
-            this.Contact.ReadOnly = true;
-            this.Contact.Width = 285;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label5.Location = new System.Drawing.Point(9, 199);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(312, 168);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "- подушка безопасности \r\nводителя\r\n\r\n- задние \r\nэлектростеклоподъемники\r\n\r\n- встр" +
+    "оенная аудиосистема";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // ButtonPick
+            // label6
             // 
-            this.ButtonPick.ActiveBorderThickness = 1;
-            this.ButtonPick.ActiveCornerRadius = 20;
-            this.ButtonPick.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
-            this.ButtonPick.ActiveForecolor = System.Drawing.Color.White;
-            this.ButtonPick.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
-            this.ButtonPick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
-            this.ButtonPick.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonPick.BackgroundImage")));
-            this.ButtonPick.ButtonText = "Pick";
-            this.ButtonPick.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonPick.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ButtonPick.ForeColor = System.Drawing.Color.White;
-            this.ButtonPick.IdleBorderThickness = 1;
-            this.ButtonPick.IdleCornerRadius = 20;
-            this.ButtonPick.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
-            this.ButtonPick.IdleForecolor = System.Drawing.Color.White;
-            this.ButtonPick.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
-            this.ButtonPick.Location = new System.Drawing.Point(329, 90);
-            this.ButtonPick.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ButtonPick.Name = "ButtonPick";
-            this.ButtonPick.Size = new System.Drawing.Size(294, 61);
-            this.ButtonPick.TabIndex = 16;
-            this.ButtonPick.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label6.Location = new System.Drawing.Point(12, 199);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(279, 120);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "- подушка безопасности\r\n\r\n- кондиционер \r\n\r\n- радио\r\n";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // labelName
+            // panel9
             // 
-            this.labelName.AutoSize = true;
-            this.labelName.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelName.ForeColor = System.Drawing.Color.White;
-            this.labelName.Location = new System.Drawing.Point(234, 45);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(152, 30);
-            this.labelName.TabIndex = 17;
-            this.labelName.Text = "LabelName";
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel9.Location = new System.Drawing.Point(319, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(2, 588);
+            this.panel9.TabIndex = 12;
             // 
-            // labelClass
+            // panel10
             // 
-            this.labelClass.AutoSize = true;
-            this.labelClass.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelClass.ForeColor = System.Drawing.Color.White;
-            this.labelClass.Location = new System.Drawing.Point(459, 45);
-            this.labelClass.Name = "labelClass";
-            this.labelClass.Size = new System.Drawing.Size(30, 30);
-            this.labelClass.TabIndex = 18;
-            this.labelClass.Text = "A";
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel10.Location = new System.Drawing.Point(319, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(2, 588);
+            this.panel10.TabIndex = 12;
             // 
-            // labelContact
+            // labelinfo
             // 
-            this.labelContact.AutoSize = true;
-            this.labelContact.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelContact.ForeColor = System.Drawing.Color.White;
-            this.labelContact.Location = new System.Drawing.Point(610, 45);
-            this.labelContact.Name = "labelContact";
-            this.labelContact.Size = new System.Drawing.Size(112, 30);
-            this.labelContact.TabIndex = 19;
-            this.labelContact.Text = "Contact";
+            this.labelinfo.AutoSize = true;
+            this.labelinfo.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelinfo.ForeColor = System.Drawing.Color.White;
+            this.labelinfo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.labelinfo.Location = new System.Drawing.Point(20, 199);
+            this.labelinfo.Name = "labelinfo";
+            this.labelinfo.Size = new System.Drawing.Size(255, 216);
+            this.labelinfo.TabIndex = 2;
+            this.labelinfo.Text = "- зарядные устройства \r\nдля iPhone и Android\r\n\r\n-зонт\r\n\r\n-без брендирования\r\n\r\n-д" +
+    "опускается отделка\r\n «под кожу»";
+            this.labelinfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label_name
+            // label1
             // 
-            this.label_name.AutoSize = true;
-            this.label_name.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_name.ForeColor = System.Drawing.Color.White;
-            this.label_name.Location = new System.Drawing.Point(234, 15);
-            this.label_name.Name = "label_name";
-            this.label_name.Size = new System.Drawing.Size(84, 28);
-            this.label_name.TabIndex = 20;
-            this.label_name.Text = "Name";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(81, 75);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 44);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Class A\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label_class
+            // panel8
             // 
-            this.label_class.AutoSize = true;
-            this.label_class.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_class.ForeColor = System.Drawing.Color.White;
-            this.label_class.Location = new System.Drawing.Point(435, 17);
-            this.label_class.Name = "label_class";
-            this.label_class.Size = new System.Drawing.Size(75, 28);
-            this.label_class.TabIndex = 21;
-            this.label_class.Text = "Class";
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel8.Location = new System.Drawing.Point(319, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(2, 588);
+            this.panel8.TabIndex = 12;
             // 
-            // label2
+            // panel5
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(607, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 28);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Contact";
+            this.panel5.Controls.Add(this.panel8);
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.labelinfo);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(321, 588);
+            this.panel5.TabIndex = 0;
+            // 
+            // ButtonA
+            // 
+            this.ButtonA.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonA.BorderRadius = 4;
+            this.ButtonA.ButtonText = "A";
+            this.ButtonA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonA.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonA.Iconcolor = System.Drawing.Color.Transparent;
+            this.ButtonA.Iconimage = null;
+            this.ButtonA.Iconimage_right = null;
+            this.ButtonA.Iconimage_right_Selected = null;
+            this.ButtonA.Iconimage_Selected = null;
+            this.ButtonA.IconMarginLeft = 0;
+            this.ButtonA.IconMarginRight = 0;
+            this.ButtonA.IconRightVisible = true;
+            this.ButtonA.IconRightZoom = 0D;
+            this.ButtonA.IconVisible = true;
+            this.ButtonA.IconZoom = 90D;
+            this.ButtonA.IsTab = false;
+            this.ButtonA.Location = new System.Drawing.Point(229, 645);
+            this.ButtonA.Name = "ButtonA";
+            this.ButtonA.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonA.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonA.OnHoverTextColor = System.Drawing.Color.White;
+            this.ButtonA.selected = false;
+            this.ButtonA.Size = new System.Drawing.Size(214, 48);
+            this.ButtonA.TabIndex = 20;
+            this.ButtonA.Text = "A";
+            this.ButtonA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ButtonA.Textcolor = System.Drawing.Color.White;
+            this.ButtonA.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ButtonA.Click += new System.EventHandler(this.ButtonA_Click);
+            // 
+            // ButtonC
+            // 
+            this.ButtonC.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonC.BorderRadius = 4;
+            this.ButtonC.ButtonText = "C";
+            this.ButtonC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonC.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonC.Iconcolor = System.Drawing.Color.Transparent;
+            this.ButtonC.Iconimage = null;
+            this.ButtonC.Iconimage_right = null;
+            this.ButtonC.Iconimage_right_Selected = null;
+            this.ButtonC.Iconimage_Selected = null;
+            this.ButtonC.IconMarginLeft = 0;
+            this.ButtonC.IconMarginRight = 0;
+            this.ButtonC.IconRightVisible = true;
+            this.ButtonC.IconRightZoom = 0D;
+            this.ButtonC.IconVisible = true;
+            this.ButtonC.IconZoom = 90D;
+            this.ButtonC.IsTab = false;
+            this.ButtonC.Location = new System.Drawing.Point(887, 645);
+            this.ButtonC.Name = "ButtonC";
+            this.ButtonC.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonC.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonC.OnHoverTextColor = System.Drawing.Color.White;
+            this.ButtonC.selected = false;
+            this.ButtonC.Size = new System.Drawing.Size(214, 48);
+            this.ButtonC.TabIndex = 21;
+            this.ButtonC.Text = "C";
+            this.ButtonC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ButtonC.Textcolor = System.Drawing.Color.White;
+            this.ButtonC.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ButtonC.Click += new System.EventHandler(this.ButtonC_Click);
+            // 
+            // ButtonB
+            // 
+            this.ButtonB.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonB.BorderRadius = 4;
+            this.ButtonB.ButtonText = "B";
+            this.ButtonB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonB.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonB.Iconcolor = System.Drawing.Color.Transparent;
+            this.ButtonB.Iconimage = null;
+            this.ButtonB.Iconimage_right = null;
+            this.ButtonB.Iconimage_right_Selected = null;
+            this.ButtonB.Iconimage_Selected = null;
+            this.ButtonB.IconMarginLeft = 0;
+            this.ButtonB.IconMarginRight = 0;
+            this.ButtonB.IconRightVisible = true;
+            this.ButtonB.IconRightZoom = 0D;
+            this.ButtonB.IconVisible = true;
+            this.ButtonB.IconZoom = 90D;
+            this.ButtonB.IsTab = false;
+            this.ButtonB.Location = new System.Drawing.Point(558, 645);
+            this.ButtonB.Name = "ButtonB";
+            this.ButtonB.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonB.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonB.OnHoverTextColor = System.Drawing.Color.White;
+            this.ButtonB.selected = false;
+            this.ButtonB.Size = new System.Drawing.Size(214, 48);
+            this.ButtonB.TabIndex = 22;
+            this.ButtonB.Text = "B";
+            this.ButtonB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ButtonB.Textcolor = System.Drawing.Color.White;
+            this.ButtonB.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ButtonB.Click += new System.EventHandler(this.ButtonB_Click);
+            // 
+            // ButtonNext
+            // 
+            this.ButtonNext.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonNext.BorderRadius = 4;
+            this.ButtonNext.ButtonText = "Next";
+            this.ButtonNext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonNext.DisabledColor = System.Drawing.Color.Gray;
+            this.ButtonNext.Iconcolor = System.Drawing.Color.Transparent;
+            this.ButtonNext.Iconimage = null;
+            this.ButtonNext.Iconimage_right = null;
+            this.ButtonNext.Iconimage_right_Selected = null;
+            this.ButtonNext.Iconimage_Selected = null;
+            this.ButtonNext.IconMarginLeft = 0;
+            this.ButtonNext.IconMarginRight = 0;
+            this.ButtonNext.IconRightVisible = true;
+            this.ButtonNext.IconRightZoom = 0D;
+            this.ButtonNext.IconVisible = true;
+            this.ButtonNext.IconZoom = 90D;
+            this.ButtonNext.IsTab = false;
+            this.ButtonNext.Location = new System.Drawing.Point(558, 721);
+            this.ButtonNext.Name = "ButtonNext";
+            this.ButtonNext.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonNext.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonNext.OnHoverTextColor = System.Drawing.Color.White;
+            this.ButtonNext.selected = false;
+            this.ButtonNext.Size = new System.Drawing.Size(214, 48);
+            this.ButtonNext.TabIndex = 23;
+            this.ButtonNext.Text = "Next";
+            this.ButtonNext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ButtonNext.Textcolor = System.Drawing.Color.White;
+            this.ButtonNext.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ButtonNext.Click += new System.EventHandler(this.ButtonNext_Click);
             // 
             // SelectAutoUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.ButtonNext);
+            this.Controls.Add(this.ButtonB);
+            this.Controls.Add(this.ButtonC);
+            this.Controls.Add(this.ButtonA);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -340,10 +429,13 @@
             this.Load += new System.EventHandler(this.SelectAutoUC_Load);
             this.PanelBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -353,22 +445,25 @@
         private System.Windows.Forms.Panel PanelBar;
         private Bunifu.Framework.UI.BunifuImageButton ButtonClose;
         private System.Windows.Forms.Panel PanelM;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Contact;
-        private Bunifu.Framework.UI.BunifuThinButton2 ButtonPick;
-        private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.Label labelContact;
-        private System.Windows.Forms.Label labelClass;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label_class;
-        private System.Windows.Forms.Label label_name;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelinfo;
+        private Bunifu.Framework.UI.BunifuFlatButton ButtonA;
+        private Bunifu.Framework.UI.BunifuFlatButton ButtonC;
+        private Bunifu.Framework.UI.BunifuFlatButton ButtonB;
+        private Bunifu.Framework.UI.BunifuFlatButton ButtonNext;
     }
 }

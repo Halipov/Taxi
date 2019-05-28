@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Taxi.UserControls;
+using Taxi.UserUC;
 using System.Data.SqlClient;
 using Taxi.BLL;
 
 namespace Taxi
 {
-    public partial class FormMain : Form
+    public partial class FormMainUser : Form
     {
 
         int PanelWidth;
@@ -22,11 +23,13 @@ namespace Taxi
 
         RouteUC ruc = new RouteUC();
         SelectAutoUC sauc = new SelectAutoUC();
-        
-        public FormMain()
+
+        public FormMainUser()
         {
             InitializeComponent();
 
+            sauc.click += () => { ButtonPriceMethod(); };
+            
             PanelWidth = PanelMenu.Width;
             isCollapsed = false;
             AddControlsToPanel(ruc);
@@ -203,15 +206,39 @@ namespace Taxi
 
         }
 
-        private void ButtonPrice_Click_1(object sender, EventArgs e)
+        public void test()
         {
+            ButtonPrice.Text = "1";
+        }
+        public void ButtonPriceMethod()
+        {
+           
             ButtonNext.Visible = false;
             PriceUC pruc = new PriceUC();
+            pruc.click += () => { ButtonWRMethod(); };
             moveSidePanel(ButtonPrice);
             AddControlsToPanel(pruc);
             flag = true;
             timer.Start();
             buttonMenu.Visible = false;
+        }
+
+        public void ButtonWRMethod()
+        {
+
+            ButtonNext.Visible = false;
+            
+            moveSidePanel(buttonWR);
+            WaitRoomUC wruc = new WaitRoomUC();
+            AddControlsToPanel(wruc);
+            flag = true;
+            timer.Start();
+            buttonMenu.Visible = false;
+        }
+
+        public void ButtonPrice_Click_1(object sender, EventArgs e)
+        {
+            ButtonPriceMethod();
         }
 
         private void ButtonNext_Click(object sender, EventArgs e)
@@ -248,6 +275,11 @@ namespace Taxi
         private void Logo_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonWR_Click(object sender, EventArgs e)
+        {
+            ButtonWRMethod();
         }
     }
 }

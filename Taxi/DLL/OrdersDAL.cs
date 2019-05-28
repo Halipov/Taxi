@@ -21,14 +21,14 @@ namespace Taxi.DLL
             SqlConnection conn = new SqlConnection(myconnstrng);
             try
             {
-                string sql = "INSERT INTO Orders (taxi_contact, taxi_name, taxi_number, user_contact, user_name, add_from, add_to, class, distance, cost) VALUES(@taxi_contact, @taxi_name, @taxi_number, @user_contact, @user_name, @add_from, @add_to, @class, @distance, @cost) ";
+                string sql = "INSERT INTO Orders (taxi_contact, taxi_name, taxi_number, contact_user, user_name, add_from, add_to, class, distance, cost) VALUES(@taxi_contact, @taxi_name, @taxi_number, @contact_user, @user_name, @add_from, @add_to, @class, @distance, @cost) ";
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("@taxi_contact", u.taxi_contact);
                 cmd.Parameters.AddWithValue("@taxi_name", u.taxi_name);
                 cmd.Parameters.AddWithValue("@taxi_number", u.taxi_number); 
                 cmd.Parameters.AddWithValue("@user_name", u.user_name);
-                cmd.Parameters.AddWithValue("@user_contact", u.user_contact);
+                cmd.Parameters.AddWithValue("@contact_user", u.user_contact);
                 cmd.Parameters.AddWithValue("@add_from", u.from);
                 cmd.Parameters.AddWithValue("@add_to", u.to);
                 cmd.Parameters.AddWithValue("@class", u._class);

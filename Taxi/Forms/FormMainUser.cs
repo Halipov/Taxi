@@ -20,7 +20,7 @@ namespace Taxi
         int PanelWidth;
         bool isCollapsed;
         bool flag = false;
-
+        public static string conntact;
         RouteUC ruc = new RouteUC();
         SelectAutoUC sauc = new SelectAutoUC();
 
@@ -199,6 +199,7 @@ namespace Taxi
         private void FormMain_Load(object sender, EventArgs e)
         {
             LabelContact.Text = FormLogin.contact;
+            conntact = LabelContact.Text;
         }
 
         private void LabelContact_Click(object sender, EventArgs e)

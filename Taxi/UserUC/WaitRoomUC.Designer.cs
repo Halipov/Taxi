@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.PanelBar = new System.Windows.Forms.Panel();
+            this.ButtonClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.PanelM = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelOrder = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ButtonClose = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.PanelBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelBar
@@ -50,6 +50,22 @@
             this.PanelBar.Name = "PanelBar";
             this.PanelBar.Size = new System.Drawing.Size(1143, 26);
             this.PanelBar.TabIndex = 36;
+            // 
+            // ButtonClose
+            // 
+            this.ButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonClose.Image = global::Taxi.Properties.Resources.close2;
+            this.ButtonClose.ImageActive = null;
+            this.ButtonClose.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ButtonClose.Location = new System.Drawing.Point(1110, 3);
+            this.ButtonClose.Name = "ButtonClose";
+            this.ButtonClose.Size = new System.Drawing.Size(34, 21);
+            this.ButtonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ButtonClose.TabIndex = 23;
+            this.ButtonClose.TabStop = false;
+            this.ButtonClose.Zoom = 10;
+            this.ButtonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
             // PanelM
             // 
@@ -82,30 +98,14 @@
             this.labelOrder.Text = "You order is created\r\nPlease waiting a free car\r\n";
             this.labelOrder.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox1
+            // pictureBox
             // 
-            this.pictureBox1.Image = global::Taxi.Properties.Resources.load;
-            this.pictureBox1.Location = new System.Drawing.Point(625, 224);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(76, 70);
-            this.pictureBox1.TabIndex = 52;
-            this.pictureBox1.TabStop = false;
-            // 
-            // ButtonClose
-            // 
-            this.ButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
-            this.ButtonClose.Image = global::Taxi.Properties.Resources.close2;
-            this.ButtonClose.ImageActive = null;
-            this.ButtonClose.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ButtonClose.Location = new System.Drawing.Point(1110, 3);
-            this.ButtonClose.Name = "ButtonClose";
-            this.ButtonClose.Size = new System.Drawing.Size(34, 21);
-            this.ButtonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ButtonClose.TabIndex = 23;
-            this.ButtonClose.TabStop = false;
-            this.ButtonClose.Zoom = 10;
-            this.ButtonClose.Click += new System.EventHandler(this.ButtonClose_Click);
+            this.pictureBox.Image = global::Taxi.Properties.Resources.load;
+            this.pictureBox.Location = new System.Drawing.Point(625, 224);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(76, 70);
+            this.pictureBox.TabIndex = 52;
+            this.pictureBox.TabStop = false;
             // 
             // bunifuDragControl1
             // 
@@ -119,16 +119,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.labelOrder);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelM);
             this.Controls.Add(this.PanelBar);
             this.Name = "WaitRoomUC";
             this.Size = new System.Drawing.Size(1143, 800);
+            this.Load += new System.EventHandler(this.WaitRoomUC_Load);
             this.PanelBar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,7 +142,7 @@
         private System.Windows.Forms.Panel PanelM;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labelOrder;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

@@ -683,7 +683,7 @@ Halipov Evgenii
     <value>12</value>
   </data>
   <data name="TextBoxEmail.Text" xml:space="preserve">
-    <value>Email</value>
+    <value>Contact</value>
   </data>
   <data name="&gt;&gt;TextBoxEmail.Name" xml:space="preserve">
     <value>TextBoxEmail</value>

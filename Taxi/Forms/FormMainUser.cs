@@ -23,17 +23,21 @@ namespace Taxi
         public static string conntact;
         RouteUC ruc = new RouteUC();
         SelectAutoUC sauc = new SelectAutoUC();
+        
 
-        public FormMainUser()
+    public FormMainUser()
         {
             InitializeComponent();
 
-            sauc.click += () => { ButtonPriceMethod(); };
-            
+            sauc.click += () => { ButtonPrice.Enabled = true; ButtonPriceMethod(); };
+            ruc.click += () => { ButtonAuto.Enabled = true; };
+        
             PanelWidth = PanelMenu.Width;
             isCollapsed = false;
             AddControlsToPanel(ruc);
             ButtonPrice.Enabled = false;
+            buttonWR.Enabled = false;
+            ButtonAuto.Enabled = false;
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -188,7 +192,6 @@ namespace Taxi
             flag = true;
             timer.Start();
             buttonMenu.Visible = false;
-            ButtonPrice.Enabled = true;
         }
 
         private void PanelUC_Paint_1(object sender, PaintEventArgs e)
@@ -207,16 +210,13 @@ namespace Taxi
 
         }
 
-        public void test()
-        {
-            ButtonPrice.Text = "1";
-        }
+        
         public void ButtonPriceMethod()
         {
            
             ButtonNext.Visible = false;
             PriceUC pruc = new PriceUC();
-            pruc.click += () => { ButtonWRMethod(); };
+            pruc.click += () => { buttonWR.Enabled = true; ButtonWRMethod(); };
             moveSidePanel(ButtonPrice);
             AddControlsToPanel(pruc);
             flag = true;

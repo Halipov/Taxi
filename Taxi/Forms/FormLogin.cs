@@ -187,29 +187,38 @@ namespace Taxi
 
         private void ButtonSignUp_Click(object sender, EventArgs e)
         {
-            //l.contact = TextBoxUser.Text.Trim();
-            s.contact = TextBoxEmail.Text.Trim();
-            s.first_name = TextBoxFirstName.Text.Trim();
-            s.last_name = TextBoxLastName.Text.Trim();
-            s.password = TextBoxPassSign.Text.Trim();
-
-            bool success_check = s_dal.signup_check(s);
-            if (success_check == true)
+            if (TextBoxEmail.Text == "" || TextBoxFirstName.Text == "" || TextBoxLastName.Text == "" || TextBoxPassSign.Text == "")
             {
-                bool success = s_dal.signup(s);
-                if (success == true)
-                {
-                    MessageBox.Show("SignUp success");
-                }
-                else
-                {
-                    MessageBox.Show("SignUp failed");
-                }
-                
+                MessageBox.Show("someone is empty");
             }
             else
             {
-                MessageBox.Show("contact is al-ready register");
+
+
+                //l.contact = TextBoxUser.Text.Trim();
+                s.contact = TextBoxEmail.Text.Trim();
+                s.first_name = TextBoxFirstName.Text.Trim();
+                s.last_name = TextBoxLastName.Text.Trim();
+                s.password = TextBoxPassSign.Text.Trim();
+
+                bool success_check = s_dal.signup_check(s);
+                if (success_check == true)
+                {
+                    bool success = s_dal.signup(s);
+                    if (success == true)
+                    {
+                        MessageBox.Show("SignUp success");
+                    }
+                    else
+                    {
+                        MessageBox.Show("SignUp failed");
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("contact is al-ready register");
+                }
             }
         }
 

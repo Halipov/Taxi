@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Taxi.BLL.LoginBLL" Collapsed="true">
+    <Position X="2.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAgAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>BLL\LoginBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.BLL.OrderBLL" Collapsed="true">
+    <Position X="11.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAIAAAAAAAAAAAAAAAgAAEAQAAAAAAAAAAAAABA=</HashCode>
+      <FileName>BLL\OrderBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.BLL.OrdersBLL" Collapsed="true">
+    <Position X="8.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABMAAAAAAAACAAAAAAgAgFAQAAAAAAAAAAAAAhA=</HashCode>
+      <FileName>BLL\OrdersBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.BLL.SignUpBLL" Collapsed="true">
+    <Position X="13.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAgAAAAAAAAAAAAAAgAAQAA=</HashCode>
+      <FileName>BLL\SignUpBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.Bll.UserBLL" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAQAAAAAAAAgAAAAAAAAAAAAAAgAAQAA=</HashCode>
+      <FileName>BLL\UserBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.DLL.LoginDAL" Collapsed="true">
+    <Position X="4.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAEAEAAAAEQAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>DLL\LoginDAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.DLL.OrderDAL" Collapsed="true">
+    <Position X="13.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>DLL\OrderDAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.DLL.OrdersDAL" Collapsed="true">
+    <Position X="10" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DLL\OrdersDAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.DLL.SignUpDAL" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAgAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DLL\SignUpDAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.DLL.UserDAL" Collapsed="true">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAgAAAAAAAAEAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>DLL\UserDAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.FormLogin" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCggAoQxAGIYERARAADAwCmmBEIAEKQTJIQAQThACIA=</HashCode>
+      <FileName>Forms\FormLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.FormMainUser" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAq4QIiCAsj0BAAKCAWYAiAAEiAIlJEAAKAATkAAA=</HashCode>
+      <FileName>Forms\FormMainUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.ControlExtensions" Collapsed="true">
+    <Position X="13.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Localization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.ToolStripExtensions" Collapsed="true">
+    <Position X="11.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Localization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.Program" Collapsed="true">
+    <Position X="8.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.Forms.FormMainTaxi" Collapsed="true">
+    <Position X="2" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQIAcAACCAMBRAAAACACQCiAAAgAIEBEAAIAARAAAA=</HashCode>
+      <FileName>Forms\FormMainTaxi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.Properties.Resources" Collapsed="true">
+    <Position X="8.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEABAABAIAAAAAAAAABEAhAAQACQAAEBIBCAAAAEYE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.Properties.Settings" Collapsed="true">
+    <Position X="10" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.TaxiUC.HistoryTaxi" Collapsed="true">
+    <Position X="2" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAQAAAAAgCAAAACAAg4BwABIAAAAQAAAAA=</HashCode>
+      <FileName>TaxiUC\HistoryTaxi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.TaxiUC.OrdersUC" Collapsed="true">
+    <Position X="2" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IDAAAIWFACASABAEipCAAaACAAg8BwIBAAgAgQAAEAA=</HashCode>
+      <FileName>TaxiUC\OrdersUC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.UserUC.HistoryUC" Collapsed="true">
+    <Position X="5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAACAQAAAAAhCAAACCAAg4BwABABAAAQAAAAA=</HashCode>
+      <FileName>UserUC\HistoryUC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.UserUC.WaitRoomUC" Collapsed="true">
+    <Position X="5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAIIIAAECAAABAEgwCAAaSCACQEAAABAAAAAQCIAAA=</HashCode>
+      <FileName>UserUC\WaitRoomUC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.UserControls.PriceUC" Collapsed="true">
+    <Position X="5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAIFIUJICAgwhINABDAAQKCgAAEAAIBAAACARAAEAA=</HashCode>
+      <FileName>UserUC\PriceUC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.UserControls.RouteUC" Collapsed="true">
+    <Position X="5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAIGIaIQCAASDAQAACAAZiCQECAAYgABAAgFQKIAAA=</HashCode>
+      <FileName>UserUC\RouteUC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Taxi.UserControls.SelectAutoUC" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAIAKACAAAHgEAgCAcQiCAAAEAAABAAACAQABABA=</HashCode>
+      <FileName>UserUC\SelectAutoUC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Delegate Name="Taxi.UserControls.NextHandlerWR" Collapsed="true">
+    <Position X="13.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserUC\PriceUC.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Taxi.UserControls.NextHandlerPrice" Collapsed="true">
+    <Position X="11.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserUC\SelectAutoUC.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

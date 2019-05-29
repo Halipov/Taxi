@@ -201,6 +201,7 @@
     <EmbeddedResource Include="UserUC\WaitRoomUC.resx">
       <DependentUpon>WaitRoomUC.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -260,6 +261,7 @@
     <None Include="Resources\close2.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\WaitRoom.png" />
     <None Include="Resources\History.png" />
     <None Include="Resources\orders.png" />
     <None Include="Resources\load.gif" />

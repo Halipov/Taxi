@@ -16,8 +16,10 @@ using Taxi.BLL;
 
 namespace Taxi.UserControls
 {
+    public delegate void NextHandlerSelect();
     public partial class RouteUC : UserControl
     {
+        public event NextHandlerSelect click;
 
         private List<PointLatLng> points;
         public bool flagFrom = true;
@@ -143,10 +145,12 @@ namespace Taxi.UserControls
             routes.Routes.Add(r);
             map.Overlays.Add(routes);
             map.ZoomAndCenterRoutes("routes");
+            click.Invoke();
             label_distance.Visible = true;
             label_distance.Text = route.Distance + "km";
             distance = route.Distance;
             flagRoute = true;
+            
         }
 
         private void TextBoxFrom_OnValueChanged(object sender, EventArgs e)

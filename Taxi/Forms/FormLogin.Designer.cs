@@ -107,7 +107,7 @@
             this.TextBoxUser.LineThickness = 3;
             this.TextBoxUser.Name = "TextBoxUser";
             this.TextBoxUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TextBoxUser.OnValueChanged += new System.EventHandler(this.TextBoxUser_OnValueChanged);
+            
             // 
             // ButtonLogin
             // 
@@ -183,8 +183,7 @@
             this.PanelSignUp.Controls.Add(this.TextBoxFirstName);
             resources.ApplyResources(this.PanelSignUp, "PanelSignUp");
             this.PanelSignUp.Name = "PanelSignUp";
-            this.PanelSignUp.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelSignUp_Paint);
-            // 
+             // 
             // ButtonSignUp
             // 
             this.ButtonSignUp.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(100)))), ((int)(((byte)(4)))));
@@ -259,7 +258,6 @@
             this.TextBoxPassSign.isPassword = false;
             this.TextBoxPassSign.Name = "TextBoxPassSign";
             this.TextBoxPassSign.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TextBoxPassSign.OnValueChanged += new System.EventHandler(this.TextBoxPassSign_OnValueChanged);
             this.TextBoxPassSign.Click += new System.EventHandler(this.TextBoxPassSign_Click);
             // 
             // TextBoxEmail
@@ -300,7 +298,6 @@
             this.TextBoxFirstName.isPassword = false;
             this.TextBoxFirstName.Name = "TextBoxFirstName";
             this.TextBoxFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TextBoxFirstName.OnValueChanged += new System.EventHandler(this.TextBoxFirstName_OnValueChanged);
             this.TextBoxFirstName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TextBoxFirstName_MouseClick);
             // 
             // panelForgetPass
@@ -312,7 +309,6 @@
             this.panelForgetPass.Controls.Add(this.label1);
             resources.ApplyResources(this.panelForgetPass, "panelForgetPass");
             this.panelForgetPass.Name = "panelForgetPass";
-            this.panelForgetPass.Paint += new System.Windows.Forms.PaintEventHandler(this.panelForgetPass_Paint);
             // 
             // label2
             // 
@@ -465,7 +461,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Name = "FormLogin";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormLogin_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormLogin_KeyPress);
             this.panelInfo.ResumeLayout(false);

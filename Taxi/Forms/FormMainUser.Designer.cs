@@ -181,7 +181,7 @@
             this.LogoAnimator.SetDecoration(this.LabelContact, BunifuAnimatorNS.DecorationType.None);
             this.LabelContact.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LabelContact.ForeColor = System.Drawing.Color.White;
-            this.LabelContact.Location = new System.Drawing.Point(60, 709);
+            this.LabelContact.Location = new System.Drawing.Point(57, 709);
             this.LabelContact.Name = "LabelContact";
             this.LabelContact.Size = new System.Drawing.Size(97, 42);
             this.LabelContact.TabIndex = 10;

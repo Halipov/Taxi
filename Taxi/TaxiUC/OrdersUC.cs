@@ -82,8 +82,8 @@ namespace Taxi.TaxiUC
         private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
             labelName.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            labelClass.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            labelContact.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            labelClass.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            labelContact.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
         }
 
 

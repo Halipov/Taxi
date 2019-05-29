@@ -39,11 +39,6 @@ namespace Taxi
         public static string contact;
         public static string username;
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -102,17 +97,6 @@ namespace Taxi
             ButtonSignUp.Text = "SignUp";
             ButtonFPSend.Text = "Send";
         }
-
-        private void panelForgetPass_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void PanelSignUp_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
 
         private void ButtonLogin_Click_1(object sender, EventArgs e)
         {
@@ -222,11 +206,6 @@ namespace Taxi
             }
         }
 
-        private void TextBoxPassSign_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void TextBoxPassSign_Click(object sender, EventArgs e)
         {
             TextBoxPassSign.Text = "";
@@ -239,19 +218,9 @@ namespace Taxi
             TextBoxReEnter.isPassword = true;
         }
 
-        private void TextBoxFirstName_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void TextBoxFirstName_MouseClick(object sender, MouseEventArgs e)
         {
             TextBoxFirstName.Text = "";
-        }
-
-        private void TextBoxUser_OnValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

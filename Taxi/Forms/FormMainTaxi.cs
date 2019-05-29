@@ -25,7 +25,6 @@ namespace Taxi.Forms
             InitializeComponent();
             PanelWidth = PanelMenu.Width;
             AddControlsToPanel(ouc);
-            ButtonPrice.Enabled = false;
             LabelContact.Text = FormLogin.contact;
             conntact = LabelContact.Text;
         }
@@ -56,6 +55,12 @@ namespace Taxi.Forms
             moveSidePanel(ButtonHistory);
             HistoryTaxi huc = new HistoryTaxi();
             AddControlsToPanel(huc);
+        }
+
+        private void ButtonOrders_Click(object sender, EventArgs e)
+        {
+            moveSidePanel(ButtonOrders);
+            AddControlsToPanel(ouc);
         }
     }
 }

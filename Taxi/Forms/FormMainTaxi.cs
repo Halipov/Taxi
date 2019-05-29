@@ -27,7 +27,7 @@ namespace Taxi.Forms
         {
             InitializeComponent();
             //buttonGL.Enabled = false;
-            ouc.click += () => { buttonGL.Enabled = true; GL(); };
+            ouc.click += () => { buttonGL.Enabled = true; GL();  };
             PanelWidth = PanelMenu.Width;
             AddControlsToPanel(ouc);
             LabelContact.Text = FormLogin.contact;

@@ -16,5 +16,10 @@ namespace Taxi.TaxiUC
         {
             InitializeComponent();
         }
+
+        private void Good_Luck_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

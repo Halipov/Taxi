@@ -131,7 +131,7 @@ namespace Taxi.UserControls
                 MessageBox.Show("Invalid");
             }
 
-            var route = GoogleMapProvider.Instance.GetRoute(points[0], points[1], false, false, 14);
+            var route = GoogleMapProvider.Instance.GetRoute(points[0], points[1], false, true, 14);
             var r = new GMapRoute(route.Points, "My Route");
             r2 = r;
             var routes = new GMapOverlay("routes");

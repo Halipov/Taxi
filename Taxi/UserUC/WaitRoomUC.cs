@@ -17,7 +17,6 @@ namespace Taxi.UserUC
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
         SqlConnection conn = new SqlConnection(myconnstrng);
 
-
         public WaitRoomUC()
         {
             InitializeComponent();
@@ -37,7 +36,6 @@ namespace Taxi.UserUC
 
         private void WatchingQuery()
         {
-            
                 conn.Open();
                 using (var command = new SqlCommand(
                     "select class from dbo.Orders WHERE contact_user = @contact", conn))
@@ -47,7 +45,6 @@ namespace Taxi.UserUC
                     sqlDependency.OnChange += new OnChangeEventHandler(OnDatabaseChange);
                     command.ExecuteReader();
                 }
-            
         }
         private void OnDatabaseChange(object sender, SqlNotificationEventArgs args)
         {
@@ -65,16 +62,14 @@ namespace Taxi.UserUC
                     labelContact.Text = (myReader["taxi_contact"].ToString());
                     labelCarNum.Text = (myReader["taxi_number"].ToString());
                 }
-               
-                
+                            
                
             }
             WatchingQuery();
         }
         public void Label()
         {
-            
-            
+           
         }
         private void WaitRoomUC_Load(object sender, EventArgs e)
         {

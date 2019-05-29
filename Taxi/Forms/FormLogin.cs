@@ -177,31 +177,37 @@ namespace Taxi
             }
             else
             {
-
-
-                //l.contact = TextBoxUser.Text.Trim();
-                s.contact = TextBoxEmail.Text.Trim();
-                s.first_name = TextBoxFirstName.Text.Trim();
-                s.last_name = TextBoxLastName.Text.Trim();
-                s.password = TextBoxPassSign.Text.Trim();
-
-                bool success_check = s_dal.signup_check(s);
-                if (success_check == true)
+                if (TextBoxPassSign.Text != TextBoxReEnter.Text)
                 {
-                    bool success = s_dal.signup(s);
-                    if (success == true)
+                    MessageBox.Show("Passwords do not match");
+                }
+
+                else
+                {
+                    //l.contact = TextBoxUser.Text.Trim();
+                    s.contact = TextBoxEmail.Text.Trim();
+                    s.first_name = TextBoxFirstName.Text.Trim();
+                    s.last_name = TextBoxLastName.Text.Trim();
+                    s.password = TextBoxPassSign.Text.Trim();
+
+                    bool success_check = s_dal.signup_check(s);
+                    if (success_check == true)
                     {
-                        MessageBox.Show("SignUp success");
+                        bool success = s_dal.signup(s);
+                        if (success == true)
+                        {
+                            MessageBox.Show("SignUp success");
+                        }
+                        else
+                        {
+                            MessageBox.Show("SignUp failed");
+                        }
+
                     }
                     else
                     {
-                        MessageBox.Show("SignUp failed");
+                        MessageBox.Show("contact is al-ready register");
                     }
-
-                }
-                else
-                {
-                    MessageBox.Show("contact is al-ready register");
                 }
             }
         }

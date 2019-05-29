@@ -88,6 +88,7 @@
             this.Controls.Add(this.labelinfo);
             this.Name = "Good_Luck";
             this.Size = new System.Drawing.Size(1357, 800);
+            this.Load += new System.EventHandler(this.Good_Luck_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

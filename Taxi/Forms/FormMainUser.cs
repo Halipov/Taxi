@@ -108,7 +108,6 @@ namespace Taxi
         private void ButtonRoute_Click(object sender, EventArgs e)
         {
             moveSidePanel(ButtonRoute);
-            
             AddControlsToPanel(ruc);
         }
 

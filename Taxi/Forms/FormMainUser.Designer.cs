@@ -48,10 +48,10 @@
             this.Logo = new System.Windows.Forms.PictureBox();
             this.ButtonAuto = new System.Windows.Forms.Button();
             this.ButtonRoute = new System.Windows.Forms.Button();
-            this.PanelUC = new System.Windows.Forms.Panel();
-            this.ButtonNext = new Bunifu.Framework.UI.BunifuThinButton2();
             this.PanelAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.PanelAnimator2 = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.ButtonNext = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.PanelUC = new System.Windows.Forms.Panel();
             this.PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
@@ -297,48 +297,6 @@
             this.ButtonRoute.UseVisualStyleBackColor = true;
             this.ButtonRoute.Click += new System.EventHandler(this.ButtonRoute_Click_1);
             // 
-            // PanelUC
-            // 
-            this.PanelUC.Controls.Add(this.ButtonNext);
-            this.LogoAnimator.SetDecoration(this.PanelUC, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.PanelUC, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator2.SetDecoration(this.PanelUC, BunifuAnimatorNS.DecorationType.None);
-            this.PanelUC.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PanelUC.Location = new System.Drawing.Point(57, 0);
-            this.PanelUC.Name = "PanelUC";
-            this.PanelUC.Size = new System.Drawing.Size(1143, 800);
-            this.PanelUC.TabIndex = 6;
-            this.PanelUC.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelUC_Paint_1);
-            // 
-            // ButtonNext
-            // 
-            this.ButtonNext.ActiveBorderThickness = 1;
-            this.ButtonNext.ActiveCornerRadius = 20;
-            this.ButtonNext.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
-            this.ButtonNext.ActiveForecolor = System.Drawing.Color.White;
-            this.ButtonNext.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
-            this.ButtonNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
-            this.ButtonNext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonNext.BackgroundImage")));
-            this.ButtonNext.ButtonText = "Select auto";
-            this.ButtonNext.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LogoAnimator.SetDecoration(this.ButtonNext, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator2.SetDecoration(this.ButtonNext, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.ButtonNext, BunifuAnimatorNS.DecorationType.None);
-            this.ButtonNext.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ButtonNext.ForeColor = System.Drawing.Color.White;
-            this.ButtonNext.IdleBorderThickness = 1;
-            this.ButtonNext.IdleCornerRadius = 20;
-            this.ButtonNext.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
-            this.ButtonNext.IdleForecolor = System.Drawing.Color.White;
-            this.ButtonNext.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
-            this.ButtonNext.Location = new System.Drawing.Point(594, 690);
-            this.ButtonNext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ButtonNext.Name = "ButtonNext";
-            this.ButtonNext.Size = new System.Drawing.Size(140, 61);
-            this.ButtonNext.TabIndex = 17;
-            this.ButtonNext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ButtonNext.Click += new System.EventHandler(this.ButtonNext_Click);
-            // 
             // PanelAnimator
             // 
             this.PanelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.HorizBlind;
@@ -381,6 +339,48 @@
             animation1.TransparencyCoeff = 0F;
             this.PanelAnimator2.DefaultAnimation = animation1;
             // 
+            // ButtonNext
+            // 
+            this.ButtonNext.ActiveBorderThickness = 1;
+            this.ButtonNext.ActiveCornerRadius = 20;
+            this.ButtonNext.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonNext.ActiveForecolor = System.Drawing.Color.White;
+            this.ButtonNext.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(80)))), ((int)(((byte)(4)))));
+            this.ButtonNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
+            this.ButtonNext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonNext.BackgroundImage")));
+            this.ButtonNext.ButtonText = "Select auto";
+            this.ButtonNext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LogoAnimator.SetDecoration(this.ButtonNext, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator2.SetDecoration(this.ButtonNext, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.ButtonNext, BunifuAnimatorNS.DecorationType.None);
+            this.ButtonNext.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ButtonNext.ForeColor = System.Drawing.Color.White;
+            this.ButtonNext.IdleBorderThickness = 1;
+            this.ButtonNext.IdleCornerRadius = 20;
+            this.ButtonNext.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonNext.IdleForecolor = System.Drawing.Color.White;
+            this.ButtonNext.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.ButtonNext.Location = new System.Drawing.Point(594, 690);
+            this.ButtonNext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ButtonNext.Name = "ButtonNext";
+            this.ButtonNext.Size = new System.Drawing.Size(140, 61);
+            this.ButtonNext.TabIndex = 17;
+            this.ButtonNext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ButtonNext.Click += new System.EventHandler(this.ButtonNext_Click);
+            // 
+            // PanelUC
+            // 
+            this.PanelUC.Controls.Add(this.ButtonNext);
+            this.LogoAnimator.SetDecoration(this.PanelUC, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.PanelUC, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator2.SetDecoration(this.PanelUC, BunifuAnimatorNS.DecorationType.None);
+            this.PanelUC.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PanelUC.Location = new System.Drawing.Point(57, 0);
+            this.PanelUC.Name = "PanelUC";
+            this.PanelUC.Size = new System.Drawing.Size(1143, 800);
+            this.PanelUC.TabIndex = 6;
+            this.PanelUC.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelUC_Paint_1);
+            // 
             // FormMainUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -419,12 +419,12 @@
         private System.Windows.Forms.PictureBox Logo;
         private System.Windows.Forms.Button ButtonRoute;
         private System.Windows.Forms.Panel PanelSlide;
-        private System.Windows.Forms.Panel PanelUC;
         private System.Windows.Forms.Button ButtonAuto;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label LabelContact;
-        private Bunifu.Framework.UI.BunifuThinButton2 ButtonNext;
         private System.Windows.Forms.Button ButtonHistory;
         private System.Windows.Forms.Button buttonWR;
+        private System.Windows.Forms.Panel PanelUC;
+        private Bunifu.Framework.UI.BunifuThinButton2 ButtonNext;
     }
 }

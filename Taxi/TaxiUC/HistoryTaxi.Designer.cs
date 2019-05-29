@@ -33,9 +33,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.PanelM = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.PanelM = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,31 +46,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(100, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(2, 773);
+            this.panel1.TabIndex = 20;
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(102, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(10, 773);
+            this.panel2.TabIndex = 21;
+            // 
             // PanelM
             // 
             this.PanelM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(23)))), ((int)(((byte)(31)))));
             this.PanelM.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelM.Location = new System.Drawing.Point(0, 0);
             this.PanelM.Name = "PanelM";
-            this.PanelM.Size = new System.Drawing.Size(167, 773);
+            this.PanelM.Size = new System.Drawing.Size(100, 773);
             this.PanelM.TabIndex = 18;
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(169, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 773);
-            this.panel2.TabIndex = 21;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(167, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2, 773);
-            this.panel1.TabIndex = 20;
             // 
             // dataGridView1
             // 
@@ -106,7 +106,7 @@
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(151)))), ((int)(((byte)(4)))));
-            this.dataGridView1.Location = new System.Drawing.Point(179, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(112, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -126,8 +126,8 @@
             this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowTemplate.Height = 39;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1121, 773);
-            this.dataGridView1.TabIndex = 55;
+            this.dataGridView1.Size = new System.Drawing.Size(1088, 773);
+            this.dataGridView1.TabIndex = 56;
             // 
             // Column3
             // 
@@ -148,14 +148,14 @@
             this.Column2.HeaderText = "User name";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 180;
+            this.Column2.Width = 200;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "User contact";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 160;
+            this.Column1.Width = 200;
             // 
             // Column4
             // 
@@ -185,7 +185,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelM);
             this.Name = "HistoryTaxi";
-            this.Size = new System.Drawing.Size(1300, 773);
+            this.Size = new System.Drawing.Size(1200, 773);
             this.Load += new System.EventHandler(this.HistoryTaxi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -193,10 +193,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel PanelM;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel PanelM;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;

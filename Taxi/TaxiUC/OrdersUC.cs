@@ -14,8 +14,10 @@ using Taxi.DLL;
 
 namespace Taxi.TaxiUC
 {
+    public delegate void NextHandlerGL();
     public partial class OrdersUC : UserControl
     {
+        public event NextHandlerGL click;
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
         OrdersBLL orders = new OrdersBLL();
         OrdersDAL ordersdal = new OrdersDAL();
@@ -180,6 +182,7 @@ namespace Taxi.TaxiUC
             {
                 conn.Close();
             }
+            click.Invoke();
 
         }
 

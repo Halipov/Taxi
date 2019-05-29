@@ -14,19 +14,25 @@ using Taxi.TaxiUC;
 
 namespace Taxi.Forms
 {
+   
     public partial class FormMainTaxi : Form
     {
         public static string conntact;
-
+        
         int PanelWidth;
         OrdersUC ouc = new OrdersUC();
+        Good_Luck gluc = new Good_Luck();
+        HistoryTaxi huc = new HistoryTaxi();
         public FormMainTaxi()
         {
             InitializeComponent();
+            //buttonGL.Enabled = false;
+            ouc.click += () => { buttonGL.Enabled = true; GL(); };
             PanelWidth = PanelMenu.Width;
             AddControlsToPanel(ouc);
             LabelContact.Text = FormLogin.contact;
             conntact = LabelContact.Text;
+
         }
         private void moveSidePanel(Control btn)
         {
@@ -35,7 +41,7 @@ namespace Taxi.Forms
         }
         private void AddControlsToPanel(Control c)
         {
-            c.Dock = DockStyle.Fill;
+            
             PanelUC.Controls.Clear();
             PanelUC.Controls.Add(c);
         }
@@ -53,7 +59,6 @@ namespace Taxi.Forms
         private void ButtonHistory_Click(object sender, EventArgs e)
         {
             moveSidePanel(ButtonHistory);
-            HistoryTaxi huc = new HistoryTaxi();
             AddControlsToPanel(huc);
         }
 
@@ -61,6 +66,18 @@ namespace Taxi.Forms
         {
             moveSidePanel(ButtonOrders);
             AddControlsToPanel(ouc);
+        }
+
+        private void buttonGL_Click(object sender, EventArgs e)
+        {
+            PanelWidth = PanelMenu.Width;
+            moveSidePanel(buttonGL);
+            AddControlsToPanel(gluc);
+        }
+        public void GL()
+        {
+            moveSidePanel(buttonGL);
+            AddControlsToPanel(gluc);
         }
     }
 }

@@ -116,7 +116,6 @@ namespace Taxi.TaxiUC
             {
                 dataGridView1.Rows.Clear();
                 LoadData();
-                MessageBox.Show("New Order");
             }
             WatchingQuery();
         }
@@ -128,6 +127,10 @@ namespace Taxi.TaxiUC
 
         private void ButtonPick_Click(object sender, EventArgs e)
         {
+            string cont = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            SqlConnection conn = new SqlConnection(myconnstrng);
+
+            
             orders.taxi_name = FormLogin.username;
             orders.taxi_contact = FormLogin.contact;
             orders.taxi_number = LoginDAL.car_number;
@@ -151,6 +154,31 @@ namespace Taxi.TaxiUC
             else
             {
                 MessageBox.Show("Error");
+            }
+            try
+            {
+                string sql = "UPDATE Users SET status = 0  WHERE contact = @contact";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@contact", cont);
+                conn.Open();
+
+                int rows = cmd.ExecuteNonQuery();
+                if (rows > 0)
+                {
+                    MessageBox.Show("status change");
+                }
+                else
+                {
+                    MessageBox.Show("status no change");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
             }
 
         }

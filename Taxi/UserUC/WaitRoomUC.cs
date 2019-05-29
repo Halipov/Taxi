@@ -54,7 +54,6 @@ namespace Taxi.UserUC
             SqlNotificationInfo info = args.Info;
             if (SqlNotificationInfo.Insert.Equals(info))
             {
-                MessageBox.Show("You order is accepted waiting");
                 pictureBox.Hide();
                 labelOrder.Text = "You order is accepted";
 
